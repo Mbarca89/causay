@@ -1,14 +1,35 @@
 import "./Home.css"
 import { Container } from "react-bootstrap"
+import { motion, useScroll } from "framer-motion";
 
 
 const Home = () => {
+
+    const { scrollYProgress } = useScroll();
+
     return (
         <>
-            <Container fluid className="overflow-hidden m-0 p-0" style={{height:"100vh", width:"100vw", overflow:"hidden"}}>
+            <Container fluid className="position-relative overflow-hidden m-0 p-0" style={{ height: "100vh", width: "100vw" }}>
+                {/* Fondo */}
                 <div className="h-100 w-100">
                     <img src="/images/back.png" alt="" className="w-100 h-100 object-fit-cover" />
                 </div>
+                
+                {/* Contenedor de texto con posición absoluta */}
+                <div className="position-absolute w-100 h-100 top-0 start-0 d-flex flex-column justify-content-center align-items-center">
+                    {/* Elemento animado */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 200 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: .8, ease: "easeOut" }}
+                        className="text-white text-center"
+                    >
+                        <h1 className="fw-bold display-3" style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}>Centro Educativo Causay</h1>
+                        <p className="lead fw-bold" style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}>Educamos para toda la vida.</p>
+                    </motion.div>
+                </div>
+                
+                {/* SVG */}
                 <div className="custom-shape-divider-bottom-1716215760">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                         <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" className="shape-fill"></path>

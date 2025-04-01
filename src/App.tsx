@@ -1,12 +1,12 @@
 import { Routes, Route, Outlet, Navigate } from "react-router-dom"
 import NavBar from "./components/NavBar/NavBar"
-import Home from "./views/Home/Home"
+import Landing from "./views/Landing/Landig"
 import './App.css'
 
 function App() {
 
   return (
-    <div className="App align-items-center d-flex flex-column">
+    <div className="App align-items-center d-flex flex-column position-relative">
       <Routes>
         <Route element={(
           <>
@@ -14,7 +14,7 @@ function App() {
               <Outlet />
           </>
         )}>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Landing />} />
         </Route>
       </Routes>
     </div>

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
@@ -45,7 +44,7 @@ const NavBar = () => {
                     href="/"
                     style={{
                         color: navTextColor,
-                        fontWeight: 'bold'
+                        filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))"
                     }}
                 >
                     <img src="/images/logo.png" alt="" style={{height:"75px"}}/>
@@ -55,7 +54,10 @@ const NavBar = () => {
                     <Nav className="ms-auto">
                         <Nav.Link
                             href="#home"
-                            style={{ color: navTextColor }}
+                            style={{
+                                color: navTextColor,
+                                filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))"
+                            }}
                         >
                             Inicio
                         </Nav.Link>
@@ -64,7 +66,8 @@ const NavBar = () => {
                             id="basic-nav-dropdown"
                             style={{
                                 '--bs-nav-link-color': navTextColor,
-                                '--bs-navbar-color': navTextColor
+                                '--bs-navbar-color': navTextColor,
+                                filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))"
                             }}
                         >
                             <NavDropdown.Item href="#services/web">Pilares</NavDropdown.Item>
@@ -76,7 +79,8 @@ const NavBar = () => {
                             id="basic-nav-dropdown"
                             style={{
                                 '--bs-nav-link-color': navTextColor,
-                                '--bs-navbar-color': navTextColor
+                                '--bs-navbar-color': navTextColor,
+                                filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))"
                             }}
                         >
                             <NavDropdown.Item href="#services/web">Educación inicial</NavDropdown.Item>
@@ -86,25 +90,25 @@ const NavBar = () => {
                         </NavDropdown>
                         <Nav.Link
                             href="#contact"
-                            style={{ color: navTextColor }}
+                            style={{ color: navTextColor,filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Servicios
                         </Nav.Link>
                         <Nav.Link
                             href="#contact"
-                            style={{ color: navTextColor }}
+                            style={{ color: navTextColor,filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Instalaciones
                         </Nav.Link>
                         <Nav.Link
                             href="#contact"
-                            style={{ color: navTextColor }}
+                            style={{ color: navTextColor,filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Talleres
                         </Nav.Link>
                         <Nav.Link
                             href="#contact"
-                            style={{ color: navTextColor }}
+                            style={{ color: navTextColor,filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Contacto
                         </Nav.Link>
@@ -113,7 +117,8 @@ const NavBar = () => {
                             id="basic-nav-dropdown"
                             style={{
                                 '--bs-nav-link-color': navTextColor,
-                                '--bs-navbar-color': navTextColor
+                                '--bs-navbar-color': navTextColor,
+                                filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))"
                             }}
                         >
                             <NavDropdown.Item href="#services/web">Acceso Alumnos</NavDropdown.Item>
