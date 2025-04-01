@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet, Navigate } from "react-router-dom"
+import { Routes, Route, Outlet } from "react-router-dom"
 import NavBar from "./components/NavBar/NavBar"
 import Landing from "./views/Landing/Landig"
 import './App.css'
@@ -6,7 +6,7 @@ import './App.css'
 function App() {
 
   return (
-    <div className="App align-items-center d-flex flex-column position-relative">
+    <div className="App d-flex flex-column position-relative">
       <Routes>
         <Route element={(
           <>
