@@ -1,6 +1,7 @@
 import { Routes, Route, Outlet } from "react-router-dom"
 import NavBar from "./components/NavBar/NavBar"
 import Landing from "./views/Landing/Landig"
+import Footer from "./components/Footer/Footer"
 import './App.css'
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
         <Route element={(
           <>
             <NavBar />
-              <Outlet />
+            <Outlet />
+            <Footer></Footer>
           </>
         )}>
           <Route path="/" element={<Landing />} />

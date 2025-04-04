@@ -1,5 +1,4 @@
-"use client"
-
+import "./Pedagogy.css"
 import type React from "react"
 
 import { useState } from "react"
@@ -97,87 +96,62 @@ export default function Pedagogy() {
   const currentCategory = categories.find((c) => c.id === activeCategory) || categories[0]
 
   return (
-      <div className=" bg-white p-6 md:p-12 position-relative container" style={{minHeight:"50vh"}}>
-        <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl font-bold mb-10 text-gray-900 text-center">Propuesta pedagógica</h1>
-          <p className="text-gray-500 mb-10 text-center">Nuestro objetivo pedagógico está centrado en proporcionar una formación integral a nuestros alumnos/as, garantizando calidad en el logro de los aprendizajes, promoviendo el respeto en las relaciones con los demás y fomentando la sinceridad, el compañerismo y la cooperación solidaria como base de una auténtica convivencia escolar.</p>
+    <>
+      <div className="container p-4 p-md-5 position-relative d-flex flex-column flex-grow fixed-height">
+        <h1 className="text-center fw-bold mb-4">Propuesta pedagógica</h1>
+        <p className="text-center text-muted mb-4">
+          Nuestro objetivo pedagógico está centrado en proporcionar una formación integral a nuestros alumnos/as, garantizando calidad en el logro de los aprendizajes.
+        </p>
 
-          {/* Timeline navigation */}
-          <div className="relative mb-10">
-            {/* Timeline line */}
-            <div className="absolute h-1 bg-gray-200 top-1/2 left-0 right-0 -translate-y-1/2"></div>
+        {/* Timeline Navigation */}
+        <div className="position-relative mb-5">
+          <div className="position-absolute w-100 bg-light" style={{ height: "4px", top: "50%", transform: "translateY(-50%)" }}></div>
 
-            {/* Timeline nodes */}
-            <div className="relative flex justify-between">
-              {categories.map((category) => (
-                <button
-                  style={{ backgroundColor: "transparent", border: "none", margin:"0", padding:"0" }}
-                  key={category.id}
-                  className={`relative flex items-center transition-all duration-300 ${activeCategory === category.id ? "scale-110" : "opacity-70 hover:opacity-100"
-                    }`}
-                  onClick={() => setActiveCategory(category.id)}
-                >
-                  {/* Node */}
-                  <div
-                    className={`w-12 h-12 rounded-full flex items-center justify-center z-10 transition-colors ${activeCategory === category.id
-                      ? category.bgColor + " text-white shadow-lg"
-                      : "bg-white border-2 rounded-full" + category.color
-                      }`}
-                  >
-                    {category.icon}
-                  </div>
+          <div className="d-flex justify-content-between position-relative">
+            {categories.map((category) => (
+              <button className="btn p-0 border-0" key={category.id} onClick={() => setActiveCategory(category.id)}>
+                <div className={`rounded-circle d-flex align-items-center justify-content-center shadow-sm ${activeCategory === category.id ? 'text-white' : ' border'}`} style={{ width: "50px", height: "50px", backgroundColor: activeCategory === category.id ? "#05ae01" : "#ffffff" }}>
+                  {category.icon}
+                </div>
+                <div className="position-absolute text-center mt-3 d-none d-lg-block" style={{ opacity: activeCategory === category.id ? "1" : "0" }}>
+                  <p ><b>{category.title}</b></p>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
 
-                  {/* Label */}
-                  <div
-                    className={`absolute d-none d-lg-block top-16 text-center whitespace-nowrap font-medium ${activeCategory === category.id ? "opacity-100" : "opacity-0"
-                      } transition-opacity`}
-                  >
-                    {category.title}
-                  </div>
-                </button>
-              ))}
+        {/* Content Area */}
+        <div className="row h-md-75 align-items-center mt-3 fixed-height-mobile">
+          {/* Left Side - Category Info */}
+          <div className="col-md-6 d-flex flex-column align-items-start justify-content-between h-50 h-md-75">
+            <div className="d-flex align-items-center gap-3">
+              <div className="p-3 rounded text-white" style={{ backgroundColor: "#05ae01" }}>{currentCategory.icon}</div>
+              <h2 className="fw-bold">{currentCategory.title}</h2>
             </div>
+            <p className="text-muted">{currentCategory.text}</p>
+            <button className="btn btn-dark d-flex align-items-center">
+              Explorar más <span className="ms-2"><ChevronRight /></span>
+            </button>
           </div>
 
-          {/* Content area */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            {/* Left side - Category info */}
-            <div className="space-y-6 d-flex flex-column justify-content-between mt-6">
-              <div className="flex items-center gap-4">
-                <div className={`p-4 rounded-2xl ${currentCategory.bgColor} text-white`}>{currentCategory.icon}</div>
-                <h2 className="text-3xl font-bold text-gray-900">{currentCategory.title}</h2>
-              </div>
-
-              <p className="text-gray-600 leading-relaxed">
-                {currentCategory.text}
-              </p>
-
-              <button className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gray-900 text-white font-medium hover:bg-gray-800 transition-colors">
-                Explorar más
-                <ChevronRight className="h-4 w-4" />
-              </button>
-            </div>
-
-            {/* Right side - Subcategories */}
-            <div className="bg-gray-50 rounded-3xl p-8 shadow-sm">
-              <div className="space-y-4">
-                {currentCategory.subcategories.map((sub, idx) => (
-                  <div
-                    key={idx}
-                    className="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm hover:shadow transition-shadow cursor-pointer group"
-                  >
-                    <div className={`p-3 rounded-xl ${currentCategory.bgColor} bg-opacity-10 ${currentCategory.color}`}>
-                      {sub.icon}
-                    </div>
-                    <span className="font-medium text-gray-800">{sub.name}</span>
-                    <ChevronRight className="ml-auto h-4 w-4 text-gray-400 group-hover:text-gray-900 group-hover:translate-x-1 transition-all" />
+          {/* Right Side - Subcategories */}
+          <div className="col-md-6 bg-light rounded p-4 shadow-sm h-sm-50 ">
+            <div className="d-grid gap-3">
+              {currentCategory.subcategories.map((sub, idx) => (
+                <div key={idx} className="d-flex align-items-center p-3 bg-white rounded shadow-sm">
+                  <div className="p-2 rounded-circle text-white d-flex align-items-center justify-content-center" style={{ width: "40px", height: "40px", backgroundColor: "#05ae01" }}>
+                    {sub.icon}
                   </div>
-                ))}
-              </div>
+                  <span className="ms-3 fw-medium">{sub.name}</span>
+                  <span className="ms-auto text-muted"><ChevronRight /></span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
+    </>
   )
 }
 

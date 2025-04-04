@@ -110,6 +110,18 @@ const NavBar = () => {
                             href="#contact"
                             style={{ color: navTextColor,filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
+                            Aranceles
+                        </Nav.Link>
+                        <Nav.Link
+                            href="#contact"
+                            style={{ color: navTextColor,filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                        >
+                            Becas
+                        </Nav.Link>
+                        <Nav.Link
+                            href="#contact"
+                            style={{ color: navTextColor,filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                        >
                             Contacto
                         </Nav.Link>
                         <NavDropdown
