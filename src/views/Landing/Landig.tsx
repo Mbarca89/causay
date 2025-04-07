@@ -5,7 +5,7 @@ import Facilities from "../../components/Facilities/Facilities"
 const Landing = () => {
     return (
         <>
-            <div className="d-flex flex-column w-100 relative">
+            <div className="">
                 <Home></Home>
                 <Pedadogy></Pedadogy>
                 <svg className="rotate-180 w-100 relative" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><g fill="#05AE01" preserveAspectRatio="none">

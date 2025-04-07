@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 const Home = () => {
 
     return (
-        <Container fluid className="position-relative overflow-hidden m-0 p-0" style={{ height: "100dvh", width: "100vw" }}>
+        <Container fluid className="position-relative overflow-hidden m-0 p-0" style={{ height: "100dvh"}}>
             {/* Fondo */}
-            <div className="h-100 w-100">
+            <div className="h-100">
                 <img src="/images/back.png" alt="" className="w-100 h-100 object-fit-cover" />
             </div>
 
@@ -21,7 +21,7 @@ const Home = () => {
                     transition={{ duration: .8, ease: "easeOut" }}
                     className="text-white text-center"
                 >
-                    <h1 className="fw-bold display-3" style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}>Centro Educativo Causay</h1>
+                    <h1 className="fw-bold display-3 ubuntu-light" style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}>Centro Educativo Causay</h1>
                     <p className="lead fw-bold" style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}>Educamos para toda la vida.</p>
                 </motion.div>
             </div>

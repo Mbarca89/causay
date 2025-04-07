@@ -2,6 +2,7 @@ import { Routes, Route, Outlet } from "react-router-dom"
 import NavBar from "./components/NavBar/NavBar"
 import Landing from "./views/Landing/Landig"
 import Footer from "./components/Footer/Footer"
+import Home from "./components/Home/Home"
 import './App.css'
 
 function App() {

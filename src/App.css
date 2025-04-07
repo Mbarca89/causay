@@ -1,4 +1,14 @@
 .App {
-  min-width: 100dvw;
-  min-height: 100dvh;
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.ubuntu-light {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
