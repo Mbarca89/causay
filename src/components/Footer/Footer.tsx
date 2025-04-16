@@ -1,4 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap"
+import { ChevronRight, Phone, Mail, Clock, MapPin, ArrowRight, Menu } from "lucide-react"
+
 
 const Footer = () => {
     return (
@@ -60,18 +62,24 @@ const Footer = () => {
                     <Col lg={4} md={12}>
                         <Row className="g-3">
                             <Col md={6} sm={12} className="mb-2">
-                                <h5>Horarios:</h5>
-                                <p className="mb-3 small">Lun. a Vie.: 08:00 hs. – 17:00 hs.</p>
-
-                                <h5>Contacto:</h5>
-                                <address className="mb-0 small">
-                                    <p className="mb-1">Dirección: Quines 655 | San Luis</p>
-                                    <p className="mb-1">E-mail: <a href="mailto:info@causay.edu.ar" className="text-secondary">info@causay.edu.ar</a></p>
-                                    <p className="mb-1">Tel: +54 (0266) 442 9011</p>
-                                    <p className="mb-1">Cel: +54 (266) 4 73 23 05</p>
-                                </address>
+                                <div>
+                                    <h5 className="mb-2">Contacto:</h5>
+                                    <ul className="space-y-3 text-sm">
+                                        <li className="flex items-center">
+                                            <Phone className="mr-2 h-4 w-4 text-grey" />
+                                            <span>+54 (0266) 442 9011</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <Mail className="mr-2 h-4 w-4 text-grey" />
+                                            <span>info@causay.edu.ar</span>
+                                        </li>
+                                        <li className="flex items-center">
+                                            <Clock className="mr-2 h-4 w-4 text-grey" />
+                                            <span>Lun - Vie: 8:00 - 17:00</span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </Col>
-
                             <Col md={6} sm={12}>
                                 <h5>Ubicación:</h5>
                                 <div className="ratio ratio-4x3">

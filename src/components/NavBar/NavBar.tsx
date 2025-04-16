@@ -1,141 +1,145 @@
+import "./NavBar.css"
 import React, { useState, useEffect } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import { NavDropdown } from 'react-bootstrap';
+import { SplitHoverDropdown } from '../../CustomComponents/Dropdown/SplitHoverDropdown';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const NavBar = () => {
-    const [navBackground, setNavBackground] = useState('transparent');
-    const [navTextColor, setNavTextColor] = useState('white');
+    const [isScrolled, setIsScrolled] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation()
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY > 50) {
-                setNavBackground('white');
-                setNavTextColor('black');
+            if (location.pathname === "/") {
+                setIsScrolled(window.scrollY > 50);
             } else {
-                setNavBackground('transparent');
-                setNavTextColor('white');
+                setIsScrolled(true); // Fuerza modo scrolled en rutas distintas a "/"
             }
         };
 
+
         // Add scroll event listener
         window.addEventListener('scroll', handleScroll);
+
+        // Initial check
+        handleScroll();
 
         // Cleanup event listener
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [location]);
+
+    // CSS class for text color - used consistently across all components
+    const textColorClass = isScrolled ? 'nv-text-black' : 'nv-text-white';
 
     return (
         <Navbar
             expand="lg"
             fixed="top"
             style={{
-                backgroundColor: navBackground,
+                backgroundColor: isScrolled ? 'white' : 'transparent',
                 backdropFilter: "blur(5px)",
                 transition: 'background-color 0.3s ease',
-                boxShadow: navBackground === 'white' ? '0 2px 4px rgba(0,0,0,0.1)' : 'none'
+                boxShadow: isScrolled ? '0 2px 4px rgba(0,0,0,0.1)' : 'none'
             }}
         >
             <Container>
                 <Navbar.Brand
-                    href="/"
+                    onClick={() => navigate("/")}
                     style={{
-                        color: navTextColor,
                         filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))"
                     }}
                 >
-                    <img src="/images/logo.png" alt="" style={{height:"75px"}}/>
+                    <img src="/images/logo.png" alt="" style={{ height: "75px" }} />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         <Nav.Link
-                            href="#home"
+                            className={textColorClass}
+                            onClick={() => navigate("/")}
                             style={{
-                                color: navTextColor,
                                 filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))"
                             }}
                         >
                             Inicio
                         </Nav.Link>
-                        <NavDropdown
+                        <SplitHoverDropdown
                             title="Institucional"
-                            id="basic-nav-dropdown"
-                            style={{
-                                '--bs-nav-link-color': navTextColor,
-                                '--bs-navbar-color': navTextColor,
-                                filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))"
-                            }}
-                        >
-                            <NavDropdown.Item href="#services/web">Pilares</NavDropdown.Item>
-                            <NavDropdown.Item href="#services/mobile">Propuesta pedagógica</NavDropdown.Item>
-                            <NavDropdown.Item href="#services/mobile">Normativa</NavDropdown.Item>
-                        </NavDropdown>
-                        <NavDropdown
+                            customClassName={textColorClass}
+                            link="institucional"
+                            items={[
+                                { label: 'Pilares', link: 'institucional/pilares' },
+                                { label: 'Propuesta pedagógica', link: 'institucional/propuesta' },
+                                { label: 'Normativa', link: 'institucional/normativa' },
+                            ]}
+                        />
+                        <SplitHoverDropdown
                             title="Niveles"
-                            id="basic-nav-dropdown"
-                            style={{
-                                '--bs-nav-link-color': navTextColor,
-                                '--bs-navbar-color': navTextColor,
-                                filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))"
-                            }}
-                        >
-                            <NavDropdown.Item href="#services/web">Educación inicial</NavDropdown.Item>
-                            <NavDropdown.Item href="#services/mobile">Ecucacicón primaria</NavDropdown.Item>
-                            <NavDropdown.Item href="#services/mobile">Ecucacicón secundaria</NavDropdown.Item>
-                            <NavDropdown.Item href="#services/mobile">Ecucacicón superior</NavDropdown.Item>
-                        </NavDropdown>
+                            customClassName={textColorClass}
+                            link="niveles"
+                            items={[
+                                { label: 'Educación inicial', link: 'niveles/inicial' },
+                                { label: 'Educación primaria', link: 'niveles/primaria' },
+                                { label: 'Educación secundaria', link: 'niveles/secundaria' },
+                                { label: 'Educación superior', link: 'niveles/supeior' },
+                            ]}
+                        />
                         <Nav.Link
-                            href="#contact"
-                            style={{ color: navTextColor,filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                            className={textColorClass}
+                            onClick={() => navigate("/servicios")}
+                            style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Servicios
                         </Nav.Link>
                         <Nav.Link
-                            href="#contact"
-                            style={{ color: navTextColor,filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                            className={textColorClass}
+                            onClick={() => navigate("/instalaciones")}
+                            style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Instalaciones
                         </Nav.Link>
                         <Nav.Link
-                            href="#contact"
-                            style={{ color: navTextColor,filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                            className={textColorClass}
+                            onClick={() => navigate("/talleres")}
+                            style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Talleres
                         </Nav.Link>
                         <Nav.Link
-                            href="#contact"
-                            style={{ color: navTextColor,filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                            className={textColorClass}
+                            onClick={() => navigate("/aranceles")}
+                            style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Aranceles
                         </Nav.Link>
                         <Nav.Link
-                            href="#contact"
-                            style={{ color: navTextColor,filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                            className={textColorClass}
+                            onClick={() => navigate("/becas")}
+                            style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Becas
                         </Nav.Link>
                         <Nav.Link
-                            href="#contact"
-                            style={{ color: navTextColor,filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                            className={textColorClass}
+                            onClick={() => navigate("/contacto")}
+                            style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Contacto
                         </Nav.Link>
-                        <NavDropdown
+                        <SplitHoverDropdown
                             title="Acceder"
-                            id="basic-nav-dropdown"
-                            style={{
-                                '--bs-nav-link-color': navTextColor,
-                                '--bs-navbar-color': navTextColor,
-                                filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))"
-                            }}
-                        >
-                            <NavDropdown.Item href="#services/web">Acceso Alumnos</NavDropdown.Item>
-                            <NavDropdown.Item href="#services/mobile">Acceso Docentes</NavDropdown.Item>
-                        </NavDropdown>
+                            customClassName={textColorClass}
+                            link="acceder"
+                            items={[
+                                { label: 'Acceso Alumnos', link: 'niveles/inicial' },
+                                { label: 'Acceso Docentes', link: 'niveles/primaria' },
+                            ]}
+                        />
                     </Nav>
                 </Navbar.Collapse>
             </Container>

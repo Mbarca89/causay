@@ -113,8 +113,8 @@ export default function Pedagogy() {
                 <div className={`rounded-circle d-flex align-items-center justify-content-center shadow-sm ${activeCategory === category.id ? 'text-white' : ' border'}`} style={{ width: "50px", height: "50px", backgroundColor: activeCategory === category.id ? "#05ae01" : "#ffffff" }}>
                   {category.icon}
                 </div>
-                <div className="position-absolute text-center mt-3 d-none d-lg-block" style={{ opacity: activeCategory === category.id ? "1" : "0" }}>
-                  <p ><b>{category.title}</b></p>
+                <div className="position-absolute text-center text-nowrap mt-3 d-none d-lg-block" style={{ opacity: activeCategory === category.id ? "1" : "0" }}>
+                  <p><b>{category.title}</b></p>
                 </div>
               </button>
             ))}
@@ -122,9 +122,9 @@ export default function Pedagogy() {
         </div>
 
         {/* Content Area */}
-        <div className="row h-md-75 align-items-center mt-3 fixed-height-mobile">
+        <div className="row h-md-75 align-items-start d-flex mt-3 fixed-height-mobile">
           {/* Left Side - Category Info */}
-          <div className="col-md-6 d-flex flex-column align-items-start justify-content-between h-50 h-md-75">
+          <div className="col-md-6 d-flex flex-column align-items-start justify-content-between h-50 h-md-75 ">
             <div className="d-flex align-items-center gap-3">
               <div className="p-3 rounded text-white" style={{ backgroundColor: "#05ae01" }}>{currentCategory.icon}</div>
               <h2 className="fw-bold">{currentCategory.title}</h2>
@@ -136,7 +136,7 @@ export default function Pedagogy() {
           </div>
 
           {/* Right Side - Subcategories */}
-          <div className="col-md-6 bg-light rounded p-4 shadow-sm h-sm-50 ">
+          <div className="col-md-6 bg-light rounded p-4 shadow-sm ">
             <div className="d-grid gap-3">
               {currentCategory.subcategories.map((sub, idx) => (
                 <div key={idx} className="d-flex align-items-center p-3 bg-white rounded shadow-sm">
@@ -144,7 +144,6 @@ export default function Pedagogy() {
                     {sub.icon}
                   </div>
                   <span className="ms-3 fw-medium">{sub.name}</span>
-                  <span className="ms-auto text-muted"><ChevronRight /></span>
                 </div>
               ))}
             </div>
