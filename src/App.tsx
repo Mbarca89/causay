@@ -2,6 +2,7 @@ import { Routes, Route, Outlet, useLocation } from "react-router-dom"
 import NavBar from "./components/NavBar/NavBar"
 import Landing from "./views/Landing/Landig"
 import Footer from "./components/Footer/Footer"
+import FooterAlt from "./components/FooterAlt/FooterAtl"
 import Pilars from "./views/Institution/Pilars/Pilars"
 import Levels from "./views/Levels/Levels"
 import './App.css'
