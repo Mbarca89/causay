@@ -2,11 +2,15 @@ import { Routes, Route, Outlet, useLocation } from "react-router-dom"
 import NavBar from "./components/NavBar/NavBar"
 import Landing from "./views/Landing/Landig"
 import Footer from "./components/Footer/Footer"
-import FooterAlt from "./components/FooterAlt/FooterAtl"
-import Pilars from "./views/Institution/Pilars/Pilars"
-import Levels from "./views/Levels/Levels"
+
+
 import './App.css'
-import { useEffect, useRef, useState } from "react"
+import { lazy, Suspense, useEffect, useRef, useState } from "react"
+
+const PedagogyView = lazy(() => import("./views/Institution/PedagogyView/PedagogyView"))
+const Levels = lazy(() => import("./views/Levels/Levels"))
+const Pilars = lazy(() => import("./views/Institution/Pilars/Pilars"))
+
 
 function App() {
 
@@ -20,15 +24,18 @@ function App() {
         <Route element={(
           <>
             <NavBar />
-            <div style={{ marginTop: location.pathname != "/" ? "110px" : 0 }}>
-              <Outlet />
-              <Footer />
-            </div>
+            <Suspense>
+              <div style={{ marginTop: location.pathname != "/" ? "110px" : 0 }}>
+                <Outlet />
+                <Footer />
+              </div>
+            </Suspense>
           </>
         )}>
           <Route path="/" element={<Landing />} />
           <Route path="/niveles" element={<Levels />} />
           <Route path="/institucional/pilares" element={<Pilars />} />
+          <Route path="/institucional/propuesta" element={<PedagogyView />} />
         </Route>
       </Routes>
     </div>
