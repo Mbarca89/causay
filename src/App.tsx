@@ -10,6 +10,7 @@ import { lazy, Suspense, useEffect, useRef, useState } from "react"
 const PedagogyView = lazy(() => import("./views/Institution/PedagogyView/PedagogyView"))
 const Levels = lazy(() => import("./views/Levels/Levels"))
 const Pilars = lazy(() => import("./views/Institution/Pilars/Pilars"))
+const Norm = lazy(() => import("./views/Institution/Norm/Norm"))
 
 
 function App() {
@@ -19,13 +20,13 @@ function App() {
   const location = useLocation();
 
   return (
-    <div className="App d-flex flex-column position-relative">
+    <div className="App">
       <Routes>
         <Route element={(
           <>
             <NavBar />
             <Suspense>
-              <div style={{ marginTop: location.pathname != "/" ? "110px" : 0 }}>
+              <div style={{ marginTop: location.pathname != "/" ? "110px" : 0}}>
                 <Outlet />
                 <Footer />
               </div>
@@ -36,6 +37,7 @@ function App() {
           <Route path="/niveles" element={<Levels />} />
           <Route path="/institucional/pilares" element={<Pilars />} />
           <Route path="/institucional/propuesta" element={<PedagogyView />} />
+          <Route path="/institucional/normativa" element={<Norm />} />
         </Route>
       </Routes>
     </div>

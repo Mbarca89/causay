@@ -60,15 +60,15 @@ const PedagogyView: React.FC = () => {
     ]
 
     const [activeProgram, setActiveProgram] = useState<number>(1);
-console.log(activeProgram)
+
     return (
         <Container className='mb-3'>
             <div className='d-flex flex-column flex-lg-row border-b border-green-500'>
                 <div className='w-100 w-md-50 d-flex flex-column justify-content-center text-center text-lg-start'>
                     <h1>Propuesta pedagógica</h1>
-                    <p>Consideramos a la educación como un proceso formativo y orientador de nuestros alumnos/as, que además de brindar herramientas para adquirir conocimientos, procure fomentar el desarrollo de valores éticos y sociales.</p>
+                    <p className='text-secondary'>Consideramos a la educación como un proceso formativo y orientador de nuestros alumnos/as, que además de brindar herramientas para adquirir conocimientos, procure fomentar el desarrollo de valores éticos y sociales.</p>
                     <h2 className='fs-3'>Objetivos pedagógicos</h2>
-                    <p>Nuestro objetivo pedagógico está centrado en proporcionar una formación integral a nuestros alumnos/as, garantizando calidad en el logro de los aprendizajes, promoviendo el respeto en las relaciones con los demás y fomentando la sinceridad, el compañerismo y la cooperación solidaria como base de una auténtica convivencia escolar</p>
+                    <p className='text-secondary'>Nuestro objetivo pedagógico está centrado en proporcionar una formación integral a nuestros alumnos/as, garantizando calidad en el logro de los aprendizajes, promoviendo el respeto en las relaciones con los demás y fomentando la sinceridad, el compañerismo y la cooperación solidaria como base de una auténtica convivencia escolar</p>
                 </div>
                 <div className='w-100 w-md-50 mb-3'>
                     <picture>
@@ -79,8 +79,8 @@ console.log(activeProgram)
             </div>
             <div className='mt-3 text-center border-b border-green-500'>
                 <h2 className=''>Aprendizaje basado en proyectos (ABP)</h2>
-                <p>En el año 2019 iniciamos, con la capacitación del personal docente, la implementación de un método sistemático de enseñanza que involucra a los estudiantes en el aprendizaje de conocimientos y habilidades, a través de un proceso extendido de indagación, estructurado alrededor de preguntas complejas y auténticas, y tareas y productos cuidadosamente diseñados.</p>
-                <p>Este método, denominado Aprendizaje Basado en Proyectos (ABP) promueve en los alumnos un aprendizaje vinculado con su vida real y les brinda herramientas para resolver un problema. Las actividades parten de una provocación inicial -una pregunta significativa, problema o desafío, que hace de detonante creativo. También reciben una pregunta inicial que los invita a la investigación. En esta fase los estudiantes se sumergen en un proceso donde trabajan de manera relativamente autónoma y con un alto nivel de implicación y colaboración. De esta forma, el Aprendizaje Basado en Proyecto busca impulsar la participación activa y el trabajo colaborativo, integrar diversas disciplinas, vincular los conocimientos, la teoría, la práctica y las experiencias.
+                <p className='text-secondary'>En el año 2019 iniciamos, con la capacitación del personal docente, la implementación de un método sistemático de enseñanza que involucra a los estudiantes en el aprendizaje de conocimientos y habilidades, a través de un proceso extendido de indagación, estructurado alrededor de preguntas complejas y auténticas, y tareas y productos cuidadosamente diseñados.</p>
+                <p className='text-secondary'>Este método, denominado Aprendizaje Basado en Proyectos (ABP) promueve en los alumnos un aprendizaje vinculado con su vida real y les brinda herramientas para resolver un problema. Las actividades parten de una provocación inicial -una pregunta significativa, problema o desafío, que hace de detonante creativo. También reciben una pregunta inicial que los invita a la investigación. En esta fase los estudiantes se sumergen en un proceso donde trabajan de manera relativamente autónoma y con un alto nivel de implicación y colaboración. De esta forma, el Aprendizaje Basado en Proyecto busca impulsar la participación activa y el trabajo colaborativo, integrar diversas disciplinas, vincular los conocimientos, la teoría, la práctica y las experiencias.
                     Todos nuestros proyectos están orientados a partir de nuestros programas transversales.
                 </p>
             </div>
@@ -99,7 +99,7 @@ console.log(activeProgram)
                 </div>
                 <div className='bg-light shadow-md rounded text-center p-2'>
                     <h3 className='d-none d-md-block mt-5'>{programs[activeProgram].title}</h3>
-                    <p className='mt-0 mt-md-5'>{programs[activeProgram].text}</p>
+                    <p className='mt-0 mt-md-5 text-secondary'>{programs[activeProgram].text}</p>
                 </div>
             </div>
         </Container>

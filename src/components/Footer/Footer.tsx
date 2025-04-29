@@ -4,7 +4,7 @@ import { ChevronRight, Phone, Mail, Clock, MapPin, ArrowRight, Menu } from "luci
 
 const Footer = () => {
     return (
-        <footer className="text-light" style={{ backgroundColor: "rgba(5, 174, 1, 0.8)", marginTop: "-7px" }}>
+        <footer className="text-light position-relative w-100 bottom-0" style={{ backgroundColor: "rgba(5, 174, 1, 0.8)", marginTop: "-7px" }}>
             <div className="w-full overflow-hidden leading-none">
                 <svg
                     className="relative block w-full h-12"
