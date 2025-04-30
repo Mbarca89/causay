@@ -70,7 +70,7 @@ const PedagogyView: React.FC = () => {
                     <h2 className='fs-3'>Objetivos pedagógicos</h2>
                     <p className='text-secondary'>Nuestro objetivo pedagógico está centrado en proporcionar una formación integral a nuestros alumnos/as, garantizando calidad en el logro de los aprendizajes, promoviendo el respeto en las relaciones con los demás y fomentando la sinceridad, el compañerismo y la cooperación solidaria como base de una auténtica convivencia escolar</p>
                 </div>
-                <div className='w-100 w-md-50 mb-3'>
+                <div className='w-sm-100 w-md-50 mb-3'>
                     <picture>
                         <source media="(min-width: 769px)" srcSet="/images/pedagogy/1w.jpg" />
                         <img className='rounded' src="/images/pedagogy/1.jpg" alt="" />

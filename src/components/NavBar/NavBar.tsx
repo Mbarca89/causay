@@ -86,7 +86,6 @@ const NavBar = () => {
                                 { label: 'Educación inicial', link: 'niveles/inicial' },
                                 { label: 'Educación primaria', link: 'niveles/primaria' },
                                 { label: 'Educación secundaria', link: 'niveles/secundaria' },
-                                { label: 'Educación superior', link: 'niveles/supeior' },
                             ]}
                         />
                         <Nav.Link

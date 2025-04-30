@@ -1,15 +1,37 @@
 .App {
-  min-height: 100dvh;
+
   min-width: 100%;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
-body {
+html, body, #root {
+  height: 100%;
+  margin: 0;
   font-family: 'Ubuntu', sans-serif;
 }
+
 
 .ubuntu-light {
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+
+main {
+  flex:1;
+}
+
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.Content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }

@@ -2,7 +2,7 @@
 const Pilars = () => {
     return (
         <div className="container d-flex flex-column justify-content-around align-items-center">
-            <div className="text-center">
+            <div className="text-center border-b border-green-500 pb-3">
                 <div className="">
                     <h1>Nuestros pilares</h1>
                     <p className="text-secondary">Promovemos como pilares básicos, proyectos para el desarrollo de una conciencia sobre hábitos saludables, actitudes de amabilidad y cortesía, respeto y solidaridad para la convivencia, la conservación del ambiente y el desarrollo sustentable, el conocimiento y valoración de nuestra tradición y patrimonio cultural.</p>
@@ -14,7 +14,7 @@ const Pilars = () => {
                     </picture>
                 </div>
             </div>
-            <div className="mt-5 lg:flex gap-2">
+            <div className="mt-3 lg:flex gap-2 border-b border-green-500 pb-3">
                 <div className="w-100 w-md-50">
                     <h2>Convivencia</h2>
                     <p className="text-secondary">
@@ -29,7 +29,7 @@ const Pilars = () => {
                     <img className="rounded" src="/images/pilars/2.jpg" alt="" />
                 </div>
             </div>
-            <div className="text-start mt-5 d-flex flex-column-reverse flex-lg-row gap-2">
+            <div className="text-start mt-3 d-flex flex-column-reverse flex-lg-row gap-2 border-b border-green-500 pb-3">
                 <div className="w-100 w-md-50">
                     <img className="rounded" src="/images/pilars/3.jpg" alt="" />
                 </div>
@@ -42,7 +42,7 @@ const Pilars = () => {
                     </p>
                 </div>
             </div>
-            <div className="text-center mb-5 mt-5">
+            <div className="text-center mb-5 mt-3">
                 <h2>Identidad</h2>
                 <p className="text-secondary">
                     Nuestra propuesta educativa incluye conocimientos y experiencias pedagógicas sobre la tradición, la querencia por lo nuestro, la cultura, la historia y el sentido de pertenencia como sanluiseños nacidos en esta tierra y de aquellos que la adoptaron para hacerla propia.

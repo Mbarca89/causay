@@ -1,13 +1,17 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react"
 import { Button } from "react-bootstrap"
+import { useNavigate } from "react-router-dom"
 
 const Levels = () => {
+
+    const navigate = useNavigate()
+
     return (
-        <section className="py-16">
+        <section className="mb-5">
             <div className="container px-4 md:px-6">
-                <h2 className="mb-12 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <h1 className="mb-12 text-center text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                     Niveles Educativos
-                </h2>
+                </h1>
 
                 <div className="grid gap-8 md:grid-cols-2">
                     {/* Card 1 */}
@@ -35,7 +39,7 @@ const Levels = () => {
                                             <span>Actividades lúdicas y educativas</span>
                                         </li>
                                     </ul>
-                                    <Button variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
+                                    <Button onClick={()=>navigate("/niveles/inicial")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
                                         Conocer más
                                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                     </Button>
@@ -69,7 +73,7 @@ const Levels = () => {
                                             <span>Desarrollo de habilidades sociales y académicas</span>
                                         </li>
                                     </ul>
-                                    <Button variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
+                                    <Button onClick={()=>navigate("/niveles/primaria")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
                                         Conocer más
                                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                     </Button>
@@ -102,40 +106,7 @@ const Levels = () => {
                                             <span>Diversas orientaciones académicas</span>
                                         </li>
                                     </ul>
-                                    <Button variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
-                                        Conocer más
-                                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                                    </Button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Card 4 */}
-                    <div className="group relative overflow-hidden rounded-2xl shadow-md transition-all hover:shadow-xl">
-                        <div className="relative z-10 p-6 md:p-8 flex flex-column align-items-start justify-content-between h-100">
-                            <div className="mb-4 inline-flex items-center rounded-full bg-teal-100 px-3 py-1 text-sm font-medium text-teal-800">
-                                <span>Nivel Superior</span>
-                            </div>
-                            <div className="mb-6 grid gap-6 md:grid-cols-5">
-                                <div className="md:col-span-5">
-                                    <h3 className="mb-4 text-2xl font-bold leading-tight text-gray-900">
-                                        Formando profesionales
-                                    </h3>
-                                    <p className="mb-6 text-gray-700">
-                                        Somos sede provincial de la Universidad Abierta Interamericana Online que ofrece programas universitarios de formación en la modalidad a distancia.
-                                    </p>
-                                    <ul className="mb-6 space-y-2">
-                                        <li className="flex items-start">
-                                            <CheckCircle2 className="mr-2 mt-0.5 h-5 w-5 flex-shrink-0 text-teal-500" />
-                                            <span>Licenciatura en gestión de las instituciones educativas</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <CheckCircle2 className="mr-2 mt-0.5 h-5 w-5 flex-shrink-0 text-teal-500" />
-                                            <span>Analista Programador</span>
-                                        </li>
-                                    </ul>
-                                    <Button variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
+                                    <Button onClick={()=>navigate("/niveles/secundaria")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
                                         Conocer más
                                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                     </Button>

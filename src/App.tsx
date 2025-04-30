@@ -6,38 +6,53 @@ import Footer from "./components/Footer/Footer"
 
 import './App.css'
 import { lazy, Suspense, useEffect, useRef, useState } from "react"
+import ScrollToTop from "./utils/ScrollToTop"
+
 
 const PedagogyView = lazy(() => import("./views/Institution/PedagogyView/PedagogyView"))
 const Levels = lazy(() => import("./views/Levels/Levels"))
 const Pilars = lazy(() => import("./views/Institution/Pilars/Pilars"))
 const Norm = lazy(() => import("./views/Institution/Norm/Norm"))
+const Institution = lazy(() => import("./views/Institution/Institution"))
+const Starting = lazy(() => import("./views/Levels/Starting/Starting"))
+const Primary = lazy(() => import("./views/Levels/Primary/Primary"))
+const Secondary = lazy(() => import("./views/Levels/Secondary/Secondary"))
+const ServicesView = lazy(() => import("./views/ServicesView/ServicesView"))
+const Workshops = lazy(() => import("./views/Workshops/Workshops"))
+const Pricing = lazy(() => import("./views/Pricing/Pricing"))
 
 
 function App() {
 
-  const navRef = useRef<HTMLDivElement>(null);
-  const [navHeight, setNavHeight] = useState(0);
   const location = useLocation();
 
   return (
     <div className="App">
+      <ScrollToTop />
       <Routes>
         <Route element={(
           <>
             <NavBar />
-            <Suspense>
-              <div style={{ marginTop: location.pathname != "/" ? "110px" : 0}}>
+            <div className="Content" style={{ marginTop: location.pathname != "/" ? "110px" : 0 }}>
+              <Suspense>
                 <Outlet />
-                <Footer />
-              </div>
-            </Suspense>
+              </Suspense>
+            </div>
+            <Footer />
           </>
         )}>
           <Route path="/" element={<Landing />} />
           <Route path="/niveles" element={<Levels />} />
+          <Route path="/niveles/inicial" element={<Starting />} />
+          <Route path="/niveles/primaria" element={<Primary />} />
+          <Route path="/niveles/secundaria" element={<Secondary />} />
+          <Route path="/institucional" element={<Institution />} />
           <Route path="/institucional/pilares" element={<Pilars />} />
           <Route path="/institucional/propuesta" element={<PedagogyView />} />
           <Route path="/institucional/normativa" element={<Norm />} />
+          <Route path="/servicios" element={<ServicesView />} />
+          <Route path="/talleres" element={<Workshops />} />
+          <Route path="/aranceles" element={<Pricing />} />
         </Route>
       </Routes>
     </div>
