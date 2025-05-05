@@ -1,6 +1,7 @@
 import React, { act, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { useSwipeable } from 'react-swipeable';
 
 interface Program {
     id: number
@@ -61,6 +62,22 @@ const PedagogyView: React.FC = () => {
 
     const [activeProgram, setActiveProgram] = useState<number>(1);
 
+    const goToPrevious = () => {
+        setActiveProgram((prev) => (prev !== 0 ? prev - 1 : programs.length - 1))
+      }
+    
+      const goToNext = () => {
+        setActiveProgram((prev) => (prev !== programs.length - 1 ? prev + 1 : 0))
+      }
+    
+      // Configure swipe handlers
+      const swipeHandlers = useSwipeable({
+        onSwipedLeft: () => goToNext(),
+        onSwipedRight: () => goToPrevious(),
+        trackMouse: false,
+        preventScrollOnSwipe: true,
+      })
+
     return (
         <Container className='mb-3'>
             <div className='d-flex flex-column flex-lg-row border-b border-green-500'>
@@ -91,13 +108,32 @@ const PedagogyView: React.FC = () => {
                     <h3 className='fs-6 m-0'>{programs[activeProgram].title}</h3>
                     <button onClick={activeProgram != programs.length-1 ? ()=>setActiveProgram(activeProgram+1) : ()=>setActiveProgram(1)}><ChevronRight /></button>
                 </div>
-                <div className='d-none d-md-flex flex-column justify-content-start text-nowrap gap-1'>
-                    {programs.map(program => (
-                        <button key={program.id} onClick={() => setActiveProgram(program.id - 1)} className='d-flex text-start d-flex h-100 align-items-center'><p className='d-flex'><span className='border-b border-transparent hover:border-green-500'>{program.title}</span><span><ChevronRight className='' /></span></p></button>
+                <div className='d-none d-md-flex flex-column justify-content-start text-nowrap gap-1' style={{ minWidth: "300px" }}>
+                    {programs.map((program,index) => (
+                        <button
+                                        key={program.id}
+                                        onClick={() => setActiveProgram(index)}
+                                        className={`d-flex text-start h-100 align-items-center border-0 bg-transparent py-2 ${
+                                          activeProgram === index ? "fw-bold" : ""
+                                        }`}
+                                      >
+                                        <p className="d-flex m-0">
+                                          <span
+                                            className={`border-b border-transparent ${activeProgram === index ? "border-green-500" : "hover:border-green-500"}`}
+                                          >
+                                            {program.title}
+                                          </span>
+                                          {activeProgram === index && (
+                                            <span>
+                                              <ChevronRight className="ms-2" />
+                                            </span>
+                                          )}
+                                        </p>
+                                      </button>
                     )
                     )}
                 </div>
-                <div className='bg-light shadow-md rounded text-center p-2'>
+                <div {...swipeHandlers} className='bg-light shadow-md rounded text-center p-2'>
                     <h3 className='d-none d-md-block mt-5'>{programs[activeProgram].title}</h3>
                     <p className='mt-0 mt-md-5 text-secondary'>{programs[activeProgram].text}</p>
                 </div>

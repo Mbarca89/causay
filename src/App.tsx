@@ -8,7 +8,6 @@ import './App.css'
 import { lazy, Suspense, useEffect, useRef, useState } from "react"
 import ScrollToTop from "./utils/ScrollToTop"
 
-
 const PedagogyView = lazy(() => import("./views/Institution/PedagogyView/PedagogyView"))
 const Levels = lazy(() => import("./views/Levels/Levels"))
 const Pilars = lazy(() => import("./views/Institution/Pilars/Pilars"))
@@ -20,7 +19,9 @@ const Secondary = lazy(() => import("./views/Levels/Secondary/Secondary"))
 const ServicesView = lazy(() => import("./views/ServicesView/ServicesView"))
 const Workshops = lazy(() => import("./views/Workshops/Workshops"))
 const Pricing = lazy(() => import("./views/Pricing/Pricing"))
-
+const FacilitiesView = lazy(() => import("./views/FacilitiesView/FacilitiesView"))
+const Scholarship = lazy(() => import("./views/Scholarship/Scholarship"))
+const Contact = lazy(() => import("./views/Contact/Contact"))
 
 function App() {
 
@@ -53,6 +54,9 @@ function App() {
           <Route path="/servicios" element={<ServicesView />} />
           <Route path="/talleres" element={<Workshops />} />
           <Route path="/aranceles" element={<Pricing />} />
+          <Route path="/instalaciones" element={<FacilitiesView />} />
+          <Route path="/becas" element={<Scholarship />} />
+          <Route path="/contacto" element={<Contact />} />
         </Route>
       </Routes>
     </div>

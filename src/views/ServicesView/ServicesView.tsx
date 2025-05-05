@@ -39,7 +39,7 @@ const ServicesView: React.FC = () => {
             ),
         },
         {
-            title: "Escuela CARDIOPROTEGIDA",
+            title: "Escuela Cardioprotegida",
             icon: <HeartPulse className="h-10 w-10" />,
             shortDescription: "Equipamiento y personal capacitado para emergencias cardíacas.",
             fullDescription: (
@@ -72,7 +72,7 @@ const ServicesView: React.FC = () => {
             ),
         },
         {
-            title: "COMEDOR",
+            title: "Comedor",
             icon: <UtensilsCrossed className="h-10 w-10" />,
             shortDescription: "Alimentación equilibrada y educación en hábitos alimenticios saludables.",
             fullDescription: (
