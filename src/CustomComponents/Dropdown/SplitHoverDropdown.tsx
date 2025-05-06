@@ -1,6 +1,6 @@
 import "./SplotHoverDropdown.css"
 import { Dropdown } from 'react-bootstrap';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 type DropdownItem = {

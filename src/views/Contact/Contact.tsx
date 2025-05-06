@@ -23,7 +23,7 @@ export default function ContactForm() {
     formState: { errors },
   } = useForm<FormData>()
 
-  const onSubmit = async (data: FormData) => {
+  const onSubmit = async () => {
     setIsSubmitting(true)
     setSubmitError("")
     setSubmitSuccess(false)

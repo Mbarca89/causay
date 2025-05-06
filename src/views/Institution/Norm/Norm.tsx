@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowDownToLine } from 'lucide-react';
-import { Button } from 'react-bootstrap';
 
 const Norm: React.FC = () => {
     return (

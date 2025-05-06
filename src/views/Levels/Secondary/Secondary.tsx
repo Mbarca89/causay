@@ -1,6 +1,5 @@
 import React from 'react';
 import { BookOpen, FlaskRoundIcon as Flask, Leaf, Brain, Users, Cpu, Globe, LightbulbIcon } from "lucide-react"
-import { Badge } from 'react-bootstrap';
 import { Card, CardContent } from '@/components/ui/card';
 
 const Secondary: React.FC = () => {
@@ -104,8 +103,6 @@ const Secondary: React.FC = () => {
             icon: <Leaf className="h-5 w-5" />,
         },
     ]
-
-    const categories = [...new Set(objectives.map((obj) => obj.category))]
 
     return (
         <div className='container d-flex flex-column'>

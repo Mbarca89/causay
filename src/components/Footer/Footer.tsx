@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap"
-import { ChevronRight, Phone, Mail, Clock, MapPin, ArrowRight, Menu } from "lucide-react"
+import { Phone, Mail, Clock } from "lucide-react"
 
 
 const Footer = () => {

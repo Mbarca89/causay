@@ -5,7 +5,7 @@ import Footer from "./components/Footer/Footer"
 
 
 import './App.css'
-import { lazy, Suspense, useEffect, useRef, useState } from "react"
+import { lazy, Suspense } from "react"
 import ScrollToTop from "./utils/ScrollToTop"
 
 const PedagogyView = lazy(() => import("./views/Institution/PedagogyView/PedagogyView"))

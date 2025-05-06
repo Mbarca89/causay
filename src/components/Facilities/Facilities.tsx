@@ -66,14 +66,17 @@ const Facilities = () => {
     // Gestión de eventos de arrastre con tipado
     const handleDragStart = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>): void => {
         setIsDragging(true);
-        setDragStart(e.touches ? e.touches[0].clientX : (e as React.MouseEvent).clientX);
+        setDragStart(
+            'touches' in e ? e.touches[0].clientX : (e as React.MouseEvent).clientX
+        );
     };
 
     const handleDragEnd = (e: React.MouseEvent<HTMLDivElement> | React.TouchEvent<HTMLDivElement>): void => {
         if (!isDragging) return;
 
-        const dragEnd = e.touches ? (e as React.TouchEvent).changedTouches[0].clientX : (e as React.MouseEvent).clientX;
-        const diff = dragStart - dragEnd;
+        const dragEnd = 'changedTouches' in e
+            ? e.changedTouches[0].clientX
+            : (e as React.MouseEvent).clientX; const diff = dragStart - dragEnd;
 
         // Cambiar imagen solo si el arrastre es significativo
         if (Math.abs(diff) > 50) {
@@ -117,7 +120,7 @@ const Facilities = () => {
                             ? 'border-b-2 border-green-500 text-green-600'
                             : 'text-gray-600 hover:text-green-500'
                             }`}
-                        style={{ backgroundColor: "transparent", border:"none" }}
+                        style={{ backgroundColor: "transparent", border: "none" }}
                         onClick={() => {
                             setDirection(index > activeTab ? 1 : -1);
                             setActiveTab(index);
