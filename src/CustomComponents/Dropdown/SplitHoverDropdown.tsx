@@ -22,9 +22,16 @@ export const SplitHoverDropdown: React.FC<SplitHoverDropdownProps> = ({
   link = '#',
 }) => {
   const [show, setShow] = useState(false);
+  let timer:any;
 
-  const handleMouseEnter = () => setShow(true);
-  const handleMouseLeave = () => setShow(false);
+const handleMouseEnter = () => {
+  clearTimeout(timer);
+  setShow(true);
+};
+
+const handleMouseLeave = () => {
+  timer = setTimeout(() => setShow(false), 50);
+};
   const handleToggleClick = () => setShow(!show);
 
   const navigate = useNavigate();
@@ -41,7 +48,7 @@ export const SplitHoverDropdown: React.FC<SplitHoverDropdownProps> = ({
         <a
           role='button'
           onClick={link === "acceder" ? () => null : () => navigate(link)}
-          className={`py-2 me-4 me-md-2 ${customClassName}`}
+          className={`py-2 me-4 me-md-2 ${customClassName} mb-0`}
           style={{
             textDecoration: 'none',
             display: 'block',

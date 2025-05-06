@@ -97,7 +97,7 @@ export default function Pedagogy() {
 
   return (
     <>
-      <div className="container p-4 p-md-5 position-relative d-flex flex-column flex-grow fixed-height">
+      <div className="container p-4 p-md-5 position-relative d-flex flex-column flex-grow fixed-height mb-3">
         <h1 className="text-center fw-bold mb-4">Propuesta pedagógica</h1>
         <p className="text-center text-muted mb-4">
           Nuestro objetivo pedagógico está centrado en proporcionar una formación integral a nuestros alumnos/as, garantizando calidad en el logro de los aprendizajes.
