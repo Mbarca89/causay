@@ -60,7 +60,7 @@ const PedagogyView: React.FC = () => {
     }
     ]
 
-    const [activeProgram, setActiveProgram] = useState<number>(1);
+    const [activeProgram, setActiveProgram] = useState<number>(0);
 
     const goToPrevious = () => {
         setActiveProgram((prev) => (prev !== 0 ? prev - 1 : programs.length - 1))

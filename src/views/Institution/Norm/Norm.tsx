@@ -3,7 +3,7 @@ import { ArrowDownToLine } from 'lucide-react';
 
 const Norm: React.FC = () => {
     return (
-        <div className='container d-flex flex-column flex-md-row' >
+        <div className='container d-flex flex-column flex-md-row mb-5' >
             <div className='w-100 w-md-50  text-center text-md-start mt-5'>
                 <h1>Sistema de Normas</h1>
                 <p className='text-secondary'>Este sistema de normas fue elaborado con el aporte de todos los integrantes de nuestra comunidad educativa y es revisado permanentemente, teniendo la flexibilidad necesaria para que –sin desvirtuar los valores de respeto y responsabilidad sobre los que fue creado- se adapte a los nuevos requerimientos.</p>
