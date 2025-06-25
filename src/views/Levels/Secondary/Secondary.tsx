@@ -115,8 +115,8 @@ const Secondary: React.FC = () => {
                 </div>
                 <div className='d-flex align-items-center justify-content-center w-100'>
                     <picture>
-                        <source className='rounded' media="(min-width: 769px)" srcSet="/images/levels/3w.jpg" />
-                        <img className='rounded' src="/images/levels/3.jpg" alt="" />
+                        <source className='rounded' media="(min-width: 769px)" srcSet="/images/levels/secundariaW.webp" />
+                        <img className='rounded' src="/images/levels/secundaria.webp" alt="" />
                     </picture>
                 </div>
             </div>

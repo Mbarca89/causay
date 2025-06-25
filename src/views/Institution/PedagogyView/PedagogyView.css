@@ -1,0 +1,20 @@
+/* PedagogyView.css (o tu hoja de estilos global) */
+.program-card {
+  position: relative;
+  overflow: hidden;        /* recorta la foto si se pasa   */
+}
+
+.program-card__bg {
+  position: absolute;
+  inset: 0;                /* top/right/bottom/left = 0    */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* llena la caja respetando ratio */
+  filter: brightness(.30); /* oscurece la foto p/leer texto */
+  opacity: .9;
+}
+
+.program-card__content {
+  position: relative;      /* vuelve a fluir sobre la foto */
+  z-index: 1;              /* queda por delante del fondo  */
+}

@@ -26,12 +26,12 @@ const Pilars = () => {
                     </p>
                 </div>
                 <div className="w-100 w-md-50">
-                    <img className="rounded" src="/images/pilars/2.jpg" alt="" />
+                    <img className="rounded" src="/images/pilars/convivencia.webp" alt="" />
                 </div>
             </div>
             <div className="text-start mt-3 d-flex flex-column-reverse flex-lg-row gap-2 border-b border-green-500 pb-3">
                 <div className="w-100 w-md-50">
-                    <img className="rounded" src="/images/pilars/3.jpg" alt="" />
+                    <img className="rounded" src="/images/pilars/educacionAmbientalista.webp" alt="" />
                 </div>
                 <div className="w-100 w-sm-50">
                     <h2>Educación Ambientalista</h2>

@@ -59,7 +59,7 @@ const Starting: React.FC = () => {
                     <p className='text-secondary'>Los alumnos de la Ludoteca y el Jardín de Infantes construyen de esta manera sus aprendizajes y desarrollan capacidades básicas que son el cimiento y sostén de su futura escolaridad.</p>
                 </div>
                 <div className='w-100 w-lg-50'>
-                    <img className='rounded' src="/images/levels/1.jpg" alt="" />
+                    <img className='rounded' src="/images/levels/inicial.webp" alt="" />
                 </div>
             </div>
             <div className='border-b border-green-500'>

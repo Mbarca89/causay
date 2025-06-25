@@ -10,18 +10,18 @@ const ServicesView: React.FC = () => {
     const [expandedService, setExpandedService] = useState<number | null>(null)
 
     const toggleExpand = (index: number) => {
-            setExpandedService(index)
+        setExpandedService(index)
     }
 
     const mySectionRef = useRef<HTMLDivElement>(null);
 
     const scrollToSection = () => {
         if (mySectionRef.current) {
-          const offset = 120;
-          const top = mySectionRef.current.getBoundingClientRect().top + window.scrollY - offset;
-          window.scrollTo({ top, behavior: 'smooth' });
+            const offset = 120;
+            const top = mySectionRef.current.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top, behavior: 'smooth' });
         }
-      };
+    };
 
     const services = [
         {
@@ -134,8 +134,13 @@ const ServicesView: React.FC = () => {
                         Se llevan adelante diversas actividades literarias, culturales y de extensión con la participación de toda
                         la comunidad educativa.
                     </p>
-
-                    <div className="bg-muted p-4 rounded-lg">
+                    <div className='flex align-items-center justify-content-center'>
+                        <picture>
+                            <source className='rounded' media="(min-width: 769px)" srcSet="/images/services/bibliotecaW.webp" />
+                            <img className='rounded' src="/images/services/biblioteca.webp" alt="" />
+                        </picture>
+                    </div>
+                    <div className="bg-muted p-4 rounded-lg mt-3">
                         <h4 className="font-medium mb-2">Asociate</h4>
                         <p>
                             Si estás interesado en hacer uso de nuestra biblioteca, tenés que asociarte. La asociación es anual y para
