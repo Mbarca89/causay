@@ -100,6 +100,12 @@ const ServicesView: React.FC = () => {
                             <strong>Variada:</strong> que de una comida a otra, incluya alimentos diferentes de cada grupo.
                         </li>
                     </ul>
+                    <div className='flex align-items-center justify-content-center'>
+                        <picture>
+                            <source className='rounded' media="(min-width: 769px)" srcSet="/images/services/comedorW.webp" />
+                            <img className='rounded' src="/images/services/comedor.webp" alt="" />
+                        </picture>
+                    </div>
                     <p>
                         Nuestro objetivo es conseguir que el Comedor Escolar no solo sea un sitio donde se come, sino intentar
                         convertirlo en un lugar que cumpla otra serie de funciones:
@@ -188,6 +194,12 @@ const ServicesView: React.FC = () => {
                     <p>
                         Estimulamos a los niños y adolescentes a elegir mejor, incorporando hábitos positivos. Promovemos la salud desde el currículo y el kiosco alinea el discurso con la práctica.
                     </p>
+                    <div className='flex align-items-center justify-content-center'>
+                        <picture>
+                            <source className='rounded' media="(min-width: 769px)" srcSet="/images/services/kioscoW.webp" />
+                            <img className='rounded' src="/images/services/kiosco.webp" alt="" />
+                        </picture>
+                    </div>
                 </div>
             ),
         },

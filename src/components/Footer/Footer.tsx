@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap"
 import { Phone, Mail, Clock } from "lucide-react"
-
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -19,6 +19,7 @@ const Footer = () => {
                     ></path>
                 </svg>
             </div>
+
             <Container>
                 <Row className="mb-3 g-4">
                     <Col lg={2} md={4} sm={12} className="mb-3 text-center text-md-start">
@@ -27,56 +28,54 @@ const Footer = () => {
 
                     <Col lg={6} md={8} sm={12}>
                         <h5 className="mb-2 text-decoration-underline">Secciones:</h5>
-                        <Row className="g-2">
-                            <Col sm={4}>
-                                <h6 className="">Institucional</h6>
-                                <ul className="list-unstyled mb-2 small">
-                                    <li><a href="#" className="text-secondary">Pilares</a></li>
-                                    <li><a href="#" className="text-secondary">Propuesta pedagógica</a></li>
-                                    <li><a href="#" className="text-secondary">Normativa</a></li>
-                                </ul>
-
-                                <h6 className=" mt-2">Niveles</h6>
-                                <ul className="list-unstyled small">
-                                    <li><a href="#" className="text-secondary">Educación inicial</a></li>
-                                    <li><a href="#" className="text-secondary">Educación primaria</a></li>
-                                    <li><a href="#" className="text-secondary">Educación secundaria</a></li>
-                                    <li><a href="#" className="text-secondary">Educación superior</a></li>
-                                </ul>
-                            </Col>
-
-                            <Col sm={4}>
-                                <h6 className="">Servicios</h6>
-                                <ul className="list-unstyled small">
-                                    <li><a href="#" className="text-secondary">Talleres</a></li>
-                                    <li><a href="#" className="text-secondary">Gabinete</a></li>
-                                    <li><a href="#" className="text-secondary">Comedor</a></li>
-                                    <li><a href="#" className="text-secondary">Biblioteca</a></li>
-                                    <li><a href="#" className="text-secondary">Seguro médico</a></li>
-                                    <li><a href="#" className="text-secondary">Cardioprotección</a></li>
-                                </ul>
-                            </Col>
-
-                            <Col sm={4}>
-                                <h6 className="">Instalaciones</h6>
-                                <ul className="list-unstyled small">
-                                    <li><a href="#" className="text-secondary">Salon de usos múltiples</a></li>
-                                    <li><a href="#" className="text-secondary">Espacios de juego</a></li>
-                                    <li><a href="#" className="text-secondary">Zonas de descanso</a></li>
-                                    <li><a href="#" className="text-secondary">Aulas</a></li>
-                                    <li><a href="#" className="text-secondary">Comedor</a></li>
-                                    <li><a href="#" className="text-secondary">Sala multimedia</a></li>
-                                    <li><a href="#" className="text-secondary">Canchas</a></li>
-                                    <li><a href="#" className="text-secondary">Desfibrilador</a></li>
-                                </ul>
-                            </Col>
+                        <Row>
+                            {[
+                                {
+                                    title: "Institucional",
+                                    path: "/institucional",
+                                    items: [
+                                        { text: "Pilares", path: "/institucional/pilares" },
+                                        { text: "Propuesta pedagógica", path: "/institucional/propuesta" },
+                                        { text: "Normativa", path: "/institucional/normativa" },
+                                    ]
+                                },
+                                {
+                                    title: "Niveles",
+                                    path: "/niveles",
+                                    items: [
+                                        { text: "Educación inicial", path: "/niveles/inicial" },
+                                        { text: "Educación primaria", path: "/niveles/primaria" },
+                                        { text: "Educación secundaria", path: "/niveles/secundaria" },
+                                    ]
+                                },
+                                { title: "Servicios", path: "/servicios" },
+                                { title: "Instalaciones", path: "/instalaciones" },
+                                { title: "Talleres", path: "/talleres" },
+                                { title: "Aranceles", path: "/aranceles" },
+                                { title: "Becas", path: "/becas" },
+                            ].map((section, index) => (
+                                <Col key={index} sm={4} className="mb-3">
+                                    <h6 className="mb-1">
+                                        <Link to={section.path} className="text-light text-decoration-none">{section.title}</Link>
+                                    </h6>
+                                    {section.items && (
+                                        <ul className="list-unstyled small ps-3">
+                                            {section.items.map((item, i) => (
+                                                <li key={i} style={{ listStyleType: "disc" }}>
+                                                    <Link to={item.path} className="text-secondary">{item.text}</Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </Col>
+                            ))}
                         </Row>
                     </Col>
 
                     <Col lg={4} md={12}>
                         <Row className="g-3">
                             <Col md={6} sm={12} className="mb-2">
-                                <div className="">
+                                <div>
                                     <h5 className="mb-2 text-decoration-underline">Contacto:</h5>
                                     <ul className="space-y-3 text-sm p-0 text-secondary">
                                         <li className="flex items-center">
@@ -85,7 +84,7 @@ const Footer = () => {
                                         </li>
                                         <li className="flex items-center">
                                             <Mail className="mr-2 h-4 w-4 text-grey" />
-                                            <span>info@causay.edu.ar</span>
+                                            <a href="mailto:info@causay.edu.ar" className="text-secondary">info@causay.edu.ar</a>
                                         </li>
                                         <li className="flex items-center">
                                             <Clock className="mr-2 h-4 w-4 text-grey" />
@@ -94,6 +93,7 @@ const Footer = () => {
                                     </ul>
                                 </div>
                             </Col>
+
                             <Col md={6} sm={12}>
                                 <h5 className="text-decoration-underline">Ubicación:</h5>
                                 <div className="ratio ratio-4x3">
@@ -120,4 +120,4 @@ const Footer = () => {
     );
 }
 
-export default Footer
+export default Footer;
