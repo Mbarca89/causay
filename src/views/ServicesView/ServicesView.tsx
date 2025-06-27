@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { useState } from "react"
-import { HeartPulse, ShieldCheck, Brain, UtensilsCrossed, BookOpen } from "lucide-react"
+import { HeartPulse, ShieldCheck, Brain, UtensilsCrossed, BookOpen, Apple } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
 import { Button } from 'react-bootstrap';
@@ -64,9 +64,7 @@ const ServicesView: React.FC = () => {
                         orientación técnica del aprendizaje y a garantizar la calidad del servicio educativo.
                     </p>
                     <p>
-                        Su tarea es atender y orientar consultas vinculadas a diagnóstico de dificultades de aprendizaje y
-                        comportamiento escolar, asesorando también en la aplicación de dinámicas grupales que favorezcan la
-                        coordinación del saber en diferentes campos del conocimiento.
+                        Su tarea es atender y orientar consultas vinculadas a dificultades de aprendizaje y comportamiento escolar, asesorando a los docentes en la aplicación de dinámicas individuales y grupales que favorezcan la coordinación del saber en diferentes campos del conocimiento y orientando a las familias sobre las necesidades de los estudiantes para el mejor desempeño escolar.
                     </p>
                 </div>
             ),
@@ -178,6 +176,18 @@ const ServicesView: React.FC = () => {
                             Lectura, orientación en la búsqueda de información, localización de bibliografía.
                         </p>
                     </div>
+                </div>
+            ),
+        },
+         {
+            title: "Kiosco Saludable",
+            icon: <Apple className="h-10 w-10" />,
+            shortDescription: "Snacks y bebidas nutritivas para fomentar elecciones alimentarias saludables.",
+            fullDescription: (
+                <div className="space-y-4">
+                    <p>
+                        Estimulamos a los niños y adolescentes a elegir mejor, incorporando hábitos positivos. Promovemos la salud desde el currículo y el kiosco alinea el discurso con la práctica.
+                    </p>
                 </div>
             ),
         },

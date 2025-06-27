@@ -1,10 +1,14 @@
 import React from 'react';
-import { BookOpen, Users, MessageSquare, Globe, Apple, Calculator, Heart, Building, Palette, Leaf } from "lucide-react"
+import { BookOpen, Users, MessageSquare, Globe, Apple, Calculator, Heart, Building, Palette, Leaf, BookUp } from "lucide-react"
 import { Card, CardContent } from '@/components/ui/card';
 
 const Starting: React.FC = () => {
 
     const objectives = [
+        {
+            icon: <BookUp className="h-5 w-5" />,
+            text: "Favorecer el desarrollo de la conciencia, expresión y regulación emocional en los niños y niñas de Educación Inicial, promoviendo la empatía, la autoestima, las habilidades sociales y la construcción de vínculos afectivos positivos en su vida cotidiana.",
+        },
         {
             icon: <BookOpen className="h-5 w-5" />,
             text: "Desarrollar capacidades básicas en relación con el conocimiento y sus formas de producción en relación con los otros y en relación consigo mismo, promoviendo situaciones de aprendizaje sistemático de saberes vinculados a su entorno social y cotidiano.",

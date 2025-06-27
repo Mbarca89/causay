@@ -32,11 +32,11 @@ const Levels = () => {
                                     <ul className="mb-6 space-y-2">
                                         <li className="flex items-start">
                                             <CheckCircle2 className="mr-2 mt-0.5 h-5 w-5 flex-shrink-0 text-teal-500" />
-                                            <span>Salas para niños de 3, 4 y 5 años</span>
+                                            <span>Ludoteca de 8:00 a 16:50 hs.</span>
                                         </li>
                                         <li className="flex items-start">
                                             <CheckCircle2 className="mr-2 mt-0.5 h-5 w-5 flex-shrink-0 text-teal-500" />
-                                            <span>Actividades lúdicas y educativas</span>
+                                            <span>Salas de 3, 4 y 5 años de 8:10 a 12:50 hs.</span>
                                         </li>
                                     </ul>
                                     <Button onClick={()=>navigate("/niveles/inicial")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
@@ -70,7 +70,7 @@ const Levels = () => {
                                         </li>
                                         <li className="flex items-start">
                                             <CheckCircle2 className="mr-2 mt-0.5 h-5 w-5 flex-shrink-0 text-teal-500" />
-                                            <span>Desarrollo de habilidades sociales y académicas</span>
+                                            <span>Jordana extendida de 8:00 a 16:30 hs.</span>
                                         </li>
                                     </ul>
                                     <Button onClick={()=>navigate("/niveles/primaria")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
@@ -99,11 +99,15 @@ const Levels = () => {
                                     <ul className="mb-6 space-y-2">
                                         <li className="flex items-start">
                                             <CheckCircle2 className="mr-2 mt-0.5 h-5 w-5 flex-shrink-0 text-teal-500" />
-                                            <span>Ciclo Básico y Ciclo Orientado</span>
+                                            <span>Ciclo Básico.</span>
                                         </li>
                                         <li className="flex items-start">
                                             <CheckCircle2 className="mr-2 mt-0.5 h-5 w-5 flex-shrink-0 text-teal-500" />
-                                            <span>Diversas orientaciones académicas</span>
+                                            <span>Ciclo Orientado en Economía y Administración.</span>
+                                        </li>
+                                        <li className="flex items-start">
+                                            <CheckCircle2 className="mr-2 mt-0.5 h-5 w-5 flex-shrink-0 text-teal-500" />
+                                            <span>Ciclo Orientado en Ciencias Naturales.</span>
                                         </li>
                                     </ul>
                                     <Button onClick={()=>navigate("/niveles/secundaria")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">

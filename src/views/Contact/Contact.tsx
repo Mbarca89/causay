@@ -81,7 +81,7 @@ export default function ContactForm() {
               <Phone className="text-green-500 me-3 flex-shrink-0" />
               <div>
                 <strong>Teléfonos</strong>
-                <p className="mb-0">+54 (0266) 442 9011 – 443 8114</p>
+                <p className="mb-0">+54 (0266) 442 9011</p>
               </div>
             </div>
 

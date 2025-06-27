@@ -20,6 +20,7 @@ import {
   Users,
   Dumbbell,
 } from "lucide-react"
+import { useNavigate } from "react-router-dom"
 
 interface Category {
   id: number
@@ -33,6 +34,7 @@ interface Category {
 
 export default function Pedagogy() {
   const [activeCategory, setActiveCategory] = useState<number>(1)
+  const navigate = useNavigate()
 
   const categories: Category[] = [
     {
@@ -45,7 +47,7 @@ export default function Pedagogy() {
       subcategories: [
         { name: "Alimentación Inteligente", icon: <Apple className="h-5 w-5" /> },
         { name: "Actividad Física", icon: <Dumbbell className="h-5 w-5" /> },
-        { name: "Naturaleza", icon: <Leaf className="h-5 w-5" /> },
+        { name: "Vida en la naturaleza", icon: <Leaf className="h-5 w-5" /> },
       ],
     },
     {
@@ -72,7 +74,7 @@ export default function Pedagogy() {
     {
       id: 4,
       title: "Conciencia Ecológica",
-      text: "Procuramos reducir los residuos que generamos diariamente y los clasificamos, así podemos reutilizar y reciclar para actividades artísticas y tecnológicas y preparar compost para nuestras plantas.",
+      text: "Trabajamos para que nuestros estudiantes comprendan y se sensibilicen sobre la importancia de cuidar y preservar el medio. Conscientes del impacto que tienen nuestras acciones sobre el ecosistema, desarrollen prácticas cotidianas de sostenibilidad y conservación de los recursos naturales.",
       icon: <Recycle className="h-6 w-6" />,
       color: "text-white",
       bgColor: "bg-green-500",
@@ -85,7 +87,7 @@ export default function Pedagogy() {
     {
       id: 5,
       title: "Compromiso Social",
-      text: "Somos Centro de Recolección de tapitas de la Fundación Garrahan para su Programa de reciclado y medio ambiente.",
+      text: "A través de este Programa buscamos generar impacto positivo en la sociedad, además de desarrollar actitudes solidarias en los estudiantes, fomentando la empatía, cooperación y compromiso con los demás.",
       icon: <HeartHandshake className="h-6 w-6" />,
       color: "text-white",
       bgColor: "bg-green-500",
@@ -130,7 +132,7 @@ export default function Pedagogy() {
               <h2 className="fw-bold">{currentCategory.title}</h2>
             </div>
             <p className="text-muted">{currentCategory.text}</p>
-            <button className="btn btn-dark d-flex align-items-center">
+            <button className="btn btn-dark d-flex align-items-center" onClick={()=>navigate("/institucional/propuesta")}>
               Explorar más <span className="ms-2"><ChevronRight /></span>
             </button>
           </div>

@@ -1,39 +1,37 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Dot } from "lucide-react"
+import { useNavigate } from 'react-router-dom';
+import { ChevronRight } from 'lucide-react';
 
 const Facilities = () => {
 
+    const navigate = useNavigate()
+
     const instalaciones = [
         {
-            id: 'Seguridad',
-            titulo: 'Seguridad',
-            descripcion: 'Amplia biblioteca con más de 10,000 libros, espacios de lectura cómodos y tecnología moderna para investigación.',
-            imagen: '/images/facilities/security.jpg'
+            id: 'Espacios de juego cubiertos',
+            titulo: 'Espacios de juego cubiertos',
+            descripcion: 'disponemos de espacios de juego que brindan oportunidades de recreación durante los tiempos de descanso.',
+            imagen: '/images/facilities/espaciosCubiertos.webp'
         },
         {
-            id: 'Comedor',
-            titulo: 'Comedor',
-            descripcion: 'Comedor espacioso con capacidad para 600 estudiantes, ofreciendo menús saludables y variados.',
-            imagen: '/images/facilities/cafe.jpg'
+            id: 'Playón polideportivo',
+            titulo: 'Playón polideportivo',
+            descripcion: 'Creamos espacios funcionales y seguros para la práctica de actividades físicas y recreativas.',
+            imagen: '/images/facilities/playonDeportivo.webp'
         },
         {
-            id: 'Aislamiento Acustico',
-            titulo: 'Aislamiento Acustico',
-            descripcion: 'Aulas modernas equipadas con pizarras interactivas, proyectores y mobiliario ergonómico.',
-            imagen: '/images/facilities/acoustic.jpg'
+            id: 'Acondicionamiento Acústico',
+            titulo: 'Acondicionamiento Acústico',
+            descripcion: 'Reduciendo el ruido, se ayuda a crear espacios más tranquilos y saludables.',
+            imagen: '/images/facilities/acustico.webp'
         },
         {
-            id: 'Sala multimedia',
-            titulo: 'Sala multimedia',
-            descripcion: 'Laboratorios de ciencias completamente equipados para experimentos prácticos de biología, química y física.',
-            imagen: '/images/facilities/multimedia.jpg'
-        },
-        {
-            id: 'Biblioteca',
-            titulo: 'Biblioteca',
-            descripcion: 'Canchas polideportivas, piscina olímpica y gimnasio con equipamiento de última generación.',
-            imagen: '/images/facilities/library.jpg'
+            id: 'Salas de descanso',
+            titulo: 'Salas de descanso',
+            descripcion: 'Los estudiantes de la Educación Primaria, luego de almorzar, descansan en las salas acondicionadas para este momento.',
+            imagen: '/images/facilities/descanso.webp'
         }
     ];
 
@@ -129,6 +127,13 @@ const Facilities = () => {
                         {instalacion.titulo}
                     </button>
                 ))}
+                <button
+                    className={'px-4 py-3 text-sm font-medium transition-colors text-gray-600 hover:text-green-500 d-flex flex-row align-items-center'}
+                    style={{ backgroundColor: "transparent", border: "none" }}
+                    onClick={() => navigate("/instalaciones")}
+                >
+                    Ver todas <span><ChevronRight /></span>
+                </button>
             </div>
 
             {/* Título para móvil */}
@@ -199,6 +204,11 @@ const Facilities = () => {
                         aria-current={activeTab === index ? "true" : "false"}
                     />
                 ))}
+            </div>
+            <div className="d-flex justify-content-center mb-5 mt-3">
+                <button className="btn btn-dark d-flex align-items-center" onClick={() => navigate("/instalaciones")}>
+                    Ver todas <span className="ms-2"><ChevronRight /></span>
+                </button>
             </div>
         </div>
     )
