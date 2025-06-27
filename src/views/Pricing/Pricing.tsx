@@ -7,22 +7,22 @@ export default function TuitionFeesSection() {
         {
             level: "Educación Inicial",
             hours: "08:10 hs. a 12:50 hs.",
-            fee: "$ 162.250",
+            fee: "$ 178.500",
         },
         {
             level: "Educación Primaria",
             hours: "08:00 hs. a 16:30 hs.",
-            fee: "$ 209.000",
+            fee: "$ 230.000",
         },
         {
             level: "Educación Secundaria - Ciclo Básico",
             hours: "7:50 hs. a 13:50 hs.",
-            fee: "$ 166.100",
+            fee: "$ 182.750",
         },
         {
             level: "Educación Secundaria - Ciclo Superior",
             hours: "7:50 hs. a 13:50 hs.",
-            fee: "$ 170.700",
+            fee: "$ 187.800",
         },
     ]
 
@@ -44,7 +44,7 @@ export default function TuitionFeesSection() {
     return (
         <div className="container mx-auto p-6">
             <div className="text-center mb-8">
-                <h1 className="text-3xl font-light mb-2">Aranceles Abril 2025</h1>
+                <h1 className="text-3xl font-light mb-2">Aranceles Junio 2025</h1>
             </div>
 
             <div className="grid gap-8 mb-12">
