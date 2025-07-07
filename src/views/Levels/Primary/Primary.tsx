@@ -98,7 +98,7 @@ const Primary: React.FC = () => {
                     
                 </div>
                 <div className='w-100 w-lg-50'>
-                    <img className='rounded' src="/images/levels/primaria.webp" alt="" />
+                    <img className='rounded' src="/images/levels/primariaok.webp" alt="" />
                 </div>
             </div>
             <div className='border-b border-green-500'>

@@ -88,7 +88,7 @@ export default function ContactForm() {
             <div className="d-flex align-items-start">
               <Smartphone className="text-green-500 me-3 flex-shrink-0" />
               <div>
-                <strong>Celular</strong>
+                <strong>Whatsapp</strong>
                 <p className="mb-0">+54 (266) 4 73 23 05</p>
               </div>
             </div>

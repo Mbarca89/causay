@@ -31,7 +31,7 @@ const PedagogyView: React.FC = () => {
         id: 3,
         title: "Vida en la naturaleza",
         text: "A través de estas actividades tratamos de contribuir a la construcción de la autonomía en sus diversas dimensiones -corporal, social, ética– vinculando a alumnos/as con experiencias de convivencia intensa que priorizan la cooperación, la resolución de situaciones, conflictos, necesidades, aplicación de valores, etc.Desde esta perspectiva, la vida en la naturaleza y al aire libre promueve la apropiación por parte de las nuevas generaciones de la problemática ecológica y ambiental, de la actitud de respeto por el medio natural, y la experimentación de las posibilidades de acción y sus consecuencias. Es un recurso que integra el conjunto de espacios curriculares que aportan saberes que se desarrollan antes, durante o después de la experiencia. La vida en la naturaleza y al aire libre se caracteriza por incluir una gran variedad de juegos y trabajos físicos que son realizados en el medio natural que constituyen un espacio educativo particularmente rico y formativo. Actividades que se desarrollan: Caminatas, ascensiones, bicicleteadas y campamentos.",
-        image: ""
+        image: "/images/pedagogy/vidaNaturaleza.webp"
     },
     {
         id: 4,
@@ -55,7 +55,7 @@ const PedagogyView: React.FC = () => {
         id: 7,
         title: "Educación Emocional",
         text: "La inteligencia emocional constituye el cimiento y motor de las demás inteligencias. Hoy, enseñar y aprender, no implica solamente conceptos, los logros afectivos y emocionales abarcan el trato interpersonal, la independencia, la disciplina, la responsabilidad, la autoestima, la tolerancia a la frustración, la comprensión de sí mismo y las demás herramientas esenciales para poder aprender. En este sentido, no es fortuito que la UNESCO haya incluido como pilares de la educación los aprendizajes ligados al conocer, ser, hacer, vivir juntos y transformarse. Por ello, trabajamos el desarrollo de la inteligencia emocional, para que cada alumno pueda reconocer sus emociones y las de los demás y poder gestionarlas de manera sana y positiva, tanto para sí mismo como para la comunidad. ",
-        image: ""
+        image: "/images/pedagogy/educacionEmocional.webp"
     },
     {
         id: 8,
@@ -144,18 +144,18 @@ const PedagogyView: React.FC = () => {
                     )}
                 </div>
                 <div {...swipeHandlers} className="program-card bg-light shadow-md rounded text-center p-3">
+                    <div className="program-card__content">
+                        <h3 className="d-none d-md-block text-dark">{programs[activeProgram].title}</h3>
+                        <p className="mt-0 text-secondary">{programs[activeProgram].text}</p>
+                    </div>
                     {programs[activeProgram].image && (
                         <img
                             src={programs[activeProgram].image}
                             alt=""
-                            className="program-card__bg"
+                            className="rounded"
                         />
                     )}
 
-                    <div className="program-card__content">
-                        <h3 className="d-none d-md-block text-light" style={{filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))",}}>{programs[activeProgram].title}</h3>
-                        <p className="mt-0 text-light" style={{filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))",}}>{programs[activeProgram].text}</p>
-                    </div>
                 </div>
             </div>
         </Container>

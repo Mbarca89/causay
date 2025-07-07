@@ -50,6 +50,12 @@ const ServicesView: React.FC = () => {
                         es posible actuar rápida y eficientemente contra los paros cardiacos repentinos, como primer interviniente,
                         hasta la llegada de los servicios de emergencia.
                     </p>
+                    <div className='flex align-items-center justify-content-center'>
+                        <picture>
+                            <source className='rounded' media="(min-width: 769px)" srcSet="/images/services/cardioprotegidaW.webp" />
+                            <img className='rounded' src="/images/services/cardioprotegida.webp" alt="" />
+                        </picture>
+                    </div>
                 </div>
             ),
         },

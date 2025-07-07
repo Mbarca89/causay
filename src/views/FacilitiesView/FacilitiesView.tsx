@@ -16,7 +16,7 @@ const FacilitiesView: React.FC = () => {
         id: 1,
         title: "Conectividad",
         text: "Brindamos acceso a internet a nuestros alumnos y personal. Contamos con fibra óptica e internet satelital. Poseemos nuestros propios servidores para alojamiento de bases y sistemas. Todo el tráfico de internet de los alumnos se encuentra filtrado bajo estrictas medidas de seguridad contra sitios con contenidos inconvenientes o no apto para menores.",
-        image: "/images/facilities/acustico.webp"
+        image: "/images/facilities/conectividad.webp"
     },
     {
         id: 2,
