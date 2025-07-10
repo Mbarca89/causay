@@ -100,8 +100,8 @@ const PedagogyView: React.FC = () => {
                 </div>
                 <div className='w-sm-100 w-md-50 mb-3'>
                     <picture>
-                        <source media="(min-width: 769px)" srcSet="/images/pedagogy/1w.jpg" />
-                        <img className='rounded' src="/images/pedagogy/1.jpg" alt="" />
+                        <source media="(min-width: 769px)" srcSet="/images/pedagogy/abpW.webp" />
+                        <img className='rounded' src="/images/pedagogy/abp.webp" alt="" />
                     </picture>
                 </div>
             </div>

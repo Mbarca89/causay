@@ -68,7 +68,7 @@ const FacilitiesView: React.FC = () => {
     },
     {
         id: 10,
-        title: "Playón polideportivo, tribunas y juegos",
+        title: "Tribunas",
         text: "Creamos espacios funcionales y seguros para la práctica de actividades físicas y recreativas, fomentando un estilo de vida saludable entre los estudiantes. Estos espacios se adaptan a diferentes deportes y actividades.",
         image: "/images/facilities/playonDeportivo.webp"
     }

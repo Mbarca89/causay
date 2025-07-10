@@ -9,7 +9,7 @@ const Home = () => {
         <Container fluid className="position-relative overflow-hidden m-0 p-0" style={{ height: "100dvh"}}>
             {/* Fondo */}
             <div className="h-100">
-                <img src="/images/back.png" alt="" className="w-100 h-100 object-fit-cover" style={{opacity:"0.85"}}/>
+                <img src="/images/background.webp" alt="" className="w-100 h-100 object-fit-cover" style={{opacity:"0.85"}}/>
             </div>
 
             {/* Contenedor de texto con posición absoluta */}

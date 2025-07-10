@@ -109,6 +109,13 @@ const NavBar = () => {
                         >
                             Talleres
                         </Nav.Link>
+                         <Nav.Link
+                            className={textColorClass}
+                            onClick={() => navigate("/galeria")}
+                            style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                        >
+                            Galeria
+                        </Nav.Link>
                         <Nav.Link
                             className={textColorClass}
                             onClick={() => navigate("/aranceles")}

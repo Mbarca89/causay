@@ -9,8 +9,8 @@ const Pilars = () => {
                 </div>
                 <div className="">
                     <picture>
-                        <source srcSet="/images/pilars/1w.jpg" media="(min-width: 600px)" />
-                        <img className="rounded" src="/images/pilars/1.jpg" alt="" />
+                        <source srcSet="/images/pilars/pilaresW.webp" media="(min-width: 600px)" />
+                        <img className="rounded" src="/images/pilars/pilares.webp" alt="" />
                     </picture>
                 </div>
             </div>

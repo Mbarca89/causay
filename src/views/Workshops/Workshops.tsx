@@ -37,28 +37,18 @@ const Workshops: React.FC = () => {
         },
         {
             name: "FUTBOL",
-            image: "/images/workshops/futbol.jpg",
+            image: "/images/workshops/futbol.webp",
             alt: "Fútbol - niños jugando al fútbol",
         },
         {
-            name: "MAMI HOCKEY",
-            image: "/images/workshops/hockey.jpg",
-            alt: "Mami Hockey - mujeres jugando hockey",
-        },
-        {
             name: "PATINAJE EN LÍNEA",
-            image: "/images/workshops/patinajelinea.jpg",
+            image: "/images/workshops/patinajeL.webp",
             alt: "Patinaje en línea - persona patinando",
         },
         {
             name: "PATINAJE ARTÍSTICO",
-            image: "/images/workshops/patinaje.jpg",
+            image: "/images/workshops/patinajeA.webp",
             alt: "Patinaje artístico - patinador realizando una figura",
-        },
-        {
-            name: "PAPI FUTBOL",
-            image: "/images/workshops/papifutbol.jpg",
-            alt: "Papi Fútbol - padres jugando al fútbol",
         },
         {
             name: "TAEKWONDO",

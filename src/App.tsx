@@ -22,6 +22,7 @@ const Pricing = lazy(() => import("./views/Pricing/Pricing"))
 const FacilitiesView = lazy(() => import("./views/FacilitiesView/FacilitiesView"))
 const Scholarship = lazy(() => import("./views/Scholarship/Scholarship"))
 const Contact = lazy(() => import("./views/Contact/Contact"))
+const Gallery = lazy(() => import("./views/Gallery/Gallery"))
 
 function App() {
 
@@ -57,6 +58,7 @@ function App() {
           <Route path="/instalaciones" element={<FacilitiesView />} />
           <Route path="/becas" element={<Scholarship />} />
           <Route path="/contacto" element={<Contact />} />
+          <Route path="/galeria" element={<Gallery />} />
         </Route>
       </Routes>
     </div>
