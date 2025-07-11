@@ -17,17 +17,17 @@ const Workshops: React.FC = () => {
     const workshops = [
         {
             name: "ACROBACIA EN TELAS",
-            image: "/images/workshops/telas.jpg",
+            image: "/images/workshops/telas.webp",
             alt: "Acrobacia en telas - persona realizando acrobacias en telas aéreas",
         },
         {
             name: "AJEDREZ",
-            image: "/images/workshops/ajedrez.jpg",
+            image: "/images/workshops/ajedrez.webp",
             alt: "Ajedrez - tablero de ajedrez con piezas",
         },
         {
             name: "BAILE",
-            image: "/images/workshops/baile.jpg",
+            image: "/images/workshops/baile.webp",
             alt: "Baile - personas bailando en un estudio",
         },
         {
@@ -52,12 +52,12 @@ const Workshops: React.FC = () => {
         },
         {
             name: "TAEKWONDO",
-            image: "/images/workshops/taekwondo.jpg",
+            image: "/images/workshops/taekwondo.webp",
             alt: "Taekwondo - practicantes de taekwondo en acción",
         },
         {
             name: "YOGA",
-            image: "/images/workshops/yoga.jpg",
+            image: "/images/workshops/yoga.webp",
             alt: "Yoga - persona practicando yoga",
         },
     ]

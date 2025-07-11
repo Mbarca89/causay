@@ -27,7 +27,7 @@ function Gallery() {
         {images.map((img, i) => (
           <div
             key={i}
-            className="aspect-square overflow-hidden cursor-pointer"
+            className="aspect-square overflow-hidden cursor-pointer rounded"
             onClick={() => {
               setIndex(i);
               setOpen(true);

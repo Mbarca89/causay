@@ -19,7 +19,7 @@ const PedagogyView: React.FC = () => {
         id: 1,
         title: "Hábitos saludables",
         text: "Automatizar y hacer propias conductas que promueven la salud y el bienestar desde la primera infancia, constituye un objetivo primordial de Causay. La práctica consiente de la respiración, caminatas diarias, hidratación permanente, practica de posturas correctas, actividad física, meditación, alimentación adecuada, nos ayudan a atender, concentrarnos y aprender mejor.",
-        image: ""
+        image: "/images/pedagogy/habitos.webp"
     },
     {
         id: 2,
@@ -100,14 +100,20 @@ const PedagogyView: React.FC = () => {
                 </div>
                 <div className='w-sm-100 w-md-50 mb-3'>
                     <picture>
-                        <source media="(min-width: 769px)" srcSet="/images/pedagogy/abpW.webp" />
-                        <img className='rounded' src="/images/pedagogy/abp.webp" alt="" />
+                        <source media="(min-width: 769px)" srcSet="/images/pedagogy/1w.webp" />
+                        <img className='rounded' src="/images/pedagogy/1.webp" alt="" />
                     </picture>
                 </div>
             </div>
             <div className='mt-3 text-center border-b border-green-500'>
                 <h2 className=''>Aprendizaje basado en proyectos (ABP)</h2>
                 <p className='text-secondary'>En el año 2019 iniciamos, con la capacitación del personal docente, la implementación de un método sistemático de enseñanza que involucra a los estudiantes en el aprendizaje de conocimientos y habilidades, a través de un proceso extendido de indagación, estructurado alrededor de preguntas complejas y auténticas, y tareas y productos cuidadosamente diseñados.</p>
+                <div className='mb-3 flex justify-content-center'>
+                    <picture>
+                        <source media="(min-width: 769px)" srcSet="/images/pedagogy/abpWV2.webp" />
+                        <img className='rounded' src="/images/pedagogy/abp.webp" alt="" />
+                    </picture>
+                </div>
                 <p className='text-secondary'>Este método, denominado Aprendizaje Basado en Proyectos (ABP) promueve en los alumnos un aprendizaje vinculado con su vida real y les brinda herramientas para resolver un problema. Las actividades parten de una provocación inicial -una pregunta significativa, problema o desafío, que hace de detonante creativo. También reciben una pregunta inicial que los invita a la investigación. En esta fase los estudiantes se sumergen en un proceso donde trabajan de manera relativamente autónoma y con un alto nivel de implicación y colaboración. De esta forma, el Aprendizaje Basado en Proyecto busca impulsar la participación activa y el trabajo colaborativo, integrar diversas disciplinas, vincular los conocimientos, la teoría, la práctica y las experiencias.
                     Todos nuestros proyectos están orientados a partir de nuestros programas transversales.
                 </p>

@@ -10,8 +10,8 @@ const Institution: React.FC = () => {
             <div className='w-100'>
                 <div className='d-flex relative justify-content-center w-100'>
                     <picture>
-                        <source media="(min-width: 769px)" srcSet="/images/institutional/1w.jpg" className='rounded w-100 object-fit-fill' />
-                        <img className='rounded' src="/images/institutional/1.jpg" alt="" style={{ opacity: ".8" }} />
+                        <source media="(min-width: 769px)" srcSet="/images/institutional/institucional1W.webp" className='rounded w-100 object-fit-fill' />
+                        <img className='rounded' src="/images/institutional/institucional1.webp" alt="" style={{ opacity: ".8" }} />
                     </picture>
                     <p className='absolute text-light fs-4 text-center' style={{
                         top: "50%",
@@ -25,7 +25,7 @@ const Institution: React.FC = () => {
             <p className='text-center fs-5'>Somos, cada uno desde su rol, generadores y protagonistas.</p>
             <div className='d-flex flex-column flex-lg-row w-100 gap-3'>
                 <div className='w-100 w-lg-50'>
-                    <img className='rounded' src="/images/institutional/2.jpg" alt="" />
+                    <img className='rounded' src="/images/institutional/institucional2.webp" alt="" />
                 </div>
                 <div className='d-flex w-100 w-lg-50 flex-column justify-content-between text-center text-lg-start'>
                     <p className='text-secondary'>Constituimos una comunidad educativa que proclama el respeto mutuo, la tolerancia y la solidaridad como pilares básicos que presiden los cimientos que sostienen la convivencia, así como el cuidado del ambiente y el sentido de pertenencia a nuestra comunidad.

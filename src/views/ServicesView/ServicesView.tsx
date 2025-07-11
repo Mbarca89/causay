@@ -35,6 +35,12 @@ const ServicesView: React.FC = () => {
                         causas de accidentes cuya ocurrencia tenga lugar durante la jornada escolar o durante actividades especiales
                         realizadas dentro o fuera del establecimiento.
                     </p>
+                    <div className='flex align-items-center justify-content-center'>
+                        <picture>
+                            <source className='rounded' media="(min-width: 769px)" srcSet="/images/services/proteccionW.webp" />
+                            <img className='rounded' src="/images/services/proteccion.webp" alt="" />
+                        </picture>
+                    </div>
                 </div>
             ),
         },
@@ -69,6 +75,12 @@ const ServicesView: React.FC = () => {
                         Nuestro Gabinete, integrado por profesionales de vasta experiencia en trabajo institucional, contribuye a la
                         orientación técnica del aprendizaje y a garantizar la calidad del servicio educativo.
                     </p>
+                    <div className='flex align-items-center justify-content-center'>
+                        <picture>
+                            <source className='rounded' media="(min-width: 769px)" srcSet="/images/services/gabineteW.webp" />
+                            <img className='rounded' src="/images/services/gabinete.webp" alt="" />
+                        </picture>
+                    </div>
                     <p>
                         Su tarea es atender y orientar consultas vinculadas a dificultades de aprendizaje y comportamiento escolar, asesorando a los docentes en la aplicación de dinámicas individuales y grupales que favorezcan la coordinación del saber en diferentes campos del conocimiento y orientando a las familias sobre las necesidades de los estudiantes para el mejor desempeño escolar.
                     </p>
