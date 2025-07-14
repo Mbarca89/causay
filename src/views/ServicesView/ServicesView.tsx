@@ -76,10 +76,10 @@ const ServicesView: React.FC = () => {
                         orientación técnica del aprendizaje y a garantizar la calidad del servicio educativo.
                     </p>
                     <div className='flex align-items-center justify-content-center'>
-                        <picture>
+                        {/* <picture>
                             <source className='rounded' media="(min-width: 769px)" srcSet="/images/services/gabineteW.webp" />
                             <img className='rounded' src="/images/services/gabinete.webp" alt="" />
-                        </picture>
+                        </picture> */}
                     </div>
                     <p>
                         Su tarea es atender y orientar consultas vinculadas a dificultades de aprendizaje y comportamiento escolar, asesorando a los docentes en la aplicación de dinámicas individuales y grupales que favorezcan la coordinación del saber en diferentes campos del conocimiento y orientando a las familias sobre las necesidades de los estudiantes para el mejor desempeño escolar.
