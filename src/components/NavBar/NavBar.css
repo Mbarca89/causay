@@ -5,3 +5,7 @@
 .nv-text-white {
     color: white !important;
 }
+
+.navbar .nav-acceder .dropdown-toggle {
+  color: inherit !important;
+}

@@ -5,6 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import { SplitHoverDropdown } from '../../CustomComponents/Dropdown/SplitHoverDropdown';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { NavDropdown } from "react-bootstrap";
 
 const NavBar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -109,7 +110,7 @@ const NavBar = () => {
                         >
                             Talleres
                         </Nav.Link>
-                         <Nav.Link
+                        <Nav.Link
                             className={textColorClass}
                             onClick={() => navigate("/galeria")}
                             style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
@@ -137,15 +138,15 @@ const NavBar = () => {
                         >
                             Contacto
                         </Nav.Link>
-                        <SplitHoverDropdown
+                        <NavDropdown
                             title="Acceder"
-                            customClassName={textColorClass}
-                            link="acceder"
-                            items={[
-                                { label: 'Acceso Alumnos', link: 'niveles/inicial' },
-                                { label: 'Acceso Docentes', link: 'niveles/primaria' },
-                            ]}
-                        />
+                            className={`nav-acceder ${textColorClass}`}
+                            style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                        >
+
+                            <NavDropdown.Item href="https://schoolnet.colegium.com/webapp/en_GB/login" target="blank">Acceso Alumnos</NavDropdown.Item>
+                            <NavDropdown.Item href="https://causay.colegium.com/stwa/login.shtml" target="black">Acceso Docentes</NavDropdown.Item>
+                        </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
