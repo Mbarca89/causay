@@ -13,6 +13,7 @@ type SplitHoverDropdownProps = {
   customClassName: string; // Make this required since we always pass it
   items: DropdownItem[];
   link?: string; // Enlace principal del botón izquierdo
+  onItemClick?: () => void
 };
 
 export const SplitHoverDropdown: React.FC<SplitHoverDropdownProps> = ({
@@ -20,18 +21,19 @@ export const SplitHoverDropdown: React.FC<SplitHoverDropdownProps> = ({
   items,
   customClassName,
   link = '#',
+  onItemClick,
 }) => {
   const [show, setShow] = useState(false);
-  let timer:any;
+  let timer: any;
 
-const handleMouseEnter = () => {
-  clearTimeout(timer);
-  setShow(true);
-};
+  const handleMouseEnter = () => {
+    clearTimeout(timer);
+    setShow(true);
+  };
 
-const handleMouseLeave = () => {
-  timer = setTimeout(() => setShow(false), 50);
-};
+  const handleMouseLeave = () => {
+    timer = setTimeout(() => setShow(false), 50);
+  };
   const handleToggleClick = () => setShow(!show);
 
   const navigate = useNavigate();
@@ -47,7 +49,10 @@ const handleMouseLeave = () => {
         {/* Botón principal con navegación directa */}
         <a
           role='button'
-          onClick={link === "acceder" ? () => null : () => navigate(link)}
+          onClick={link === "acceder" ? () => null : () => {
+            navigate(link);
+            if (onItemClick) onItemClick();
+          }}
           className={`py-2 me-4 me-md-2 ${customClassName} mb-0`}
           style={{
             textDecoration: 'none',
@@ -76,7 +81,10 @@ const handleMouseLeave = () => {
 
       <Dropdown.Menu>
         {items.map((item, idx) => (
-          <Dropdown.Item key={idx} onClick={() => navigate(item.link)}>
+          <Dropdown.Item key={idx} onClick={() => {
+            navigate(item.link);
+            if (onItemClick) onItemClick();
+          }}>
             {item.label}
           </Dropdown.Item>
         ))}
