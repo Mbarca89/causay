@@ -39,8 +39,8 @@ export default function Pedagogy() {
   const categories: Category[] = [
     {
       id: 1,
-      title: "Hábitos Saludables",
-      text: "Automatizar y hacer propias conductas que promueven la salud y el bienestar desde la primera infancia, constituye un objetivo primordial de Causay. La práctica consiente de la respiración, caminatas diarias, hidratación permanente, practica de posturas correctas, actividad física, meditación, alimentación adecuada, nos ayudan a atender, concentrarnos y aprender mejor",
+      title: "Hábitos saludables",
+      text: "Automatizar y hacer propias conductas que promueven la salud y el bienestar desde la primera infancia, constituye un objetivo primordial de Causay. La práctica conciente de la respiración, caminatas diarias, hidratación permanente, practica de posturas correctas, actividad física, meditación, alimentación adecuada, nos ayudan a atender, concentrarnos y aprender mejor",
       icon: <Heart className="h-6 w-6" />,
       color: "text-white",
       bgColor: "bg-green-500",

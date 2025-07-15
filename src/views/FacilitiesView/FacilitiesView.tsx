@@ -97,9 +97,9 @@ const FacilitiesView: React.FC = () => {
 
             <div className='mt-3 d-flex flex-column flex-md-row p-2 mb-5'>
                 <div className='d-flex d-md-none justify-content-between align-items-center mb-3'>
-                    <button onClick={activeProgram != 1 ? () => setActiveProgram(activeProgram - 1) : () => setActiveProgram(programs.length - 1)}><ChevronLeft /></button>
+                    <button onClick={() => setActiveProgram((activeProgram - 1 + programs.length) % programs.length)}><ChevronLeft /></button>
                     <h3 className='fs-6 m-0'>{programs[activeProgram].title}</h3>
-                    <button onClick={activeProgram != programs.length - 1 ? () => setActiveProgram(activeProgram + 1) : () => setActiveProgram(1)}><ChevronRight /></button>
+                    <button onClick={() => setActiveProgram((activeProgram + 1) % programs.length)}><ChevronRight /></button>
                 </div>
                 <div className='d-none d-md-flex flex-column justify-content-start text-nowrap gap-1' style={{ minWidth: "300px" }}>
                     {programs.map((program, index) => (

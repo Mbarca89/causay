@@ -29,9 +29,8 @@ const Institution: React.FC = () => {
                 </div>
                 <div className='d-flex w-100 w-lg-50 flex-column justify-content-between text-center text-lg-start'>
                     <p className='text-secondary'>Constituimos una comunidad educativa que proclama el respeto mutuo, la tolerancia y la solidaridad como pilares básicos que presiden los cimientos que sostienen la convivencia, así como el cuidado del ambiente y el sentido de pertenencia a nuestra comunidad.
-                        Nuestro proyecto pedagógico está comprometido con la calidad y la valorización del trabajo como realización del ser humano y la sociedad, y como eje vertebrador del proceso social y educativo, concibiendo a la educación como un proceso de formación integral y permanente que armoniza acciones educativas formales y no formales ofrecidas a la comunidad.
                     </p>
-                    <p className='text-secondary'>Constituimos una comunidad educativa que proclama el respeto mutuo, la tolerancia y la solidaridad como pilares básicos que presiden los cimientos que sostienen la convivencia, así como el cuidado del ambiente y el sentido de pertenencia a nuestra comunidad.</p>
+                    <p className='text-secondary'>Nuestro proyecto pedagógico está comprometido con la calidad y la valorización del trabajo como realización del ser humano y la sociedad, y como eje vertebrador del proceso social y educativo, concibiendo a la educación como un proceso de formación integral y permanente que armoniza acciones educativas formales y no formales ofrecidas a la comunidad.</p>
                     <p className='text-secondary'>Cada etapa evolutiva es pensada en su dinámica y problemática; para poder generar cambios con estímulos sistemáticos que complementan y enriquecen la vivencia.</p>
                 </div>
             </div>
