@@ -9,6 +9,7 @@ import { NavDropdown } from "react-bootstrap";
 
 const NavBar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [expanded, setExpanded] = useState(false);
     const navigate = useNavigate();
     const location = useLocation()
 
@@ -40,6 +41,8 @@ const NavBar = () => {
     return (
         <Navbar
             expand="lg"
+            expanded={expanded}
+            onToggle={() => setExpanded(!expanded)}
             fixed="top"
             style={{
                 backgroundColor: isScrolled ? 'white' : 'transparent',
@@ -50,7 +53,7 @@ const NavBar = () => {
         >
             <Container>
                 <Navbar.Brand
-                    onClick={() => navigate("/")}
+                    onClick={() => {navigate("/"); setExpanded(false);}}
                     style={{
                         filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))"
                     }}
@@ -62,7 +65,7 @@ const NavBar = () => {
                     <Nav className="ms-auto">
                         <Nav.Link
                             className={textColorClass}
-                            onClick={() => navigate("/")}
+                           onClick={() => {navigate("/"); setExpanded(false);}}
                             style={{
                                 filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))"
                             }}
@@ -78,6 +81,7 @@ const NavBar = () => {
                                 { label: 'Propuesta pedagógica', link: 'institucional/propuesta' },
                                 { label: 'Normativa', link: 'institucional/normativa' },
                             ]}
+                            onItemClick={() => setExpanded(false)}
                         />
                         <SplitHoverDropdown
                             title="Niveles"
@@ -88,52 +92,53 @@ const NavBar = () => {
                                 { label: 'Educación primaria', link: 'niveles/primaria' },
                                 { label: 'Educación secundaria', link: 'niveles/secundaria' },
                             ]}
+                            onItemClick={() => setExpanded(false)}
                         />
                         <Nav.Link
                             className={textColorClass}
-                            onClick={() => navigate("/servicios")}
+                            onClick={() => {navigate("/servicios"); setExpanded(false);}}
                             style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Servicios
                         </Nav.Link>
                         <Nav.Link
                             className={textColorClass}
-                            onClick={() => navigate("/instalaciones")}
+                            onClick={() => {navigate("/instalaciones"); setExpanded(false);}}
                             style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Instalaciones
                         </Nav.Link>
                         <Nav.Link
                             className={textColorClass}
-                            onClick={() => navigate("/talleres")}
+                            onClick={() => {navigate("/talleres"); setExpanded(false);}}
                             style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Talleres
                         </Nav.Link>
                         <Nav.Link
                             className={textColorClass}
-                            onClick={() => navigate("/galeria")}
+                            onClick={() => {navigate("/galeria"); setExpanded(false);}}
                             style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Galeria
                         </Nav.Link>
                         <Nav.Link
                             className={textColorClass}
-                            onClick={() => navigate("/aranceles")}
+                            onClick={() => {navigate("/aranceles"); setExpanded(false);}}
                             style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Aranceles
                         </Nav.Link>
                         <Nav.Link
                             className={textColorClass}
-                            onClick={() => navigate("/becas")}
+                            onClick={() => {navigate("/becas"); setExpanded(false);}}
                             style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Becas
                         </Nav.Link>
                         <Nav.Link
                             className={textColorClass}
-                            onClick={() => navigate("/contacto")}
+                            onClick={() => {navigate("/contacto"); setExpanded(false);}}
                             style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
                         >
                             Contacto
