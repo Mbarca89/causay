@@ -7,44 +7,62 @@ export default function TuitionFeesSection() {
         {
             level: "Educación Inicial",
             hours: "08:10 hs. a 12:50 hs.",
-            fee: "$ 178.500",
+            fee: "$ 189.200",
         },
         {
             level: "Educación Primaria",
             hours: "08:00 hs. a 16:30 hs.",
-            fee: "$ 230.000",
+            fee: "$ 243.800",
         },
         {
             level: "Educación Secundaria - Ciclo Básico",
             hours: "7:50 hs. a 13:50 hs.",
-            fee: "$ 182.750",
+            fee: "$ 193.700",
         },
         {
             level: "Educación Secundaria - Ciclo Superior",
             hours: "7:50 hs. a 13:50 hs.",
-            fee: "$ 187.800",
+            fee: "$ 199.100",
         },
     ]
 
-    const enrollmentFees = [
+    const enrollmentFeesNew = [
         {
             level: "Educación Inicial",
-            fee: "$ 180.000",
+            fee: "$ 220.000",
         },
         {
             level: "Educación Primaria",
-            fee: "$ 200.000",
+            fee: "$ 260.000",
         },
         {
             level: "Educación Secundaria",
-            fee: "$ 190.000",
+            fee: "$ 240.000",
+        },
+    ]
+    const enrollmentFeesActual = [
+        {
+            level: "Educación Inicial",
+            fee: "$ 200.000",
+        },
+        {
+            level: "Educación Primaria",
+            fee: "$ 240.000",
+        },
+        {
+            level: "Educación Secundaria",
+            fee: "$ 220.000",
+        },
+        {
+            level: "Ludoteca (Según cantidad de horas)",
+            fee: "$ 180.000 - $ 200.000",
         },
     ]
 
     return (
         <div className="container mx-auto p-6">
             <div className="text-center mb-8">
-                <h1 className="text-3xl font-light mb-2">Aranceles Julio 2025</h1>
+                <h1 className="text-3xl font-light mb-2">Aranceles Agosto 2025</h1>
             </div>
 
             <div className="grid gap-8 mb-12">
@@ -68,15 +86,31 @@ export default function TuitionFeesSection() {
                 <hr style={{ backgroundColor: "green", height:"2px", border:"none" }}/>
                 <Card>
                     <CardHeader className="pb-2">
-                        <CardTitle className="text-xl">Matrículas 2025</CardTitle>
+                        <CardTitle className="text-xl">Matrículas 2025 - Alumnos nuevos</CardTitle>
                     </CardHeader>
                     <CardContent>
                         <div className="space-y-4">
-                            {enrollmentFees.map((item, index) => (
+                            {enrollmentFeesNew.map((item, index) => (
                                 <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
                                     <div className="font-medium">{item.level}</div>
                                     <div className="text-right font-bold text-lg">{item.fee}</div>
-                                    {index < enrollmentFees.length - 1 && <hr className="col-span-2 my-2"  />}
+                                    {index < enrollmentFeesNew.length - 1 && <hr className="col-span-2 my-2"  />}
+                                </div>
+                            ))}
+                        </div>
+                    </CardContent>
+                </Card>
+                <Card>
+                    <CardHeader className="pb-2">
+                        <CardTitle className="text-xl">Matrículas 2025 - Alumnos actuales</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <div className="space-y-4">
+                            {enrollmentFeesActual.map((item, index) => (
+                                <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
+                                    <div className="font-medium">{item.level}</div>
+                                    <div className="text-right font-bold text-lg">{item.fee}</div>
+                                    {index < enrollmentFeesActual.length - 1 && <hr className="col-span-2 my-2"  />}
                                 </div>
                             ))}
                         </div>
