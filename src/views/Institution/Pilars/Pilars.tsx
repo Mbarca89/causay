@@ -47,6 +47,12 @@ const Pilars = () => {
                 <p className="text-secondary">
                     Nuestra propuesta educativa incluye conocimientos y experiencias pedagógicas sobre la tradición, la querencia por lo nuestro, la cultura, la historia y el sentido de pertenencia como sanluiseños nacidos en esta tierra y de aquellos que la adoptaron para hacerla propia.
                 </p>
+                <div className="">
+                    <picture>
+                        <source srcSet="/images/pilars/identityW.webp" media="(min-width: 600px)" />
+                        <img className="rounded" src="/images/pilars/identity.webp" alt="" />
+                    </picture>
+                </div>
             </div>
         </div>
     )
