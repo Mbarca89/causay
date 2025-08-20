@@ -14,7 +14,7 @@ const Norm: React.FC = () => {
                     <li className='d-flex gap-3' role='button'><ArrowDownToLine/><span><a className='text-dark' href="/normativa/2019-MATRICULACION.pdf" target='window'>Matriculación</a></span></li>
                     <li className='d-flex gap-3' role='button'><ArrowDownToLine/><span><a className='text-dark' href="/normativa/2019-PROGENITORES.pdf" target='window'>Progenitores</a></span></li>
                     <li className='d-flex gap-3' role='button'><ArrowDownToLine/><span><a className='text-dark' href="/normativa/2019-SIMBOLOS-Y-DISTINTIVOS-PATRIOS.pdf" target='window'>Símbolos y Distintivos patrios</a></span></li>
-                    <li className='d-flex gap-3' role='button'><ArrowDownToLine/><span><a className='text-dark' href="/normativa/2024-ELECCION-DE-ABANDERADOS-Y-ESCOLTAS.pdf" target='window'>Abanderados</a></span></li>
+                    <li className='d-flex gap-3' role='button'><ArrowDownToLine/><span><a className='text-dark' href="/normativa/ABANDERADOS-2025.pdf.pdf" target='window'>Abanderados</a></span></li>
                     <li className='d-flex gap-3' role='button'><ArrowDownToLine/><span><a className='text-dark' href="/normativa/2019-ARANCELES.pdf" target='window'>Aranceles</a></span></li>
                 </ul>
             </div>

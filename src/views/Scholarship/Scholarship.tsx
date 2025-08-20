@@ -41,7 +41,7 @@ const Scholarship: React.FC = () => {
           <div>
             <p>
               Completar el siguiente &gt;&gt;{" "}
-              <a href="#" className="text-green-500 hover:underline inline-flex items-center">
+              <a href="https://forms.gle/xnsnf7wnEeH3kHS28" target='blank_' className="text-green-500 hover:underline inline-flex items-center">
                 FORMULARIO <ExternalLink className="ml-1 h-4 w-4" />
               </a>{" "}
               &lt;&lt;
