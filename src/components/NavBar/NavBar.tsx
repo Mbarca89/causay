@@ -46,16 +46,16 @@ const NavBar = () => {
             fixed="top"
             style={{
                 backgroundColor: isScrolled ? 'white' : 'transparent',
-                backdropFilter: "blur(5px)",
+                backdropFilter: "blur(10px)",
                 transition: 'background-color 0.3s ease',
-                boxShadow: isScrolled ? '0 2px 4px rgba(0,0,0,0.1)' : 'none'
+                boxShadow: isScrolled ? '0 2px 4px rgba(0,0,0,0.5)' : 'none'
             }}
         >
             <Container>
                 <Navbar.Brand
                     onClick={() => {navigate("/"); setExpanded(false);}}
                     style={{
-                        filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))"
+                        filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, .5))"
                     }}
                 >
                     <img src="/images/logo.png" alt="" style={{ height: "75px" }} />
@@ -66,9 +66,7 @@ const NavBar = () => {
                         <Nav.Link
                             className={textColorClass}
                            onClick={() => {navigate("/"); setExpanded(false);}}
-                            style={{
-                                filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))"
-                            }}
+                            style={isScrolled ? {filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, .3))"} : {filter: "drop-shadow(2px 2px 1px rgba(0, 0, 0, 1))"}}
                         >
                             Inicio
                         </Nav.Link>
@@ -82,6 +80,7 @@ const NavBar = () => {
                                 { label: 'Normativa', link: 'institucional/normativa' },
                             ]}
                             onItemClick={() => setExpanded(false)}
+                            isScrolled={isScrolled}
                         />
                         <SplitHoverDropdown
                             title="Niveles"
@@ -91,62 +90,64 @@ const NavBar = () => {
                                 { label: 'Educación inicial', link: 'niveles/inicial' },
                                 { label: 'Educación primaria', link: 'niveles/primaria' },
                                 { label: 'Educación secundaria', link: 'niveles/secundaria' },
+                                 { label: 'Educación superior', link: 'niveles/superior' },
                             ]}
                             onItemClick={() => setExpanded(false)}
+                            isScrolled={isScrolled}
                         />
                         <Nav.Link
                             className={textColorClass}
                             onClick={() => {navigate("/servicios"); setExpanded(false);}}
-                            style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                            style={isScrolled ? {filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, .3))"} : {filter: "drop-shadow(2px 2px 1px rgba(0, 0, 0, 1))"}}
                         >
                             Servicios
                         </Nav.Link>
                         <Nav.Link
                             className={textColorClass}
                             onClick={() => {navigate("/instalaciones"); setExpanded(false);}}
-                            style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                            style={isScrolled ? {filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, .3))"} : {filter: "drop-shadow(2px 2px 1px rgba(0, 0, 0, 1))"}}
                         >
                             Instalaciones
                         </Nav.Link>
                         <Nav.Link
                             className={textColorClass}
                             onClick={() => {navigate("/talleres"); setExpanded(false);}}
-                            style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                            style={isScrolled ? {filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, .3))"} : {filter: "drop-shadow(2px 2px 1px rgba(0, 0, 0, 1))"}}
                         >
                             Talleres
                         </Nav.Link>
                         <Nav.Link
                             className={textColorClass}
                             onClick={() => {navigate("/galeria"); setExpanded(false);}}
-                            style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                            style={isScrolled ? {filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, .3))"} : {filter: "drop-shadow(2px 2px 1px rgba(0, 0, 0, 1))"}}
                         >
                             Galeria
                         </Nav.Link>
                         <Nav.Link
                             className={textColorClass}
                             onClick={() => {navigate("/aranceles"); setExpanded(false);}}
-                            style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                            style={isScrolled ? {filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, .3))"} : {filter: "drop-shadow(2px 2px 1px rgba(0, 0, 0, 1))"}}
                         >
                             Aranceles
                         </Nav.Link>
                         <Nav.Link
                             className={textColorClass}
                             onClick={() => {navigate("/becas"); setExpanded(false);}}
-                            style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                            style={isScrolled ? {filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, .3))"} : {filter: "drop-shadow(2px 2px 1px rgba(0, 0, 0, 1))"}}
                         >
                             Becas
                         </Nav.Link>
                         <Nav.Link
                             className={textColorClass}
                             onClick={() => {navigate("/contacto"); setExpanded(false);}}
-                            style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                            style={isScrolled ? {filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, .3))"} : {filter: "drop-shadow(2px 2px 1px rgba(0, 0, 0, 1))"}}
                         >
                             Contacto
                         </Nav.Link>
                         <NavDropdown
                             title="Acceder"
                             className={`nav-acceder ${textColorClass}`}
-                            style={{ filter: "drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))" }}
+                            style={isScrolled ? {filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, .3))"} : {filter: "drop-shadow(2px 2px 1px rgba(0, 0, 0, 1))"}}
                         >
 
                             <NavDropdown.Item href="https://schoolnet.colegium.com/webapp/en_GB/login" target="blank">Acceso Alumnos</NavDropdown.Item>

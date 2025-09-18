@@ -14,6 +14,7 @@ type SplitHoverDropdownProps = {
   items: DropdownItem[];
   link?: string; // Enlace principal del botón izquierdo
   onItemClick?: () => void
+  isScrolled?: boolean;
 };
 
 export const SplitHoverDropdown: React.FC<SplitHoverDropdownProps> = ({
@@ -22,6 +23,7 @@ export const SplitHoverDropdown: React.FC<SplitHoverDropdownProps> = ({
   customClassName,
   link = '#',
   onItemClick,
+  isScrolled,
 }) => {
   const [show, setShow] = useState(false);
   let timer: any;
@@ -54,12 +56,19 @@ export const SplitHoverDropdown: React.FC<SplitHoverDropdownProps> = ({
             if (onItemClick) onItemClick();
           }}
           className={`py-2 me-4 me-md-2 ${customClassName} mb-0`}
-          style={{
+          style={isScrolled ? {
             textDecoration: 'none',
             display: 'block',
-            filter: 'drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))',
+            filter: 'drop-shadow(2px 2px 4px rgba(0, 0, 0, .3))',
             transition: 'color 0.3s ease', // Add transition for smooth color change
-          }}
+          } : 
+        {
+            textDecoration: 'none',
+            display: 'block',
+            filter: 'drop-shadow(2px 2px 1px rgba(0, 0, 0, 1))',
+            transition: 'color 0.3s ease', // Add transition for smooth color change
+          }
+        }
         >
           {title}
         </a>
@@ -73,7 +82,7 @@ export const SplitHoverDropdown: React.FC<SplitHoverDropdownProps> = ({
           style={{
             background: 'transparent',
             border: 'none',
-            filter: 'drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5))',
+            filter: 'drop-shadow(2px 2px 1px rgba(0, 0, 0, 1))',
             transition: 'color 0.3s ease', // Add transition for smooth color change
           }}
         />

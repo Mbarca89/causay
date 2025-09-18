@@ -16,6 +16,7 @@ const Institution = lazy(() => import("./views/Institution/Institution"))
 const Starting = lazy(() => import("./views/Levels/Starting/Starting"))
 const Primary = lazy(() => import("./views/Levels/Primary/Primary"))
 const Secondary = lazy(() => import("./views/Levels/Secondary/Secondary"))
+const Superior = lazy(() => import("./views/Levels/Superior/Superior"))
 const ServicesView = lazy(() => import("./views/ServicesView/ServicesView"))
 const Workshops = lazy(() => import("./views/Workshops/Workshops"))
 const Pricing = lazy(() => import("./views/Pricing/Pricing"))
@@ -48,6 +49,7 @@ function App() {
           <Route path="/niveles/inicial" element={<Starting />} />
           <Route path="/niveles/primaria" element={<Primary />} />
           <Route path="/niveles/secundaria" element={<Secondary />} />
+          <Route path="/niveles/superior" element={<Superior />} />
           <Route path="/institucional" element={<Institution />} />
           <Route path="/institucional/pilares" element={<Pilars />} />
           <Route path="/institucional/propuesta" element={<PedagogyView />} />

@@ -108,7 +108,7 @@ const Secondary: React.FC = () => {
         <div className='container d-flex flex-column'>
             <div className='d-flex flex-column border-b border-green-500 pb-3'>
                 <div className='w-100 w-lg-50'>
-                    <h1>Educación Secundaria</h1>
+                    <h1 className='text-center'>Educación Secundaria</h1>
                     <p className='text-secondary text-center'>Nuestra propuesta pedagógica garantiza las tres funciones de la Educación Secundaria: la formación del ciudadano/a, la preparación para proseguir estudios superiores y la formación para desempeñar actividades laborales.
                         Se divide en dos (2) ciclos: un (1) Ciclo Básico, de carácter común a todas las orientaciones y un (1) Ciclo Orientado, de carácter diversificado según distintas áreas del conocimiento, del mundo social y del trabajo.
                     </p>

@@ -39,7 +39,7 @@ const Levels = () => {
                                             <span>Salas de 3, 4 y 5 años de 8:10 a 12:50 hs.</span>
                                         </li>
                                     </ul>
-                                    <Button onClick={()=>navigate("/niveles/inicial")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
+                                    <Button onClick={() => navigate("/niveles/inicial")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
                                         Conocer más
                                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                     </Button>
@@ -73,7 +73,7 @@ const Levels = () => {
                                             <span>Jordana extendida de 8:00 a 16:30 hs.</span>
                                         </li>
                                     </ul>
-                                    <Button onClick={()=>navigate("/niveles/primaria")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
+                                    <Button onClick={() => navigate("/niveles/primaria")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
                                         Conocer más
                                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                     </Button>
@@ -110,7 +110,44 @@ const Levels = () => {
                                             <span>Ciclo Orientado en Ciencias Naturales.</span>
                                         </li>
                                     </ul>
-                                    <Button onClick={()=>navigate("/niveles/secundaria")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
+                                    <Button onClick={() => navigate("/niveles/secundaria")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
+                                        Conocer más
+                                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                                    </Button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {/* Card 4 */}
+                    <div className="group relative overflow-hidden rounded-2xl shadow-md transition-all hover:shadow-xl">
+                        <div className="relative z-10 p-6 md:p-8 flex flex-column align-items-start justify-content-between h-100">
+                            <div className="mb-4 inline-flex items-center rounded-full bg-teal-100 px-3 py-1 text-sm font-medium text-teal-800">
+                                <span>Educación Superior</span>
+                            </div>
+                            <div className="mb-6 grid gap-6 md:grid-cols-5">
+                                <div className="md:col-span-5">
+                                    <h3 className="mb-5 text-2xl font-bold leading-tight text-gray-900">
+                                        Formación continua con validez oficial
+                                    </h3>
+                                    <p className="mb-5 text-gray-700">
+                                        Actualización profesional con enfoque práctico y certificación ministerial.
+
+                                    </p>
+                                    <ul className="mb-6 space-y-2">
+                                        <li className="flex items-start">
+                                            <CheckCircle2 className="mr-2 mt-0.5 h-5 w-5 flex-shrink-0 text-teal-500" />
+                                            <span>IA aplicada a la Educación – Nivel I (Res. 339-SDCDYFP-2025).</span>
+                                        </li>
+                                        <li className="flex items-start">
+                                            <CheckCircle2 className="mr-2 mt-0.5 h-5 w-5 flex-shrink-0 text-teal-500" />
+                                            <span>Modalidad combinada · 200 h en 4 meses.</span>
+                                        </li>
+                                        <li className="flex items-start">
+                                            <CheckCircle2 className="mr-2 mt-0.5 h-5 w-5 flex-shrink-0 text-teal-500" />
+                                            <span>Inicio: sáb. 08/03/2026 · 8:30–13:30 hs.</span>
+                                        </li>
+                                    </ul>
+                                    <Button onClick={() => navigate("/niveles/superior")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
                                         Conocer más
                                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                     </Button>

@@ -20,7 +20,7 @@ export default function TuitionFeesSection() {
             fee: "$ 193.700",
         },
         {
-            level: "Educación Secundaria - Ciclo Superior",
+            level: "Educación Secundaria - Ciclo Orientado",
             hours: "7:50 hs. a 13:50 hs.",
             fee: "$ 199.100",
         },
