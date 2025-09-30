@@ -55,12 +55,7 @@ const Superior: React.FC = () => {
                         Cada postítulo, diplomatura, o programa de formación es concebido como una herramienta útil, actualizada y significativa.
                     </p>
                 </div>
-                <div className='d-flex align-items-center justify-content-center w-100'>
-                    <picture>
-                        <source className='rounded' media="(min-width: 769px)" srcSet="/images/levels/secundariaW.webp" />
-                        <img className='rounded' src="/images/levels/secundaria.webp" alt="" />
-                    </picture>
-                </div>
+
             </div>
             <div className='mt-3 pb-3'>
 
@@ -69,6 +64,12 @@ const Superior: React.FC = () => {
                     <h3 className='fs-5 text-center'>ACTUALIZACIÓN ACADÉMICA EN INTELIGENCIA ARTIFICIAL APLICADA A LA EDUCACIÓN. NIVEL I </h3>
                     <p className='text-secondary text-center'>CERTIFICACIÓN OFICIAL CON VALIDEZ MINISTERIAL -RESOLUCIÓN Nº 339-SDCDYFP-2025.-</p>
                     <p className='text-center'>En un contexto de transformación digital acelerada, la inteligencia artificial (ia) impacta de manera significativa en la educación. este postítulo responde a la necesidad de formar docentes capaces de integrar y problematizar críticamentela ia en susprácticas pedagógicas, promoviendo la equidad, la creatividady una ciudadanía digital activa.</p>
+                    <div className='d-flex align-items-center justify-content-center w-100 mb-3'>
+                        <picture>
+                            <source className='rounded' media="(min-width: 769px)" srcSet="/images/levels/superior2.webp" />
+                            <img className='rounded' src="/images/levels/superior2.webp" alt="" />
+                        </picture>
+                    </div>
                     <div className="grid gap-6 mb-8">
                         {/* Course Details */}
                         <Card>

@@ -1,6 +1,7 @@
 import { Download } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "react-bootstrap"
+import { p } from "framer-motion/client"
 
 export default function TuitionFeesSection() {
     const monthlyFees = [
@@ -24,6 +25,11 @@ export default function TuitionFeesSection() {
             hours: "7:50 hs. a 13:50 hs.",
             fee: "$ 199.100",
         },
+        {
+            level: "Educación Superior",
+            hours: "8:30 hs. a 13:30 hs.",
+            fee: <p>$80.000 <span className="text-secondary fs-6">(Pago anticipado $300.000)</span></p>,
+        }
     ]
 
     const enrollmentFeesNew = [
