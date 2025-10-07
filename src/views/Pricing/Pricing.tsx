@@ -1,7 +1,7 @@
 import { Download } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "react-bootstrap"
-import { p } from "framer-motion/client"
+import { div, p } from "framer-motion/client"
 
 export default function TuitionFeesSection() {
     const monthlyFees = [
@@ -28,7 +28,7 @@ export default function TuitionFeesSection() {
         {
             level: "Educación Superior",
             hours: "8:30 hs. a 13:30 hs.",
-            fee: <p>$80.000 <span className="text-secondary fs-6">(Pago anticipado $300.000)</span></p>,
+            fee: <p>$80.000 (4 meses)<br /><span className="text-success fs-6">(Pago anticipado $300.000)</span></p>,
         }
     ]
 
@@ -68,7 +68,7 @@ export default function TuitionFeesSection() {
     return (
         <div className="container mx-auto p-6">
             <div className="text-center mb-8">
-                <h1 className="text-3xl font-light mb-2">Aranceles Agosto 2025</h1>
+                <h1 className="text-3xl font-light mb-2">Aranceles Octubre 2025</h1>
             </div>
 
             <div className="grid gap-8 mb-12">
@@ -79,17 +79,19 @@ export default function TuitionFeesSection() {
                     <CardContent>
                         <div className="space-y-4">
                             {monthlyFees.map((item, index) => (
-                                <div key={index} className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center">
-                                    <div className="font-medium">{item.level}</div>
-                                    <div className="text-muted-foreground text-sm">{item.hours}</div>
-                                    <div className="text-right font-bold text-lg">{item.fee}</div>
+                                <div key={index}>
+                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center">
+                                        <div className="font-medium">{item.level}</div>
+                                        <div className="text-muted-foreground text-sm">{item.hours}</div>
+                                        <div className="text-right font-bold text-lg">{item.fee}</div>
+                                    </div>
                                     {index < monthlyFees.length - 1 && <hr className="col-span-3 my-2" />}
                                 </div>
                             ))}
                         </div>
                     </CardContent>
                 </Card>
-                <hr style={{ backgroundColor: "green", height:"2px", border:"none" }}/>
+                <hr style={{ backgroundColor: "green", height: "2px", border: "none" }} />
                 <Card>
                     <CardHeader className="pb-2">
                         <CardTitle className="text-xl">Matrículas 2025 - Alumnos nuevos</CardTitle>
@@ -97,10 +99,12 @@ export default function TuitionFeesSection() {
                     <CardContent>
                         <div className="space-y-4">
                             {enrollmentFeesNew.map((item, index) => (
-                                <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
-                                    <div className="font-medium">{item.level}</div>
-                                    <div className="text-right font-bold text-lg">{item.fee}</div>
-                                    {index < enrollmentFeesNew.length - 1 && <hr className="col-span-2 my-2"  />}
+                                <div key={index}>
+                                    <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
+                                        <div className="font-medium">{item.level}</div>
+                                        <div className="text-right font-bold text-lg">{item.fee}</div>
+                                    </div>
+                                    {index < enrollmentFeesNew.length - 1 && <hr className="col-span-2 my-2" />}
                                 </div>
                             ))}
                         </div>
@@ -113,10 +117,12 @@ export default function TuitionFeesSection() {
                     <CardContent>
                         <div className="space-y-4">
                             {enrollmentFeesActual.map((item, index) => (
-                                <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
-                                    <div className="font-medium">{item.level}</div>
-                                    <div className="text-right font-bold text-lg">{item.fee}</div>
-                                    {index < enrollmentFeesActual.length - 1 && <hr className="col-span-2 my-2"  />}
+                                <div key={index}>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
+                                        <div className="font-medium">{item.level}</div>
+                                        <div className="text-right font-bold text-lg">{item.fee}</div>
+                                    </div>
+                                    {index < enrollmentFeesActual.length - 1 && <hr className="col-span-2 my-2" />}
                                 </div>
                             ))}
                         </div>

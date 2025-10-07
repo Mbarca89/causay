@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer className="text-light position-relative w-100 bottom-0" style={{ backgroundColor: "rgba(5, 174, 1, 0.8)", marginTop: "-7px" }}>
-            <div className="w-full overflow-hidden leading-none">
+            <div className="w-full overflow-hidden leading-none" style={{marginTop: "-1px"}}>
                 <svg
                     className="relative block w-full h-12"
                     data-name="Layer 1"
