@@ -1,7 +1,6 @@
 import { Download } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "react-bootstrap"
-import { div, p } from "framer-motion/client"
 
 export default function TuitionFeesSection() {
     const monthlyFees = [
