@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "title": "Expochess 2025",
+        "description": "Estudiantes del Centro Educativo Causay se destacan en el Concurso Internacional de Dibujo Expochess 2025.",
+        "date": "2025-10-14",
+        "category": "Logros",
+        "image": "/press/expochess-14-10-25.webp",
+        "link": "/noticias/expochess-14-10-25"
+    },
+    {
+        "id": 2,
+        "title": "Feria Nacional de Educación, Artes, Ciencias y Tecnología 2025",
+        "description": "Centro Educativo Causay: Ganador como Proyecto Destacado en la Feria Nacional de Educación, Artes, Ciencias y Tecnología 2025 ",
+        "date": "2025-10-07",
+        "category": "Ciencia y Tecnología",
+        "image": "/press/feria-07-10-25.webp",
+        "link": "/noticias/feria-07-10-25"
+    },
+    {
+        "id": 3,
+        "title": "Juegos Intercolegiales 2025",
+        "description": "Centro Educativo Causay: Campeones Provinciales de Handball de los Juegos Intercolegiales 2025. ",
+        "date": "2025-09-25",
+        "category": "Deportes",
+        "image": "/press/feria-07-10-25.webp",
+        "link": "/noticias/intercolegiales-25-09-25"
+    },
+    {
+        "id": 4,
+        "title": "Propuesta educativa 2026",
+        "description": "Centro Educativo Causay: Una Nueva Propuesta Educativa para el año 2026. ",
+        "date": "2025-09-22",
+        "category": "Institucional",
+        "image": "/press/propuesta-educativa-22-09-25.webp",
+        "link": "/noticias/propuesta-educativa-22-09-25"
+    },
+    {
+        "id": 5,
+        "title": "Centro Educativo Causay representará a la Argentina en la Feria Internacional de Ciencias",
+        "description": "El proyecto 'CardioInsight' del Centro Educativo Causay fue seleccionado por el Ministerio de Educación para representar al país en la Feria Internacional de Ciencias 2025 en Chile.",
+        "date": "2025-10-14",
+        "category": "Ciencia y Tecnología",
+        "image": "/press/feria-internacional-14-10-25.webp",
+        "link": "/noticias/feria-internacional-14-10-25"
+    }
+]

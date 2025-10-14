@@ -213,7 +213,7 @@ const Superior: React.FC = () => {
 
                                 <div className="d-flex flex-column flex-md-row align-items-center gap-3 justify-content-center">
                                     <Button className="gap-2" variant='success'>
-                                        <a className='text-light flex flex-row align-items-center gap-2' href="https://forms.gle/QDiqMehu2ewfBBe26" target="_blank" rel="noopener noreferrer">
+                                        <a className='text-light flex flex-row align-items-center gap-2' href="https://forms.gle/GaGWvwXR3GaPHL4n7" target="_blank" rel="noopener noreferrer">
                                             <ExternalLink className="h-4 w-4" />
                                             Formulario de Preinscripción
                                         </a>

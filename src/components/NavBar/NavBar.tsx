@@ -70,6 +70,13 @@ const NavBar = () => {
                         >
                             Inicio
                         </Nav.Link>
+                        <Nav.Link
+                            className={textColorClass}
+                           onClick={() => {navigate("/noticias"); setExpanded(false);}}
+                            style={isScrolled ? {filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, .3))"} : {filter: "drop-shadow(2px 2px 1px rgba(0, 0, 0, 1))"}}
+                        >
+                            Noticias
+                        </Nav.Link>
                         <SplitHoverDropdown
                             title="Institucional"
                             customClassName={textColorClass}
