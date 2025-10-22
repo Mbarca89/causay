@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { ChevronLeft, ChevronRight, Calendar, Clock } from "lucide-react"
+import { ChevronLeft, ChevronRight, Calendar } from "lucide-react"
 import "./NewsCarousel.css"
 import { useNavigate } from "react-router-dom"
 
