@@ -43,5 +43,14 @@
         "category": "Institucional",
         "image": "/press/noimage.webp",
         "link": "/noticias/propuesta-educativa-22-09-25"
+    },
+    {
+        "id": 6,
+        "title": "Jornadas de Enseñanza Interactiva de la Estadística 2025",
+        "description": "Alumnos del Centro Educativo Causay abrirán las Jornadas de Enseñanza Interactiva de la Estadística, organizadas por la Universidad Nacional de San Luis.",
+        "date": "2025-10-22",
+        "category": "Educación",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/ensenanza-interactiva-22-10-25"
     }
 ]
