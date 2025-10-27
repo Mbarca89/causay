@@ -103,7 +103,7 @@ const Workshops: React.FC = () => {
                         >
                             <div className="aspect-video overflow-hidden relative">
                                 <img
-                                    src={workshop.image || "/placeholder.svg"}
+                                    src={workshop.image}
                                     alt={workshop.alt}
                                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                                 />

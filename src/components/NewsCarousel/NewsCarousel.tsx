@@ -119,7 +119,7 @@ const NewsCarousel = () => {
               <div className="col-lg-6">
                 <div className="news-image-wrapper rounded-4 overflow-hidden shadow-lg">
                   <img
-                    src={currentNews.image || "/placeholder.svg"}
+                    src={currentNews.image}
                     alt={currentNews.title}
                     className="w-100 h-100 object-fit-cover"
                     style={{ aspectRatio: "16/9" }}
