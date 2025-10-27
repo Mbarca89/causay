@@ -52,5 +52,14 @@
         "category": "Educación",
         "image": "/press/noimage.webp",
         "link": "/noticias/ensenanza-interactiva-22-10-25"
+    },
+    {
+        "id": 7,
+        "title": "Poggi recibió a los alumnos del Causay que competirán en la Feria Internacional de Ciencias en Chile",
+        "description": "El Gobernador Claudio Poggi recibió a 11 estudiantes del Causay que presentarán el proyecto ‘CardioInsight’ en la Feria Internacional de Ciencias en Chile.",
+        "date": "2025-10-24",
+        "category": "Institucional",
+        "image": "/press/poggi-alumnos-24-10-25.webp",
+        "link": "/noticias/poggi-alumnos-24-10-25"
     }
 ]

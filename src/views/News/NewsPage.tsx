@@ -1,6 +1,9 @@
 import { useParams, Link } from "react-router-dom"
-import { useEffect, useState } from "react"
-import { Calendar, ArrowLeft, Download } from "lucide-react"
+import { useEffect, useMemo, useState } from "react"
+import { Calendar, ArrowLeft, Download, ExternalLink, Youtube } from "lucide-react"
+
+type ExternalLinkItem = { label?: string; url: string }
+type MediaItem = { type: "youtube"; id: string; title?: string }
 
 interface NewsData {
     id: number
@@ -11,7 +14,16 @@ interface NewsData {
     image: string
     docFile: string
     htmlContent: string
-    media: string[]
+    externalLinks?: ExternalLinkItem[]
+    media: MediaItem[]
+}
+
+function domainFromUrl(u: string) {
+    try {
+        return new URL(u).hostname.replace(/^www\./, "")
+    } catch {
+        return u
+    }
 }
 
 const NewsPage = () => {
@@ -30,6 +42,11 @@ const NewsPage = () => {
             .then((data) => setNews(data))
             .catch(() => setError(true))
     }, [slug])
+
+    const youTubeItems = useMemo(
+        () => (news?.media || []).filter((m): m is MediaItem => m.type === "youtube" && !!m.id),
+        [news]
+    )
 
     if (error) {
         return (
@@ -99,12 +116,65 @@ const NewsPage = () => {
                 dangerouslySetInnerHTML={{ __html: news.htmlContent }}
             />
 
-            <div className="mt-5 d-flex">
+            {/* Media (YouTube) opcional */}
+      {youTubeItems.length > 0 && (
+        <section className="mt-5">
+          <h5 className="fw-bold d-flex align-items-center gap-2 mb-3">
+            <Youtube size={20} />
+            Media
+          </h5>
+
+          <div className="row g-4">
+            {youTubeItems.map((vid, i) => (
+              <div className="col-12 col-md-6" key={`${vid.id}-${i}`}>
+                {/* Bootstrap 5: contenedor responsive 16:9 */}
+                <div className="ratio ratio-16x9 rounded-4 shadow">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${vid.id}?rel=0`}
+                    title={vid.title || `video-${i + 1}`}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="rounded-4"
+                  />
+                </div>
+                {vid.title && <p className="mt-2 text-muted small">{vid.title}</p>}
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* Enlaces externos (opcional) */}
+      {!!news.externalLinks?.length && (
+        <section className="mt-5">
+          <h5 className="fw-bold d-flex align-items-center gap-2 mb-3">
+            <ExternalLink size={20} />
+            Enlaces externos
+          </h5>
+
+          <ul className="list-unstyled">
+            {news.externalLinks!.map((lnk, i) => (
+              <li key={`${lnk.url}-${i}`} className="mb-2">
+                <a
+                  href={lnk.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-success"
+                >
+                  {lnk.label || domainFromUrl(lnk.url)}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+            {news.docFile && <div className="mt-5 d-flex">
                 <a href={news.docFile} download className="btn btn-success d-flex align-items-center">
                     <Download size={18} className="me-2" />
                     Descargar gacetilla
                 </a>
-            </div>
+            </div>}
         </div>
     )
 }
