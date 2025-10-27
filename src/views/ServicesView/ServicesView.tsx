@@ -253,7 +253,7 @@ const ServicesView: React.FC = () => {
                         <CardContent>
                             <div className="space-y-4">
                                 <CardDescription className="text-base">{service.shortDescription}</CardDescription>
-                                <Button variant="success" onClick={() => { toggleExpand(index); scrollToSection() }}>
+                                <Button aria-label='Ver más' variant="success" onClick={() => { toggleExpand(index); scrollToSection() }}>
                                     Ver más
                                 </Button>
                             </div>

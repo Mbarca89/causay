@@ -111,7 +111,9 @@ export default function Pedagogy() {
 
           <div className="d-flex justify-content-between position-relative">
             {categories.map((category) => (
-              <button className="btn p-0 border-0" key={category.id} onClick={() => setActiveCategory(category.id)}>
+              <button
+                aria-label={category.title}
+                className="btn p-0 border-0" key={category.id} onClick={() => setActiveCategory(category.id)}>
                 <div className={`rounded-circle d-flex align-items-center justify-content-center shadow-sm ${activeCategory === category.id ? 'text-white' : ' border'}`} style={{ width: "50px", height: "50px", backgroundColor: activeCategory === category.id ? "#05ae01" : "#ffffff" }}>
                   {category.icon}
                 </div>
@@ -132,7 +134,7 @@ export default function Pedagogy() {
               <h2 className="fw-bold">{currentCategory.title}</h2>
             </div>
             <p className="text-muted">{currentCategory.text}</p>
-            <button className="btn btn-dark d-flex align-items-center" onClick={()=>navigate("/institucional/propuesta")}>
+            <button aria-label="Explorar más" className="btn btn-dark d-flex align-items-center" onClick={() => navigate("/institucional/propuesta")}>
               Explorar más <span className="ms-2"><ChevronRight /></span>
             </button>
           </div>

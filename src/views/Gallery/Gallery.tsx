@@ -22,6 +22,7 @@ const Gallery: React.FC = () => {
             <div className="flex border-b border-green-500 justify-content-center">
                 {galerias.map((galeria, index) => (
                     <button
+                    aria-label={galeria.titulo}
                         key={galeria.id}
                         className={`px-4 py-3 text-sm font-medium transition-colors ${activeTab === index
                             ? 'border-b-2 border-green-500 text-green-600'

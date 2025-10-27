@@ -113,6 +113,7 @@ const Facilities = () => {
             <div className="hidden md:flex border-b border-green-500 justify-content-center">
                 {instalaciones.map((instalacion, index) => (
                     <button
+                        aria-label={instalacion.titulo}
                         key={instalacion.id}
                         className={`px-4 py-3 text-sm font-medium transition-colors ${activeTab === index
                             ? 'border-b-2 border-green-500 text-green-600'
@@ -128,6 +129,7 @@ const Facilities = () => {
                     </button>
                 ))}
                 <button
+                    aria-label='Ver todas las instalaciones'
                     className={'px-4 py-3 text-sm font-medium transition-colors text-gray-600 hover:text-green-500 d-flex flex-row align-items-center'}
                     style={{ backgroundColor: "transparent", border: "none" }}
                     onClick={() => navigate("/instalaciones")}
@@ -192,21 +194,38 @@ const Facilities = () => {
             </div>
             {/* Indicadores de navegación (puntitos) */}
             <div className="carousel-indicators position-relative mb-0 py-3 gap-3">
-                {instalaciones.map((_, index) => (
-                    <Dot size={16} color={activeTab == index ? "#05ae01" : "#eeeeee"} strokeWidth={10} absoluteStrokeWidth
+                {instalaciones.map((instalacion, index) => (
+                    <button
                         key={index}
-                        type="button"
                         onClick={() => {
                             setDirection(index > activeTab ? 1 : -1);
                             setActiveTab(index);
                         }}
-                        aria-label={`Ver ${instalaciones[index].titulo}`}
+                        aria-label={`Ver ${instalacion.titulo}`}
                         aria-current={activeTab === index ? "true" : "false"}
-                    />
+                        className="rounded-full flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+                        style={{
+                            width: "44px",
+                            height: "44px",
+                            background: "transparent",
+                            border: "none",
+                        }}
+                        type="button"
+                    >
+                        <Dot
+                            size={16}
+                            color={activeTab === index ? "#05ae01" : "#eeeeee"}
+                            strokeWidth={10}
+                            absoluteStrokeWidth
+                            aria-hidden="true"
+                        />
+                    </button>
                 ))}
             </div>
             <div className="d-flex justify-content-center mb-5 mt-3">
-                <button className="btn btn-dark d-flex align-items-center" onClick={() => navigate("/instalaciones")}>
+                <button
+                    aria-label='Ver todas las instalaciones'
+                    className="btn btn-dark d-flex align-items-center" onClick={() => navigate("/instalaciones")}>
                     Ver todas <span className="ms-2"><ChevronRight /></span>
                 </button>
             </div>

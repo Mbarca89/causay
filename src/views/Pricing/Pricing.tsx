@@ -130,7 +130,7 @@ export default function TuitionFeesSection() {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-4 bg-muted/30 p-6 rounded-lg">
-                <Button className="gap-2" size="lg" variant="success">
+                <Button aria-label="Arancel preferencial" className="gap-2" size="lg" variant="success">
                     <a className=" d-flex flex-row align-items-center gap-3 text-light" href="/pricing/aranceles-preferenciales.pdf" download>
                         <Download className="h-4 w-4" />
                         Arancel Preferencial

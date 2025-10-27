@@ -54,25 +54,53 @@
 }
 
 .carousel-dot {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 12px;
   height: 12px;
-  border-radius: 50%;
+  margin: 0 6px;
   border: 2px solid #05ae01;
+  border-radius: 50%;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   padding: 0;
+  outline: none;
 }
 
-.carousel-dot:hover {
-  background: rgba(5, 174, 1, 0.3);
-  transform: scale(1.2);
-}
-
+/* círculo activo */
 .carousel-dot.active {
   background: #05ae01;
   width: 32px;
   border-radius: 6px;
+}
+
+/* hover */
+.carousel-dot:hover {
+  background: rgba(5, 174, 1, 0.3);
+  transform: scale(1.1);
+}
+
+/* foco visible solo en teclado (sin romper hover) */
+.carousel-dot:focus-visible {
+  outline: 2px solid #05ae01;
+  outline-offset: 4px;
+}
+
+/* área táctil invisible para accesibilidad */
+.carousel-dot::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: transparent;
+  pointer-events: none; /* no interfiere con el clic */
 }
 
 /* Responsive adjustments */

@@ -151,14 +151,14 @@ const NewsCarousel = () => {
                     </div>
                   </div>
 
-                  <button onClick={() => navigate(currentNews.link)} className="btn btn-success px-4 py-2">Leer más</button>
+                  <button aria-label="Leer más" onClick={() => navigate(currentNews.link)} className="btn btn-success px-4 py-2">Leer más</button>
                 </div>
               </div>
             </motion.div>
           </AnimatePresence>
 
           {/* Navigation Arrows */}
-          <button onClick={handlePrev} className="carousel-nav-btn carousel-nav-prev" aria-label="Noticia anterior">
+          <button  onClick={handlePrev} className="carousel-nav-btn carousel-nav-prev" aria-label="Noticia anterior">
             <ChevronLeft size={24} />
           </button>
 

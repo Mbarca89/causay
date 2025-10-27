@@ -49,29 +49,33 @@ export const SplitHoverDropdown: React.FC<SplitHoverDropdownProps> = ({
     >
       <div style={{ display: 'flex', alignItems: 'center' }}>
         {/* Botón principal con navegación directa */}
-        <a
-          role='button'
-          onClick={link === "acceder" ? () => null : () => {
-            navigate(link);
-            if (onItemClick) onItemClick();
+        <button
+          type="button"
+          aria-label={title}
+          onClick={() => {
+            if (link !== "acceder") {
+              navigate(link);
+              if (onItemClick) onItemClick();
+            }
           }}
-          className={`py-2 me-4 me-md-2 ${customClassName} mb-0`}
-          style={isScrolled ? {
-            textDecoration: 'none',
-            display: 'block',
-            filter: 'drop-shadow(2px 2px 4px rgba(0, 0, 0, .3))',
-            transition: 'color 0.3s ease', // Add transition for smooth color change
-          } : 
-        {
-            textDecoration: 'none',
-            display: 'block',
-            filter: 'drop-shadow(2px 2px 1px rgba(0, 0, 0, 1))',
-            transition: 'color 0.3s ease', // Add transition for smooth color change
+          className={`py-2 me-4 me-md-2 ${customClassName} mb-0 bg-transparent border-0 text-start`}
+          style={isScrolled
+            ? {
+              textDecoration: "none",
+              display: "block",
+              filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, .3))",
+              transition: "color 0.3s ease",
+            }
+            : {
+              textDecoration: "none",
+              display: "block",
+              filter: "drop-shadow(2px 2px 1px rgba(0, 0, 0, 1))",
+              transition: "color 0.3s ease",
+            }
           }
-        }
         >
           {title}
-        </a>
+        </button>
 
         {/* Botón toggle para abrir el menú */}
         <Dropdown.Toggle

@@ -1,0 +1,33 @@
+footer a.text-secondary {
+  color: #fafafa  !important;
+}
+
+footer a.text-secondary:hover {
+  color: #fafafa  !important;
+}
+
+footer ul {
+  margin: 0;
+  padding-left: rem;
+}
+
+footer ul li {
+  list-style-type: disc;
+  margin-left: 0.5rem;
+}
+
+footer a.text-gray-100 {
+  color: #fafafa  !important; /* gris claro */
+  text-decoration: none;
+}
+
+footer a.text-gray-100:hover {
+  color: #fafafa  !important; /* blanco al pasar el mouse */
+}
+
+footer a,
+footer small,
+footer h2,
+footer h3 {
+  color: #fafafa  !important; /* era #d0d0d0 */
+}

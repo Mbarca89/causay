@@ -166,7 +166,7 @@ export default function ContactForm() {
                 </div>
               )}
 
-              <button type="submit" className="btn btn-success d-flex align-items-center" disabled={isSubmitting}>
+              <button aria-label="Enviar mensaje" type="submit" className="btn btn-success d-flex align-items-center" disabled={isSubmitting}>
                 {isSubmitting ? (
                   <>
                     <Loader2 className="animate-spin mr-2" size={18} />

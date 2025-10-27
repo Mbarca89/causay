@@ -39,7 +39,7 @@ const Levels = () => {
                                             <span>Salas de 3, 4 y 5 años de 8:10 a 12:50 hs.</span>
                                         </li>
                                     </ul>
-                                    <Button onClick={() => navigate("/niveles/inicial")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
+                                    <Button aria-label="Conocer más" onClick={() => navigate("/niveles/inicial")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
                                         Conocer más
                                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                     </Button>
@@ -73,7 +73,7 @@ const Levels = () => {
                                             <span>Jordana extendida de 8:00 a 16:30 hs.</span>
                                         </li>
                                     </ul>
-                                    <Button onClick={() => navigate("/niveles/primaria")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
+                                    <Button aria-label="Conocer más" onClick={() => navigate("/niveles/primaria")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
                                         Conocer más
                                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                     </Button>
@@ -110,7 +110,7 @@ const Levels = () => {
                                             <span>Ciclo Orientado en Ciencias Naturales.</span>
                                         </li>
                                     </ul>
-                                    <Button onClick={() => navigate("/niveles/secundaria")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
+                                    <Button aria-label="Conocer más" onClick={() => navigate("/niveles/secundaria")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
                                         Conocer más
                                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                     </Button>
@@ -147,7 +147,7 @@ const Levels = () => {
                                             <span>Inicio: sáb. 08/03/2026 · 8:30–13:30 hs.</span>
                                         </li>
                                     </ul>
-                                    <Button onClick={() => navigate("/niveles/superior")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
+                                    <Button aria-label="Conocer más" onClick={() => navigate("/niveles/superior")} variant="success" className="group bg-teal-600 hover:bg-teal-700 d-flex align-items-center">
                                         Conocer más
                                         <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                                     </Button>

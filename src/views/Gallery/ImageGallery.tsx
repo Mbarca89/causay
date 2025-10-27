@@ -1,5 +1,5 @@
-import { useState } from "react";
-import Lightbox from "yet-another-react-lightbox";
+import { lazy, useState, Suspense } from "react";
+const Lightbox = lazy(() => import("yet-another-react-lightbox"))
 import "yet-another-react-lightbox/styles.css";
 
 // Importamos imágenes
@@ -44,12 +44,16 @@ function Gallery() {
       </div>
 
       {/* Lightbox con imágenes en HD */}
-      <Lightbox
-        open={open}
-        close={() => setOpen(false)}
-        index={index}
-        slides={images.map(img => ({ src: img.src }))}
-      />
+      <Suspense fallback={<div className="text-center py-5">Cargando galería...</div>}>
+        {open && (
+          <Lightbox
+            open={open}
+            close={() => setOpen(false)}
+            index={index}
+            slides={images.map(img => ({ src: img.src }))}
+          />
+        )}
+      </Suspense>
     </>
   );
 }
