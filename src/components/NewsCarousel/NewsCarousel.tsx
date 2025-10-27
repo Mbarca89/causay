@@ -34,21 +34,23 @@ const NewsCarousel = () => {
 
   // Auto-play functionality
   useEffect(() => {
-    if (!isAutoPlaying) return
+    if (!isAutoPlaying || newsItems.length === 0) return
 
     const interval = setInterval(() => {
       handleNext()
     }, 5000)
 
     return () => clearInterval(interval)
-  }, [currentIndex, isAutoPlaying])
+  }, [currentIndex, isAutoPlaying, newsItems.length])
 
   const handleNext = () => {
+    if (newsItems.length === 0) return
     setDirection(1)
     setCurrentIndex((prev) => (prev + 1) % newsItems.length)
   }
 
   const handlePrev = () => {
+    if (newsItems.length === 0) return
     setDirection(-1)
     setCurrentIndex((prev) => (prev - 1 + newsItems.length) % newsItems.length)
   }
@@ -149,7 +151,7 @@ const NewsCarousel = () => {
                     </div>
                   </div>
 
-                  <button onClick={()=> navigate(currentNews.link)} className="btn btn-success px-4 py-2">Leer más</button>
+                  <button onClick={() => navigate(currentNews.link)} className="btn btn-success px-4 py-2">Leer más</button>
                 </div>
               </div>
             </motion.div>
