@@ -61,5 +61,14 @@
         "category": "Institucional",
         "image": "/press/poggi-alumnos-24-10-25.webp",
         "link": "/noticias/poggi-alumnos-24-10-25"
+    },
+    {
+        "id": 8,
+        "title": "Alumnos del Causay recibidos por autoridades educativas nacionales",
+        "description": "Estudiantes del Centro Educativo Causay fueron reconocidos por autoridades nacionales previo a su participación en la Feria Internacional de Ciencias en Chile.",
+        "date": "2025-10-31",
+        "category": "Institucional",
+        "image": "/press/alumnos-autoridades-nacionales-31-10-25.webp",
+        "link": "/noticias/alumnos-autoridades-nacionales-31-10-25"
     }
 ]
