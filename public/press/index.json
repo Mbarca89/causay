@@ -88,5 +88,14 @@
         "category": "Logros",
         "image": "/press/noimage.webp",
         "link": "/noticias/primer-premio-junior-12-11-2025"
+    },
+    {
+        "id": 11,
+        "title": "Estudiantes del Causay clasifican a la final nacional de MateClubes",
+        "description": "Santiago Pacheco Berardi y Milagros Roche representarán al Causay en la final de MateClubes organizada por la Olimpíada Matemática Argentina.",
+        "date": "2025-11-18",
+        "category": "Ciencia y Tecnología",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/mateclubes-18-11-25"
     }
 ]
