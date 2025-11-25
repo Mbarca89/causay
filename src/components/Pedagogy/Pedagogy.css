@@ -1,6 +1,7 @@
 @media (min-width: 1024px) {
   .fixed-height {
-    height: 70vh;
+    min-height: 70vh;
+    padding-bottom: 4rem;
   }
 }
 
