@@ -97,5 +97,14 @@
         "category": "Ciencia y Tecnología",
         "image": "/press/noimage.webp",
         "link": "/noticias/mateclubes-18-11-25"
+    },
+    {
+        "id": 12,
+        "title": "Mejoras acústicas en las aulas del Causay potencian el aprendizaje",
+        "description": "El Causay incorporó nubes acústicas y un sistema de sonido central para mejorar el ambiente educativo y el rendimiento de los estudiantes.",
+        "date": "2025-11-27",
+        "category": "Institucional",
+        "image": "/press/nubes-acusticas-27-11-25.webp",
+        "link": "/noticias/nubes-acusticas-27-11-25"
     }
 ]
