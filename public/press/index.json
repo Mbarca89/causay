@@ -106,5 +106,14 @@
         "category": "Institucional",
         "image": "/press/nubes-acusticas-27-11-25.webp",
         "link": "/noticias/nubes-acusticas-27-11-25"
+    },
+    {
+        "id": 13,
+        "title": "Causay obtiene el Primer Lugar en la IX Expociencias Nacional Chile 2025",
+        "description": "El proyecto CardioInsight del Causay fue premiado con el máximo reconocimiento internacional en la Expociencias Chile 2025.",
+        "date": "2025-11-28",
+        "category": "Logros",
+        "image": "/press/expociencias-chile-28-11-25.webp",
+        "link": "/noticias/expociencias-chile-28-11-25"
     }
 ]
