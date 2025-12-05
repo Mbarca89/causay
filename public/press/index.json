@@ -115,5 +115,14 @@
         "category": "Logros",
         "image": "/press/expociencias-chile-28-11-25.webp",
         "link": "/noticias/expociencias-chile-28-11-25"
+    },
+    {
+        "id": 14,
+        "title": "Actos de cierre del Ciclo Lectivo 2025",
+        "description": "El Causay anuncia fechas y horarios de los actos académicos y actividades que cierran el Ciclo Lectivo 2025.",
+        "date": "2025-12-04",
+        "category": "Institucional",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/actos-04-12-25"
     }
 ]
