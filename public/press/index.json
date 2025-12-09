@@ -124,5 +124,14 @@
         "category": "Institucional",
         "image": "/press/noimage.webp",
         "link": "/noticias/actos-04-12-25"
+    },
+    {
+        "id": 15,
+        "title": "Primer y segundo premio en el Concurso de Ensayo del IFDCSL",
+        "description": "Estudiantes de 5° año del Causay obtuvieron el primer y segundo premio en el Concurso de Ensayo del IFDCSL sobre inteligencia artificial.",
+        "date": "2025-12-09",
+        "category": "Logros",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/concurso-ifdcsl-09-12-25"
     }
 ]
