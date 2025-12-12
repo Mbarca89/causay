@@ -6,13 +6,12 @@
   "category": "Institucional",
   "image": "/press/noimage.webp",
   "docFile": null,
-  "htmlContent": "<p>El <strong>Centro Educativo Causay</strong> comparte la transmisión en vivo del <strong>Acto Artístico de Cierre del Ciclo Lectivo 2025</strong>, una propuesta que refleja el trabajo, la creatividad y el compromiso de nuestros estudiantes y docentes a lo largo del año.</p><p>El evento se llevó a cabo en el marco de las actividades de finalización del ciclo lectivo y fue transmitido en vivo a través de la red social Facebook.</p>",
-  "externalLinks": [],
-  "media": [
+  "htmlContent": "<p>El <strong>Centro Educativo Causay</strong> comparte la transmisión en vivo del <strong>Acto Artístico de Cierre del Ciclo Lectivo 2025</strong>, una propuesta que refleja el trabajo, la creatividad y el compromiso de nuestros estudiantes y docentes a lo largo del año.</p><p>El evento se llevó a cabo en el marco de las actividades de finalización del ciclo lectivo y fue transmitido en vivo por Radio Rivadavia a través de la red social Facebook.</p>",
+  "externalLinks": [
     {
-      "type": "facebook",
-      "id": "3293420864166458",
-      "title": "Acto Artístico – Cierre del Ciclo Lectivo 2025"
+      "label": "Ver transmisión en Facebook",
+      "url": "https://www.facebook.com/watch/live/?ref=watch_permalink&v=3293420864166458&rdid=xR7DNbD7kRbFNnTi"
     }
-  ]
+  ],
+  "media": []
 }

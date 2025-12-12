@@ -3,7 +3,10 @@ import { useEffect, useMemo, useState } from "react"
 import { Calendar, ArrowLeft, Download, ExternalLink, Youtube } from "lucide-react"
 
 type ExternalLinkItem = { label?: string; url: string }
-type MediaItem = { type: "youtube" | "facebook"; id: string; title?: string }
+type MediaItem =
+  | { type: "youtube"; id: string; title?: string }
+  | { type: "facebook"; url: string; title?: string }
+
 
 interface NewsData {
   id: number
@@ -43,10 +46,19 @@ const NewsPage = () => {
       .catch(() => setError(true))
   }, [slug])
 
-  const youTubeItems = useMemo(
-    () => (news?.media || []).filter((m): m is MediaItem => m.type === "youtube" && !!m.id),
-    [news]
-  )
+  const mediaItems = useMemo(() => news?.media || [], [news])
+
+  const hasMedia = mediaItems.length > 0
+
+  type YoutubeMedia = Extract<MediaItem, { type: "youtube" }>
+  type FacebookMedia = Extract<MediaItem, { type: "facebook" }>
+
+  const isYoutube = (m: MediaItem): m is YoutubeMedia => m.type === "youtube"
+  const isFacebook = (m: MediaItem): m is FacebookMedia => m.type === "facebook"
+
+  const youTubeItems = useMemo(() => mediaItems.filter(isYoutube), [mediaItems])
+  const facebookItems = useMemo(() => mediaItems.filter(isFacebook), [mediaItems])
+
 
   if (error) {
     return (
@@ -117,7 +129,7 @@ const NewsPage = () => {
       />
 
       {/* Media (YouTube) opcional */}
-      {youTubeItems.length > 0 && (
+      {hasMedia && (
         <section className="mt-5">
           <h5 className="fw-bold d-flex align-items-center gap-2 mb-3">
             <Youtube size={20} />
@@ -125,9 +137,9 @@ const NewsPage = () => {
           </h5>
 
           <div className="row g-4">
-            {youTubeItems.map((vid, i) => (
+            {/* YouTube */}
+            {youTubeItems.map((vid: any, i) => (
               <div className="col-12 col-md-6" key={`${vid.id}-${i}`}>
-                {/* Bootstrap 5: contenedor responsive 16:9 */}
                 <div className="ratio ratio-16x9 rounded-4 shadow">
                   <iframe
                     src={`https://www.youtube.com/embed/${vid.id}?rel=0`}
@@ -140,28 +152,28 @@ const NewsPage = () => {
                 {vid.title && <p className="mt-2 text-muted small">{vid.title}</p>}
               </div>
             ))}
-          </div>
-          {news.media?.map((m, i) => {
-            if (m.type === "facebook") {
-              return (
-                <div className="col-12" key={i}>
-                  <div className="ratio ratio-16x9 rounded-4 shadow">
-                    <iframe
-                      src={`https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/facebook/videos/${m.id}/&show_text=false`}
-                      width="100%"
-                      height="100%"
-                      style={{ border: "none", overflow: "hidden" }}
-                      scrolling="no"
-                      frameBorder="0"
-                      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                      allowFullScreen
-                    />
-                  </div>
+
+            {/* Facebook */}
+            {facebookItems.map((fb, i) => (
+              <div className="col-12" key={i}>
+                <div className="ratio ratio-16x9 rounded-4 shadow mb-2">
+                  <iframe
+                    src={`https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(fb.url)}&show_text=false&width=1280`}
+                    title={fb.title || `facebook-${i + 1}`}
+                    style={{ border: "none", overflow: "hidden" }}
+                    scrolling="no"
+                    frameBorder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
                 </div>
-              )
-            }
-            return null
-          })}
+
+                <a className="btn btn-outline-success" href={fb.url} target="_blank" rel="noreferrer">
+                  Ver en Facebook
+                </a>
+              </div>
+            ))}
+          </div>
         </section>
       )}
 
