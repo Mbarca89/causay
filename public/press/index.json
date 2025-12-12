@@ -133,5 +133,14 @@
         "category": "Logros",
         "image": "/press/noimage.webp",
         "link": "/noticias/concurso-ifdcsl-09-12-25"
+    },
+    {
+        "id": 16,
+        "title": "Acto Artístico de Cierre del Ciclo Lectivo 2025",
+        "description": "Transmisión en vivo del Acto Artístico de cierre del Ciclo Lectivo 2025 del Centro Educativo Causay.",
+        "date": "2025-12-11",
+        "category": "Institucional",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/acto-artistico-facebook-live-2025"
     }
 ]
