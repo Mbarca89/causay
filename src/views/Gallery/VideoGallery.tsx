@@ -1,6 +1,8 @@
 import { useState } from "react";
 
 const videos = [
+    { id: "XHvO23Iya9Q", title: "Profes y alumnos del taller de folklore del Causay en Gracias por Estar" },
+    { id: "YTDX9xBJXLU", title: "Liliana Freysz y Rosa Pereyra, integrantes del club de abuelos del Causay en Gracias por Estar" },
     { id: "hFPGxaRYMsw", title: "¡Celebremos juntos! Cumplimos nuestro 40 Aniversario!" },
     { id: "bxNeby3md3M", title: "Bienvenidos a Causay / Recorrido virtual" },
     { id: "n3ssF6iz3yI", title: "Acto artístico 2019 / Centro Educativo Causay" },
