@@ -144,13 +144,21 @@
         "link": "/noticias/acto-2025-12-12-2025"
     },
     {
-  "id": 17,
-  "title": "Alumnos accedieron al Plan de Becas Causay 2026",
-  "description": "El Causay otorgó becas completas a estudiantes de nivel primario y secundario en el marco del Plan de Becas 2026.",
-  "date": "2025-12-18",
-  "category": "Institucional",
-  "image": "/press/noimage.webp",
-  "link": "/noticias/beneficiarios-becas-18-12-25"
-}
-
+        "id": 17,
+        "title": "Alumnos accedieron al Plan de Becas Causay 2026",
+        "description": "El Causay otorgó becas completas a estudiantes de nivel primario y secundario en el marco del Plan de Becas 2026.",
+        "date": "2025-12-18",
+        "category": "Institucional",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/beneficiarios-becas-18-12-25"
+    },
+    {
+        "id": 18,
+        "title": "Causay culminó la Campaña de Colecta Solidaria 2025",
+        "description": "La comunidad educativa del Causay cerró la Campaña de Colecta Solidaria 2025 con una amplia participación y numerosas donaciones.",
+        "date": "2025-12-31",
+        "category": "Solidaridad",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/colecta-solidaria-31-12-2025"
+    }
 ]
