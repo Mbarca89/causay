@@ -5,8 +5,8 @@
         "description": "El proyecto 'CardioInsight' del Centro Educativo Causay fue seleccionado por el Ministerio de Educación para representar al país en la Feria Internacional de Ciencias 2025 en Chile.",
         "date": "2025-10-14",
         "category": "Ciencia y Tecnología",
-        "image": "/press/feria-internacional-14-10-25.webp",
-        "link": "/noticias/feria-internacional-14-10-25"
+        "image": "/press/feria-internacional-14-10-2025.webp",
+        "link": "/noticias/feria-internacional-14-10-2025"
     },
     {
         "id": 1,
@@ -14,8 +14,8 @@
         "description": "Estudiantes del Centro Educativo Causay se destacan en el Concurso Internacional de Dibujo Expochess 2025.",
         "date": "2025-10-14",
         "category": "Logros",
-        "image": "/press/expochess-14-10-25.webp",
-        "link": "/noticias/expochess-14-10-25"
+        "image": "/press/expochess-14-10-2025.webp",
+        "link": "/noticias/expochess-14-10-2025"
     },
     {
         "id": 2,
@@ -23,8 +23,8 @@
         "description": "Centro Educativo Causay: Ganador como Proyecto Destacado en la Feria Nacional de Educación, Artes, Ciencias y Tecnología 2025 ",
         "date": "2025-10-07",
         "category": "Ciencia y Tecnología",
-        "image": "/press/feria-07-10-25.webp",
-        "link": "/noticias/feria-07-10-25"
+        "image": "/press/feria-07-10-2025.webp",
+        "link": "/noticias/feria-07-10-2025"
     },
     {
         "id": 3,
@@ -32,8 +32,8 @@
         "description": "Centro Educativo Causay: Campeones Provinciales de Handball de los Juegos Intercolegiales 2025. ",
         "date": "2025-09-25",
         "category": "Deportes",
-        "image": "/press/intercolegiales-25-09-25.webp",
-        "link": "/noticias/intercolegiales-25-09-25"
+        "image": "/press/intercolegiales-25-09-2025.webp",
+        "link": "/noticias/intercolegiales-25-09-2025"
     },
     {
         "id": 4,
@@ -42,7 +42,7 @@
         "date": "2025-09-22",
         "category": "Institucional",
         "image": "/press/noimage.webp",
-        "link": "/noticias/propuesta-educativa-22-09-25"
+        "link": "/noticias/propuesta-educativa-22-09-2025"
     },
     {
         "id": 6,
@@ -51,7 +51,7 @@
         "date": "2025-10-22",
         "category": "Educación",
         "image": "/press/noimage.webp",
-        "link": "/noticias/ensenanza-interactiva-22-10-25"
+        "link": "/noticias/ensenanza-interactiva-22-10-2025"
     },
     {
         "id": 7,
@@ -59,8 +59,8 @@
         "description": "El Gobernador Claudio Poggi recibió a 11 estudiantes del Causay que presentarán el proyecto ‘CardioInsight’ en la Feria Internacional de Ciencias en Chile.",
         "date": "2025-10-24",
         "category": "Institucional",
-        "image": "/press/poggi-alumnos-24-10-25.webp",
-        "link": "/noticias/poggi-alumnos-24-10-25"
+        "image": "/press/poggi-alumnos-24-10-2025.webp",
+        "link": "/noticias/poggi-alumnos-24-10-2025"
     },
     {
         "id": 8,
@@ -68,8 +68,8 @@
         "description": "Estudiantes del Centro Educativo Causay fueron reconocidos por autoridades nacionales previo a su participación en la Feria Internacional de Ciencias en Chile.",
         "date": "2025-10-31",
         "category": "Institucional",
-        "image": "/press/alumnos-autoridades-nacionales-31-10-25.webp",
-        "link": "/noticias/alumnos-autoridades-nacionales-31-10-25"
+        "image": "/press/alumnos-autoridades-nacionales-31-10-2025.webp",
+        "link": "/noticias/alumnos-autoridades-nacionales-31-10-2025"
     },
     {
         "id": 9,
@@ -96,7 +96,7 @@
         "date": "2025-11-18",
         "category": "Ciencia y Tecnología",
         "image": "/press/noimage.webp",
-        "link": "/noticias/mateclubes-18-11-25"
+        "link": "/noticias/mateclubes-18-11-2025"
     },
     {
         "id": 12,
@@ -104,8 +104,8 @@
         "description": "El Causay incorporó nubes acústicas y un sistema de sonido central para mejorar el ambiente educativo y el rendimiento de los estudiantes.",
         "date": "2025-11-27",
         "category": "Institucional",
-        "image": "/press/nubes-acusticas-27-11-25.webp",
-        "link": "/noticias/nubes-acusticas-27-11-25"
+        "image": "/press/nubes-acusticas-27-11-2025.webp",
+        "link": "/noticias/nubes-acusticas-27-11-2025"
     },
     {
         "id": 13,
@@ -113,8 +113,8 @@
         "description": "El proyecto CardioInsight del Causay fue premiado con el máximo reconocimiento internacional en la Expociencias Chile 2025.",
         "date": "2025-11-28",
         "category": "Logros",
-        "image": "/press/expociencias-chile-28-11-25.webp",
-        "link": "/noticias/expociencias-chile-28-11-25"
+        "image": "/press/expociencias-chile-28-11-2025.webp",
+        "link": "/noticias/expociencias-chile-28-11-2025"
     },
     {
         "id": 14,
@@ -123,7 +123,7 @@
         "date": "2025-12-04",
         "category": "Institucional",
         "image": "/press/noimage.webp",
-        "link": "/noticias/actos-04-12-25"
+        "link": "/noticias/actos-04-12-2025"
     },
     {
         "id": 15,
@@ -132,7 +132,7 @@
         "date": "2025-12-09",
         "category": "Logros",
         "image": "/press/noimage.webp",
-        "link": "/noticias/concurso-ifdcsl-09-12-25"
+        "link": "/noticias/concurso-ifdcsl-09-12-2025"
     },
     {
         "id": 16,
@@ -150,7 +150,7 @@
         "date": "2025-12-18",
         "category": "Institucional",
         "image": "/press/noimage.webp",
-        "link": "/noticias/beneficiarios-becas-18-12-25"
+        "link": "/noticias/beneficiarios-becas-18-12-2025"
     },
     {
         "id": 18,
@@ -160,5 +160,14 @@
         "category": "Solidaridad",
         "image": "/press/noimage.webp",
         "link": "/noticias/colecta-solidaria-31-12-2025"
+    },
+    {
+        "id": 19,
+        "title": "Causay se ilumina con sustentabilidad: obras que inspiran el aprendizaje",
+        "description": "Durante el verano 2026, el Causay lleva adelante obras civiles orientadas a la eficiencia energética, el confort y el bienestar de la comunidad educativa.",
+        "date": "2026-01-14",
+        "category": "Institucional",
+        "image": "/press/obras-civiles-14-01-2026.webp",
+        "link": "/noticias/obras-civiles-14-01-2026"
     }
 ]
