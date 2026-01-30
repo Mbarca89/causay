@@ -25,6 +25,7 @@ const NewsArchive = () => {
   }, [])
 
   function parseLocalDate(isoDate: string) {
+    console.log(isoDate)
     const [year, month, day] = isoDate.split("-").map(Number)
     return new Date(year, month - 1, day)
   }
@@ -69,11 +70,12 @@ const NewsArchive = () => {
 
       <div className="list-group shadow-sm">
         {filtered.map((item) => (
-          <Link
+          < Link
             key={item.id}
             to={item.link}
             className="list-group-item list-group-item-action d-flex align-items-center gap-3 py-3"
           >
+
             <span className="badge bg-secondary flex-shrink-0">
               {parseLocalDate(item.date).toLocaleDateString("es-AR", {
                 day: "2-digit",
@@ -84,11 +86,13 @@ const NewsArchive = () => {
 
             <span className="fw-semibold">{item.title}</span>
 
-            {item.category && (
-              <span className="badge bg-success ms-auto d-none d-md-inline">
-                {item.category}
-              </span>
-            )}
+            {
+              item.category && (
+                <span className="badge bg-success ms-auto d-none d-md-inline">
+                  {item.category}
+                </span>
+              )
+            }
           </Link>
         ))}
 
@@ -98,7 +102,7 @@ const NewsArchive = () => {
           </div>
         )}
       </div>
-    </div>
+    </div >
   )
 }
 

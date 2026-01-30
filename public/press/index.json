@@ -169,5 +169,221 @@
         "category": "Institucional",
         "image": "/press/obras-civiles-14-01-2026.webp",
         "link": "/noticias/obras-civiles-14-01-2026"
+    },
+    {
+        "id": 20,
+        "title": "Causay abre sus actividades extracurriculares a toda la comunidad",
+        "description": "El Centro Educativo Causay presentó su propuesta de actividades extracurriculares 2025 abiertas a toda la comunidad.",
+        "date": "2025-02-04",
+        "category": "Institucional",
+        "image": "/press/actividades-extracurriculares-04-02-2025.webp",
+        "link": "/noticias/actividades-extracurriculares-04-02-2025"
+    },
+    {
+        "id": 21,
+        "title": "Causay impulsa un Programa de Alimentación Inteligente",
+        "description": "El Centro Educativo Causay desarrolla un programa integral de alimentación inteligente para promover hábitos saludables en sus alumnos.",
+        "date": "2025-03-10",
+        "category": "Hábitos Saludables",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/alimentacion-inteligente-10-03-2025"
+    },
+    {
+        "id": 22,
+        "title": "El Centro Educativo Causay celebra 44 años de fundación",
+        "description": "El Causay conmemora 44 años de trayectoria educativa, reafirmando su compromiso con una educación innovadora y de calidad.",
+        "date": "2025-08-13",
+        "category": "Institucional",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/aniversario-fundacion-causay-13-08-2025"
+    },
+    {
+        "id": 23,
+        "title": "La Biblioteca del Causay abre sus puertas a toda la comunidad",
+        "description": "El Centro Educativo Causay abre su biblioteca a la comunidad de San Luis, ofreciendo un espacio de lectura, estudio y acceso al conocimiento.",
+        "date": "2025-02-24",
+        "category": "Institucional",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/biblioteca-abierta-24-02-2025"
+    },
+    {
+        "id": 24,
+        "title": "Curso gratuito de RCP para periodistas y personal de prensa",
+        "description": "El Centro Educativo Causay dictará un curso gratuito de RCP destinado a periodistas y personal de prensa de toda la provincia.",
+        "date": "2025-03-26",
+        "category": "Salud",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/capacitacion-rcp-26-03-2025"
+    },
+    {
+        "id": 25,
+        "title": "Causay inicia la Campaña de Colecta de Juguetes por el Día del Niño",
+        "description": "El Centro Educativo Causay lanza una campaña solidaria de recolección de juguetes para niños del barrio República.",
+        "date": "2025-08-04",
+        "category": "Solidaridad",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/colecta-juguetes-04-08-2025"
+    },
+    {
+        "id": 26,
+        "title": "Causay lanza una Colecta Solidaria para ayudar a familias necesitadas",
+        "description": "El Centro Educativo Causay inicia una colecta solidaria de abrigo, ropa y artículos de higiene para familias del barrio La República.",
+        "date": "2025-03-31",
+        "category": "Solidaridad",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/colecta-solidaria-31-03-2025"
+    },
+    {
+        "id": 27,
+        "title": "Con compromiso y excelencia comienza el Ciclo Lectivo 2025 en Causay",
+        "description": "El Centro Educativo Causay anuncia el inicio del Ciclo Lectivo 2025 y reafirma su compromiso con la educación integral.",
+        "date": "2025-02-17",
+        "category": "Institucional",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/comienzo-ciclo-lectivo-17-02-2025"
+    },
+    {
+        "id": 28,
+        "title": "Causay impulsa el proyecto educativo \"Conociendo mi Provincia\"",
+        "description": "El Centro Educativo Causay lanza el proyecto \"Conociendo mi Provincia\" con viajes educativos para alumnos de nivel primario y secundario.",
+        "date": "2025-05-06",
+        "category": "Educación",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/conociendo-mi-provincia-06-05-2025"
+    },
+    {
+        "id": 29,
+        "title": "Causay celebra el Día de los Abuelos con encuentros intergeneracionales",
+        "description": "El Centro Educativo Causay organiza desayunos intergeneracionales para homenajear a los abuelos y fortalecer vínculos con los alumnos.",
+        "date": "2025-07-23",
+        "category": "Institucional",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/dia-abuelos-23-07-2025"
+    },
+    {
+        "id": 30,
+        "title": "Centro Educativo Causay: la mejor elección para una educación de calidad",
+        "description": "El Centro Educativo Causay presenta su propuesta educativa integral, innovadora y personalizada para todos los niveles.",
+        "date": "2025-01-23",
+        "category": "Institucional",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/estudiar-en-causay-23-01-2025"
+    },
+    {
+        "id": 31,
+        "title": "Alumnos del Causay superan la media nacional en exámenes de Cambridge",
+        "description": "Estudiantes del Centro Educativo Causay obtuvieron resultados sobresalientes en exámenes internacionales de inglés, superando la media nacional.",
+        "date": "2025-03-05",
+        "category": "Educación",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/examenes-cambridge-05-03-2025"
+    },
+    {
+        "id": 32,
+        "title": "Alumnos del Causay trabajan sobre el mundo de la Inteligencia Artificial",
+        "description": "Estudiantes del Centro Educativo Causay desarrollan proyectos sobre el uso ético y el funcionamiento de la inteligencia artificial.",
+        "date": "2025-04-08",
+        "category": "Tecnología",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/inteligencia-artificial-08-04-2025"
+    },
+    {
+        "id": 33,
+        "title": "Causay recibe a un estudiante de Lituania en un nuevo intercambio internacional",
+        "description": "El Centro Educativo Causay participa del programa Rotary Youth Exchange y recibe a un estudiante proveniente de Lituania.",
+        "date": "2025-08-20",
+        "category": "Educación",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/intercambio-internacional-alumnos-20-08-2025"
+    },
+    {
+        "id": 34,
+        "title": "Causay lanza el Postítulo en Inteligencia Artificial Aplicada a la Educación",
+        "description": "El Centro Educativo Causay presenta un postítulo con validez ministerial orientado a la aplicación de la inteligencia artificial en la educación.",
+        "date": "2025-09-16",
+        "category": "Educación",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/postitulo-ia-16-09-2025"
+    },
+    {
+        "id": 35,
+        "title": "Causay fortalece su compromiso con la conciencia ecológica y el reciclaje",
+        "description": "El Centro Educativo Causay desarrolla un programa de conciencia ecológica basado en reciclaje, sostenibilidad y acciones comunitarias.",
+        "date": "2025-05-13",
+        "category": "Conciencia Ecológica",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/reciclado-13-05-2025"
+    },
+    {
+        "id": 36,
+        "title": "Reciclamoda 2025: arte, creatividad y reciclaje",
+        "description": "El Centro Educativo Causay organiza una nueva edición de Reciclamoda, un evento que promueve el reciclaje y la creatividad.",
+        "date": "2025-07-30",
+        "category": "Conciencia Ecológica",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/reciclamoda-30-07-2025"
+    },
+    {
+        "id": 37,
+        "title": "Renovaciones y mejoras edilicias en el Causay",
+        "description": "El Centro Educativo Causay realizó trabajos de renovación y mantenimiento para el inicio del ciclo lectivo 2025.",
+        "date": "2025-01-13",
+        "category": "Institucional",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/renovaciones-13-01-2025"
+    },
+    {
+        "id": 38,
+        "title": "Obras de refacción durante las vacaciones de invierno",
+        "description": "El Centro Educativo Causay inicia obras edilicias para mejorar el confort y la iluminación natural de sus espacios.",
+        "date": "2025-06-07",
+        "category": "Institucional",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/renovaciones-invierno-07-06-2025"
+    },
+    {
+        "id": 39,
+        "title": "Mesas de exámenes y Semana de Fortalecimiento",
+        "description": "El Centro Educativo Causay habilita mesas de exámenes y una semana de fortalecimiento previo al inicio del ciclo lectivo 2025.",
+        "date": "2025-02-18",
+        "category": "Institucional",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/semana-fortalecimiento-18-02-2025"
+    },
+    {
+        "id": 40,
+        "title": "Semana de los Jardines de Infantes en el Causay",
+        "description": "El Centro Educativo Causay celebra la Semana de los Jardines de Infantes con actividades educativas, recreativas y comunitarias.",
+        "date": "2025-05-26",
+        "category": "Educación Inicial",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/semana-jardines-26-05-2025"
+    },
+    {
+        "id": 41,
+        "title": "Causay abre talleres a la comunidad de San Luis",
+        "description": "El Centro Educativo Causay ofrece una amplia propuesta de talleres recreativos, artísticos y deportivos abiertos a la comunidad.",
+        "date": "2025-03-17",
+        "category": "Comunidad",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/talleres-17-03-2025"
+    },
+    {
+        "id": 42,
+        "title": "Torneo de Ajedrez abierto a la comunidad",
+        "description": "El Centro Educativo Causay organiza un torneo de ajedrez para alumnos de nivel primario de toda la provincia.",
+        "date": "2025-04-21",
+        "category": "Deportes",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/torneo-ajedrez-21-04-2025"
+    },
+    {
+        "id": 43,
+        "title": "Comienzan las Vacaciones de Invierno 2025",
+        "description": "El Centro Educativo Causay informa el inicio del receso invernal y destaca la importancia del descanso y la desconexión.",
+        "date": "2025-07-04",
+        "category": "Institucional",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/vacaciones-invierno-04-07-2025"
     }
 ]

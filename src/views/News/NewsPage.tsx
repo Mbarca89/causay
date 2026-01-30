@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom"
+import { useParams, Link, useNavigate } from "react-router-dom"
 import { useEffect, useMemo, useState } from "react"
 import { Calendar, ArrowLeft, Download, ExternalLink, Youtube } from "lucide-react"
 
@@ -34,6 +34,9 @@ const NewsPage = () => {
   const [news, setNews] = useState<NewsData | null>(null)
   const [error, setError] = useState(false)
 
+  const navigate = useNavigate();
+
+
   useEffect(() => {
     if (!slug) return
 
@@ -65,10 +68,14 @@ const NewsPage = () => {
       <div className="container py-5 text-center">
         <h3 className="text-danger mb-3">Noticia no encontrada</h3>
         <div className="d-flex">
-          <Link to="/noticias" className="btn btn-outline-success mb-3 d-flex flex-row align-items-center">
+          <button
+            type="button"
+            onClick={() => navigate(-1)}
+            className="btn btn-outline-success mb-3 d-flex flex-row align-items-center"
+          >
             <ArrowLeft size={18} className="me-2" />
-            Volver a todas las noticias
-          </Link>
+            Volver
+          </button>
         </div>
       </div>
     )
@@ -91,10 +98,14 @@ const NewsPage = () => {
     <div className="container py-5">
       <div className="mb-4">
         <div className="d-flex">
-          <Link to="/noticias" className="btn btn-outline-success mb-3 d-flex flex-row align-items-center">
+          <button
+            type="button"
+            onClick={() => navigate(-1)}
+            className="btn btn-outline-success mb-3 d-flex flex-row align-items-center"
+          >
             <ArrowLeft size={18} className="me-2" />
-            Volver a todas las noticias
-          </Link>
+            Volver
+          </button>
         </div>
 
         <h1 className="fw-bold">{news.title}</h1>
