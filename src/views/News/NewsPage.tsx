@@ -1,4 +1,4 @@
-import { useParams, Link, useNavigate } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import { useEffect, useMemo, useState } from "react"
 import { Calendar, ArrowLeft, Download, ExternalLink, Youtube } from "lucide-react"
 
