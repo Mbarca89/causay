@@ -385,5 +385,32 @@
         "category": "Institucional",
         "image": "/press/noimage.webp",
         "link": "/noticias/vacaciones-invierno-04-07-2025"
+    },
+    {
+        "id": 44,
+        "title": "La Ludoteca Causay reabre sus puertas a la comunidad",
+        "description": "El Centro Educativo Causay vuelve a abrir su Ludoteca, un espacio educativo para niños de hasta 3 años basado en el aprendizaje a través del juego.",
+        "date": "2026-02-11",
+        "category": "Educación Inicial",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/ludoteca-11-02-2026"
+    },
+    {
+        "id": 45,
+        "title": "Mesas de exámenes y Semana de Fortalecimiento 2026",
+        "description": "El Centro Educativo Causay habilita mesas de exámenes y una semana de fortalecimiento previo al inicio del ciclo lectivo 2026.",
+        "date": "2026-02-12",
+        "category": "Institucional",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/mesas-examenes-12-02-2026"
+    },
+    {
+        "id": 46,
+        "title": "Convocatoria abierta al Postítulo en Inteligencia Artificial aplicada a la Educación",
+        "description": "Docentes de toda la provincia pueden inscribirse al Postítulo en IA aplicada a la Educación con certificación oficial y validez ministerial.",
+        "date": "2026-02-24",
+        "category": "Formación Docente",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/postitulo-ia-24-02-2026"
     }
 ]
