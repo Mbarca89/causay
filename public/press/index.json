@@ -392,7 +392,7 @@
         "description": "El Centro Educativo Causay vuelve a abrir su Ludoteca, un espacio educativo para niños de hasta 3 años basado en el aprendizaje a través del juego.",
         "date": "2026-02-11",
         "category": "Educación Inicial",
-        "image": "/press/noimage.webp",
+        "image": "/press/ludoteca-11-02-2026.webp",
         "link": "/noticias/ludoteca-11-02-2026"
     },
     {
@@ -412,5 +412,23 @@
         "category": "Formación Docente",
         "image": "/press/noimage.webp",
         "link": "/noticias/postitulo-ia-24-02-2026"
+    },
+    {
+        "id": 47,
+        "title": "Causay lanza talleres para adultos y adultos mayores",
+        "description": "El Centro Educativo Causay presenta nuevos talleres orientados a la estimulación cognitiva, el aprendizaje y la actividad física.",
+        "date": "2026-03-02",
+        "category": "Comunidad",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/talleres-adultos-02-03-2026"
+    },
+    {
+        "id": 48,
+        "title": "Un gol de educación: Causay inicia un año mundial",
+        "description": "El Centro Educativo Causay inició el ciclo lectivo 2026 con una temática inspirada en el mundial y un fuerte mensaje sobre el trabajo en equipo.",
+        "date": "2026-03-03",
+        "category": "Institucional",
+        "image": "/press/inicio-ciclo-lectivo-2026.webp",
+        "link": "/noticias/inicio-ciclo-lectivo-2026"
     }
 ]

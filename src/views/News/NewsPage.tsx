@@ -15,10 +15,11 @@ interface NewsData {
   date: string
   category: string
   image: string
-  docFile: string
   htmlContent: string
   externalLinks?: ExternalLinkItem[]
   media: MediaItem[]
+  docFile?: string
+  gallery?: string[]
 }
 
 function domainFromUrl(u: string) {
@@ -212,7 +213,24 @@ const NewsPage = () => {
           </ul>
         </section>
       )}
+      {!!news.gallery?.length && (
+        <section className="mt-5">
+          <h5 className="fw-bold mb-3">Galería</h5>
 
+          <div className="row g-3">
+            {news.gallery.map((src, i) => (
+              <div className="col-12 col-sm-6 col-md-4" key={`${src}-${i}`}>
+                <img
+                  src={src}
+                  alt={`${news.title} - foto ${i + 1}`}
+                  className="img-fluid rounded-4 shadow-sm w-100"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
       {news.docFile && <div className="mt-5 d-flex">
         <a href={news.docFile} download className="btn btn-success d-flex align-items-center">
           <Download size={18} className="me-2" />
