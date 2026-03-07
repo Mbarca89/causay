@@ -430,5 +430,14 @@
         "category": "Institucional",
         "image": "/press/inicio-ciclo-lectivo-2026.webp",
         "link": "/noticias/inicio-ciclo-lectivo-2026"
+    },
+    {
+        "id": 49,
+        "title": "Poggi visitó el Causay y participó de la apertura del postítulo en Inteligencia Artificial",
+        "description": "El gobernador Claudio Poggi recorrió el Causay y acompañó la apertura del postítulo en Inteligencia Artificial aplicada a la educación.",
+        "date": "2026-03-06",
+        "category": "Institucional",
+        "image": "/press/poggi-postitulo-ia-06-03-2026.webp",
+        "link": "/noticias/poggi-postitulo-ia-06-03-2026"
     }
 ]
