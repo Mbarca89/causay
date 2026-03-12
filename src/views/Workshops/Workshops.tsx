@@ -16,50 +16,85 @@ const Workshops: React.FC = () => {
 
     const workshops = [
         {
-            name: "ACROBACIA EN TELAS",
+            name: "Acrobacia en telas",
             image: "/images/workshops/telas.webp",
             alt: "Acrobacia en telas - persona realizando acrobacias en telas aéreas",
+            days: "Lunes y Miércoles",
+            time: "16:40 - 17:40 hs"
         },
         {
-            name: "AJEDREZ",
+            name: "Ajedrez",
             image: "/images/workshops/ajedrez.webp",
             alt: "Ajedrez - tablero de ajedrez con piezas",
+            days: "Martes y Jueves",
+            time: "16:40 - 17:40 hs"
         },
         {
-            name: "BAILE",
-            image: "/images/workshops/baile.webp",
-            alt: "Baile - personas bailando en un estudio",
-        },
-        {
-            name: "FOLKLORE",
-            image: "/images/workshops/folklore.jpg",
-            alt: "Folklore - bailarines de danzas tradicionales",
-        },
-        {
-            name: "FUTBOL",
+            name: "Fútbol",
             image: "/images/workshops/futbol.webp",
             alt: "Fútbol - niños jugando al fútbol",
+            days: "Consultar segun edad",
+            time: ""
         },
         {
-            name: "PATINAJE EN LÍNEA",
+            name: "Patinaje en línea",
             image: "/images/workshops/patinajeL.webp",
             alt: "Patinaje en línea - persona patinando",
+            days: "Martes y Jueves",
+            time: "16:40 - 17:40 hs"
         },
         {
-            name: "PATINAJE ARTÍSTICO",
+            name: "Patinaje artístico",
             image: "/images/workshops/patinajeA.webp",
             alt: "Patinaje artístico - patinador realizando una figura",
+            days: "Lunes y Miércoles",
+            time: "16:40 - 17:40 hs"
         },
         {
-            name: "TAEKWONDO",
+            name: "Taekwondo",
             image: "/images/workshops/taekwondo.webp",
             alt: "Taekwondo - practicantes de taekwondo en acción",
+            days: "Lunes y Miércoles",
+            time: "16:40 - 17:40 hs"
+        },
+    ]
+
+    const adultWorkshops = [
+        {
+            name: "Folklore",
+            image: "/images/workshops/folklore.webp",
+            alt: "Folklore - bailarines de danzas tradicionales",
+            days: "Martes y Jueves",
+            time: "19:30 - 21:00 hs"
         },
         {
-            name: "YOGA",
-            image: "/images/workshops/yoga.webp",
-            alt: "Yoga - persona practicando yoga",
+            name: "Gimnasia cognitiva",
+            image: "/images/workshops/gym.webp",
+            alt: "Fútbol - niños jugando al fútbol",
+            days: "Lunes y Viernes",
+            time: "10:30 - 11:30 hs"
         },
+        {
+            name: "Manejo de plataformas digitales",
+            image: "/images/workshops/plataformas.webp",
+            alt: "Fútbol - niños jugando al fútbol",
+            days: "Lunes y Jueves",
+            time: "16:40 - 17:40 hs"
+        },
+        {
+            name: "Tejido para principiantes",
+            image: "/images/workshops/tejido.webp",
+            alt: "Patinaje en línea - persona patinando",
+            days: "Lunes y Miercoles",
+            time: "17:40 - 18:40 hs"
+        },
+        {
+            name: "Zumba",
+            image: "/images/workshops/zumba.webp",
+            alt: "Patinaje en línea - persona patinando",
+            days: "Martes y Jueves",
+            time: "16:40 - 17:40 hs"
+        }
     ]
 
     return (
@@ -93,9 +128,9 @@ const Workshops: React.FC = () => {
                 general.
             </p>
 
-            <div className="mb-8">
-                <h2 className="text-2xl font-medium mb-6 text-center">Oferta 2025</h2>
-                <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            <div className="mb-8 border-b border-green-500">
+                <h2 className="text-2xl font-medium mb-6 text-center">Oferta 2026</h2>
+                <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mb-8">
                     {workshops.map((workshop, index) => (
                         <Card
                             key={index}
@@ -108,8 +143,42 @@ const Workshops: React.FC = () => {
                                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                                 />
                             </div>
+                            <CardContent className="p-4 gap-4 flex flex-col">
+                                <div>
+                                    <h4 className="font-medium text-center">{workshop.name}</h4>
+                                </div>
+                                <div>
+                                    <p className='text-center '>{workshop.days}</p>
+                                    <p className='text-center text-muted-foreground'>{workshop.time}</p>
+                                </div>
+                            </CardContent>
+                        </Card>
+                    ))}
+                </div>
+            </div>
+            <div className="mb-8">
+                <h2 className="text-2xl font-medium mb-6 text-center">Talleres para adultos 2026</h2>
+                <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    {adultWorkshops.map((workshop, index) => (
+                        <Card
+                            key={index}
+                            className="overflow-hidden group transition-all duration-300 hover:shadow-md hover:-translate-y-1"
+                        >
+                            <div className="aspect-video overflow-hidden relative">
+                                <img
+                                    src={workshop.image}
+                                    alt={workshop.alt}
+                                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                />
+                            </div>
                             <CardContent className="p-4">
-                                <h4 className="font-medium text-center">{workshop.name}</h4>
+                                <div>
+                                    <h5 className="font-medium text-center">{workshop.name}</h5>
+                                </div>
+                                <div>
+                                    <p className='text-center '>{workshop.days}</p>
+                                    <p className='text-center text-muted-foreground'>{workshop.time}</p>
+                                </div>
                             </CardContent>
                         </Card>
                     ))}
