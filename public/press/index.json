@@ -439,5 +439,14 @@
         "category": "Institucional",
         "image": "/press/poggi-postitulo-ia-06-03-2026.webp",
         "link": "/noticias/poggi-postitulo-ia-06-03-2026"
+    },
+    {
+        "id": 50,
+        "title": "Colecta Solidaria Causay 2026: Comunidad que Comparte",
+        "description": "El Centro Educativo Causay lanza una nueva edición de su campaña solidaria para acompañar a familias en situación de vulnerabilidad.",
+        "date": "2026-03-11",
+        "category": "Comunidad",
+        "image": "/press/colecta-solidaria-11-03-2026.webp",
+        "link": "/noticias/colecta-solidaria-11-03-2026"
     }
 ]
