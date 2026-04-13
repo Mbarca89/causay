@@ -448,5 +448,32 @@
         "category": "Comunidad",
         "image": "/press/colecta-solidaria-11-03-2026.webp",
         "link": "/noticias/colecta-solidaria-11-03-2026"
+    },
+    {
+        "id": 51,
+        "title": "Causay en Agenda Directa: educación e innovación en vivo",
+        "description": "El Centro Educativo Causay participó de un móvil en vivo donde presentó su propuesta educativa y proyectos.",
+        "date": "2026-03-26",
+        "category": "Institucional",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/nota-agenda-directa 26-03-2026"
+    },
+    {
+        "id": 52,
+        "title": "Desconectar para conectar: Causay regula el uso de celulares en el aula",
+        "description": "El Centro Educativo Causay implementa una política para fomentar el uso responsable de la tecnología y mejorar el aprendizaje.",
+        "date": "2026-03-30",
+        "category": "Educación",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/uso-de-celulares-30-03-2026"
+    },
+    {
+        "id": 53,
+        "title": "Jornada por el Día Mundial de la Salud en el Causay",
+        "description": "El Centro Educativo Causay organiza una jornada abierta con actividades deportivas y recreativas para promover hábitos saludables.",
+        "date": "2026-03-30",
+        "category": "Salud",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/dia-de-la-salud-30-03-2026"
     }
 ]
