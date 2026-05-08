@@ -475,5 +475,41 @@
         "category": "Salud",
         "image": "/press/noimage.webp",
         "link": "/noticias/dia-de-la-salud-30-03-2026"
-    }
+    },
+    {
+        "id": 54,
+        "title": "El ajedrez como herramienta educativa en el Causay",
+        "description": "El Centro Educativo Causay utiliza el ajedrez como recurso pedagógico para desarrollar habilidades cognitivas y emocionales en sus alumnos.",
+        "date": "2026-04-13",
+        "category": "Educación",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/ajedrez-13-04-2026"
+    },
+    {
+        "id": 55,
+        "title": "Causay implementa un protocolo de actuación ante situaciones de riesgo",
+        "description": "El Centro Educativo Causay capacitó a su personal y presentó un protocolo para actuar ante amenazas o situaciones de riesgo.",
+        "date": "2026-04-17",
+        "category": "Institucional",
+        "image": "/press/protocolo-ante-amenazas-17-04-2026.webp",
+        "link": "/noticias/protocolo-ante-amenazas-17-04-2026"
+    },
+    {
+        "id": 56,
+        "title": "Causay realizó su tradicional Suelta de Libros",
+        "description": "Alumnos del Centro Educativo Causay promovieron la lectura con una suelta de libros abierta a la comunidad.",
+        "date": "2026-04-23",
+        "category": "Cultura",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/suelta-de-libros-23-04-2026"
+    },
+    {
+  "id": 57,
+  "title": "Causay promueve la tenencia responsable en el Día del Animal",
+  "description": "El Centro Educativo Causay realizó una jornada comunitaria para concientizar sobre el cuidado y respeto hacia los animales.",
+  "date": "2026-04-29",
+  "category": "Comunidad",
+  "image": "/press/dia-del-animal-29-04-2026.webp",
+  "link": "/noticias/dia-del-animal-29-04-2026"
+}
 ]

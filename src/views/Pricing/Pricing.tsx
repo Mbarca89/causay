@@ -7,22 +7,22 @@ export default function TuitionFeesSection() {
         {
             level: "Educación Inicial",
             hours: "08:10 hs. a 12:50 hs.",
-            fee: "$ 189.200",
+            fee: "$ 220.500",
         },
         {
             level: "Educación Primaria",
             hours: "08:00 hs. a 16:30 hs.",
-            fee: "$ 243.800",
+            fee: "$ 284.500",
         },
         {
             level: "Educación Secundaria - Ciclo Básico",
             hours: "7:50 hs. a 13:50 hs.",
-            fee: "$ 193.700",
+            fee: "$ 225.800",
         },
         {
             level: "Educación Secundaria - Ciclo Orientado",
             hours: "7:50 hs. a 13:50 hs.",
-            fee: "$ 199.100",
+            fee: "$ 232.100",
         },
         {
             level: "Educación Superior",
@@ -67,7 +67,7 @@ export default function TuitionFeesSection() {
     return (
         <div className="container mx-auto p-6">
             <div className="text-center mb-8">
-                <h1 className="text-3xl font-light mb-2">Aranceles Octubre 2025</h1>
+                <h1 className="text-3xl font-light mb-2">Aranceles Mayo 2026</h1>
             </div>
 
             <div className="grid gap-8 mb-12">
@@ -93,7 +93,7 @@ export default function TuitionFeesSection() {
                 <hr style={{ backgroundColor: "green", height: "2px", border: "none" }} />
                 <Card>
                     <CardHeader className="pb-2">
-                        <CardTitle className="text-xl">Matrículas 2025 - Alumnos nuevos</CardTitle>
+                        <CardTitle className="text-xl">Matrículas 2026 - Alumnos nuevos</CardTitle>
                     </CardHeader>
                     <CardContent>
                         <div className="space-y-4">
@@ -111,7 +111,7 @@ export default function TuitionFeesSection() {
                 </Card>
                 <Card>
                     <CardHeader className="pb-2">
-                        <CardTitle className="text-xl">Matrículas 2025 - Alumnos actuales</CardTitle>
+                        <CardTitle className="text-xl">Matrículas 2026 - Alumnos actuales</CardTitle>
                     </CardHeader>
                     <CardContent>
                         <div className="space-y-4">
