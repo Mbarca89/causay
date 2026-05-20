@@ -504,12 +504,39 @@
         "link": "/noticias/suelta-de-libros-23-04-2026"
     },
     {
-  "id": 57,
-  "title": "Causay promueve la tenencia responsable en el Día del Animal",
-  "description": "El Centro Educativo Causay realizó una jornada comunitaria para concientizar sobre el cuidado y respeto hacia los animales.",
-  "date": "2026-04-29",
-  "category": "Comunidad",
-  "image": "/press/dia-del-animal-29-04-2026.webp",
-  "link": "/noticias/dia-del-animal-29-04-2026"
-}
+        "id": 57,
+        "title": "Causay promueve la tenencia responsable en el Día del Animal",
+        "description": "El Centro Educativo Causay realizó una jornada comunitaria para concientizar sobre el cuidado y respeto hacia los animales.",
+        "date": "2026-04-29",
+        "category": "Comunidad",
+        "image": "/press/dia-del-animal-29-04-2026.webp",
+        "link": "/noticias/dia-del-animal-29-04-2026"
+    },
+    {
+        "id": 58,
+        "title": "Causay homenajeó los 90 años del Centro de Jubilados",
+        "description": "El Centro Educativo Causay realizó una jornada de homenaje e integración por los 90 años del Centro de Jubilados y Pensionados Nacionales.",
+        "date": "2026-05-08",
+        "category": "Comunidad",
+        "image": "/press/centro-jubilados-08-05-2026.webp",
+        "link": "/noticias/centro-jubilados-08-05-2026"
+    },
+    {
+        "id": 59,
+        "title": "Alumnos del Causay avanzaron de nivel en Taekwondo",
+        "description": "Estudiantes del taller de Taekwondo del Centro Educativo Causay rindieron exámenes y obtuvieron nuevos cinturones.",
+        "date": "2026-05-18",
+        "category": "Deportes",
+        "image": "/press/taekwondo-18-05-2026.webp",
+        "link": "/noticias/taekwondo-18-05-2026"
+    },
+    {
+        "id": 60,
+        "title": "Cuatro alumnos del Causay avanzaron en la Olimpíada Matemática Ñandú",
+        "description": "Estudiantes del Centro Educativo Causay clasificaron a la etapa intercolegial de la Olimpíada Matemática Ñandú 2026.",
+        "date": "2026-05-19",
+        "category": "Educación",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/olimpiada-matematica-19-05-2026"
+    }
 ]
