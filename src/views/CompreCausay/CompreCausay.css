@@ -1,0 +1,7 @@
+.compre-causay-section { max-width: 1200px; margin: 0 auto; padding: 3rem 1rem; color: #1e2d2f; }
+.compre-causay-title { font-size: 2rem; font-weight: 700; color: #2f6a45; margin-bottom: 1rem; }
+.compre-causay-table-wrapper { margin-top: 1.5rem; overflow-x: auto; }
+.compre-causay-table { width: 100%; border-collapse: collapse; min-width: 900px; }
+.compre-causay-table th,.compre-causay-table td { border: 1px solid #d0d0d0; padding: 0.75rem; vertical-align: top; text-align: left; }
+.compre-causay-table th { background-color: #5a3c85; color: #fff; }
+.compre-causay-table tr:nth-child(even) { background-color: #f4f4f4; }
