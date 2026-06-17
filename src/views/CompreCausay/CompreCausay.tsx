@@ -65,25 +65,11 @@ const commerces = [
     redes: 'https://www.instagram.com/lospicapiedras.srl'
   },
   {
-    nombre: 'Camargo Consultora Legal',
-    rubro: 'Asesoramiento empresarial-legal de empresas familiares',
-    telefono: '2664-489066',
-    direccion: '25 de mayo 567',
-    redes: 'https://www.instagram.com/camargo.consultoralegal'
-  },
-  {
     nombre: 'Hi!',
     rubro: 'Marroquinería y accesorios de moda',
     telefono: '2664-695888',
     direccion: 'Rivadavia 636 / Belgrano 856 / Belgrano 877 / Junín 798',
     redes: 'https://www.instagram.com/hi_carteras_mochilas_valijas'
-  },
-  {
-    nombre: 'Pollería Don Jorge',
-    rubro: 'Pollería - producción de alimentos',
-    telefono: '2665-297814',
-    direccion: 'Mitre 795',
-    redes: 'https://www.instagram.com/polleria_don_jorge/'
   },
   {
     nombre: 'FP Studio',

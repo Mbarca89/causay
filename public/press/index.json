@@ -538,5 +538,32 @@
         "category": "Educación",
         "image": "/press/noimage.webp",
         "link": "/noticias/olimpiada-matematica-19-05-2026"
+    },
+    {
+        "id": 61,
+        "title": "Causay inaugura su Escuela Federada de Patinaje Artístico",
+        "description": "La nueva propuesta deportiva del Centro Educativo Causay está abierta a toda la comunidad y habilita la participación en competencias oficiales.",
+        "date": "2026-06-05",
+        "category": "Deportes",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/escuela-patin-05-06-2026"
+    },
+    {
+        "id": 62,
+        "title": "Profesora del Causay fue seleccionada en “Docentes que Inspiran”",
+        "description": "Romina Ortiz fue elegida entre los 24 semifinalistas del prestigioso premio nacional que reconoce a educadores destacados.",
+        "date": "2026-06-10",
+        "category": "Educación",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/docentes-que-inspiran-10-06-2026"
+    },
+    {
+        "id": 63,
+        "title": "Causay gritó campeón en Handball Intercolegial",
+        "description": "El equipo femenino categoría A se consagró campeón de la etapa local de los Juegos Intercolegiales 2026 y avanzó a la instancia regional.",
+        "date": "2026-06-11",
+        "category": "Deportes",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/handball-intercolegiales-11-06-2026"
     }
 ]

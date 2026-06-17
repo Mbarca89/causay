@@ -7,22 +7,27 @@ export default function TuitionFeesSection() {
         {
             level: "Educación Inicial",
             hours: "08:10 hs. a 12:50 hs.",
-            fee: "$ 220.500",
+            fee: "$ 231.500",
+        },
+        {
+            level: "Educación Inicial - Jornada completa",
+            hours: "08:10 hs. a 16:30 hs.",
+            fee: "$ 298.500",
         },
         {
             level: "Educación Primaria",
             hours: "08:00 hs. a 16:30 hs.",
-            fee: "$ 284.500",
+            fee: "$ 298.500",
         },
         {
             level: "Educación Secundaria - Ciclo Básico",
             hours: "7:50 hs. a 13:50 hs.",
-            fee: "$ 225.800",
+            fee: "$ 237.100",
         },
         {
             level: "Educación Secundaria - Ciclo Orientado",
             hours: "7:50 hs. a 13:50 hs.",
-            fee: "$ 232.100",
+            fee: "$ 243.700",
         },
         {
             level: "Educación Superior",
