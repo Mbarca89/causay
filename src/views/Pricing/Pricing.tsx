@@ -110,7 +110,7 @@ export default function TuitionFeesSection() {
                 <hr style={{ backgroundColor: "green", height: "2px", border: "none" }} />
                 <Card>
                     <CardHeader className="pb-2">
-                        <CardTitle className="text-xl">Matrículas 2026 - Alumnos nuevos</CardTitle>
+                        <CardTitle className="text-xl">Matrículas 2027 - Alumnos nuevos</CardTitle>
                     </CardHeader>
                     <CardContent>
                         <div className="space-y-4">
@@ -128,7 +128,7 @@ export default function TuitionFeesSection() {
                 </Card>
                 <Card>
                     <CardHeader className="pb-2">
-                        <CardTitle className="text-xl">Matrículas 2026 - Alumnos actuales</CardTitle>
+                        <CardTitle className="text-xl">Matrículas 2027 - Alumnos actuales</CardTitle>
                     </CardHeader>
                     <CardContent>
                         <div className="space-y-4">
