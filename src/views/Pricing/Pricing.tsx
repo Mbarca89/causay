@@ -7,27 +7,27 @@ export default function TuitionFeesSection() {
         {
             level: "Educación Inicial",
             hours: "08:10 hs. a 12:50 hs.",
-            fee: "$ 231.500",
+            fee: "$ 243.100",
         },
         {
             level: "Educación Inicial - Jornada completa",
             hours: "08:10 hs. a 16:30 hs.",
-            fee: "$ 298.500",
+            fee: "$ 313.400",
         },
         {
             level: "Educación Primaria",
             hours: "08:00 hs. a 16:30 hs.",
-            fee: "$ 298.500",
+            fee: "$ 313.400",
         },
         {
             level: "Educación Secundaria - Ciclo Básico",
             hours: "7:50 hs. a 13:50 hs.",
-            fee: "$ 237.100",
+            fee: "$ 249.000",
         },
         {
             level: "Educación Secundaria - Ciclo Orientado",
             hours: "7:50 hs. a 13:50 hs.",
-            fee: "$ 243.700",
+            fee: "$ 255.900",
         },
         {
             level: "Educación Superior",
@@ -39,33 +39,45 @@ export default function TuitionFeesSection() {
     const enrollmentFeesNew = [
         {
             level: "Educación Inicial",
-            fee: "$ 220.000",
+            fee: "$ 400.000",
+        },
+        {
+            level: "Educación Inicial - Jornada completa",
+            fee: "$ 500.000",
         },
         {
             level: "Educación Primaria",
-            fee: "$ 260.000",
+            fee: "$ 500.000",
         },
         {
             level: "Educación Secundaria",
-            fee: "$ 240.000",
+            fee: "$ 400.000",
+        },
+        {
+            level: "Ludoteca",
+            fee: "Según cantidad de horas",
         },
     ]
     const enrollmentFeesActual = [
         {
             level: "Educación Inicial",
-            fee: "$ 200.000",
+            fee: "$ 320.000",
+        },
+        {
+            level: "Educación Inicial - Jornada completa",
+            fee: "$ 400.000",
         },
         {
             level: "Educación Primaria",
-            fee: "$ 240.000",
+            fee: "$ 400.000",
         },
         {
             level: "Educación Secundaria",
-            fee: "$ 220.000",
+            fee: "$ 360.000",
         },
         {
-            level: "Ludoteca (Según cantidad de horas)",
-            fee: "$ 180.000 - $ 200.000",
+            level: "Ludoteca",
+            fee: "según cantidad de horas",
         },
     ]
 
