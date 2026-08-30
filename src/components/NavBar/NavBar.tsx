@@ -146,6 +146,13 @@ const NavBar = () => {
                         </Nav.Link>
                         <Nav.Link
                             className={textColorClass}
+                            onClick={() => {navigate("/compre-causay"); setExpanded(false);}}
+                            style={isScrolled ? {filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, .3))"} : {filter: "drop-shadow(2px 2px 1px rgba(0, 0, 0, 1))"}}
+                        >
+                            Compre Causay
+                        </Nav.Link>
+                        <Nav.Link
+                            className={textColorClass}
                             onClick={() => {navigate("/contacto"); setExpanded(false);}}
                             style={isScrolled ? {filter: "drop-shadow(2px 2px 4px rgba(0, 0, 0, .3))"} : {filter: "drop-shadow(2px 2px 1px rgba(0, 0, 0, 1))"}}
                         >

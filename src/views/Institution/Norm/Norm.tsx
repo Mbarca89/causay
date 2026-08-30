@@ -11,7 +11,7 @@ const Norm: React.FC = () => {
             <div className="bg-light shadow-md rounded text-center w-100 w-md-50 mt-5">
                 <ul className="space-y-3 list-unstyled">
                     {[
-                        { file: "ALUMNOS-2025.pdf", label: "Alumnos" },
+                        { file: "ALUMNOS-2026.pdf", label: "Alumnos" },
                         { file: "2019-MATRICULACION.pdf", label: "Matriculación" },
                         { file: "2019-PROGENITORES.pdf", label: "Progenitores" },
                         { file: "2019-SIMBOLOS-Y-DISTINTIVOS-PATRIOS.pdf", label: "Símbolos y Distintivos Patrios" },

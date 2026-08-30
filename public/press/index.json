@@ -504,12 +504,120 @@
         "link": "/noticias/suelta-de-libros-23-04-2026"
     },
     {
-  "id": 57,
-  "title": "Causay promueve la tenencia responsable en el Día del Animal",
-  "description": "El Centro Educativo Causay realizó una jornada comunitaria para concientizar sobre el cuidado y respeto hacia los animales.",
-  "date": "2026-04-29",
-  "category": "Comunidad",
-  "image": "/press/dia-del-animal-29-04-2026.webp",
-  "link": "/noticias/dia-del-animal-29-04-2026"
-}
+        "id": 57,
+        "title": "Causay promueve la tenencia responsable en el Día del Animal",
+        "description": "El Centro Educativo Causay realizó una jornada comunitaria para concientizar sobre el cuidado y respeto hacia los animales.",
+        "date": "2026-04-29",
+        "category": "Comunidad",
+        "image": "/press/dia-del-animal-29-04-2026.webp",
+        "link": "/noticias/dia-del-animal-29-04-2026"
+    },
+    {
+        "id": 58,
+        "title": "Causay homenajeó los 90 años del Centro de Jubilados",
+        "description": "El Centro Educativo Causay realizó una jornada de homenaje e integración por los 90 años del Centro de Jubilados y Pensionados Nacionales.",
+        "date": "2026-05-08",
+        "category": "Comunidad",
+        "image": "/press/centro-jubilados-08-05-2026.webp",
+        "link": "/noticias/centro-jubilados-08-05-2026"
+    },
+    {
+        "id": 59,
+        "title": "Alumnos del Causay avanzaron de nivel en Taekwondo",
+        "description": "Estudiantes del taller de Taekwondo del Centro Educativo Causay rindieron exámenes y obtuvieron nuevos cinturones.",
+        "date": "2026-05-18",
+        "category": "Deportes",
+        "image": "/press/taekwondo-18-05-2026.webp",
+        "link": "/noticias/taekwondo-18-05-2026"
+    },
+    {
+        "id": 60,
+        "title": "Cuatro alumnos del Causay avanzaron en la Olimpíada Matemática Ñandú",
+        "description": "Estudiantes del Centro Educativo Causay clasificaron a la etapa intercolegial de la Olimpíada Matemática Ñandú 2026.",
+        "date": "2026-05-19",
+        "category": "Educación",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/olimpiada-matematica-19-05-2026"
+    },
+    {
+        "id": 61,
+        "title": "Causay inaugura su Escuela Federada de Patinaje Artístico",
+        "description": "La nueva propuesta deportiva del Centro Educativo Causay está abierta a toda la comunidad y habilita la participación en competencias oficiales.",
+        "date": "2026-06-05",
+        "category": "Deportes",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/escuela-patin-05-06-2026"
+    },
+    {
+        "id": 62,
+        "title": "Profesora del Causay fue seleccionada en “Docentes que Inspiran”",
+        "description": "Romina Ortiz fue elegida entre los 24 semifinalistas del prestigioso premio nacional que reconoce a educadores destacados.",
+        "date": "2026-06-10",
+        "category": "Educación",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/docentes-que-inspiran-10-06-2026"
+    },
+    {
+        "id": 63,
+        "title": "Causay gritó campeón en Handball Intercolegial",
+        "description": "El equipo femenino categoría A se consagró campeón de la etapa local de los Juegos Intercolegiales 2026 y avanzó a la instancia regional.",
+        "date": "2026-06-11",
+        "category": "Deportes",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/handball-intercolegiales-11-06-2026"
+    },
+    {
+        "id": 64,
+        "title": "Héroes de Malvinas tomaron la Promesa y Jura a la Bandera",
+        "description": "Ex combatientes de Malvinas acompañaron a alumnos del Causay en una emotiva ceremonia de Promesa y Jura a la Bandera Nacional.",
+        "date": "2026-06-22",
+        "category": "Institucional",
+        "image": "/press/promesa-jura-bandera-22-06-2026.webp",
+        "link": "/noticias/promesa-jura-bandera-22-06-2026"
+    },
+    {
+        "id": 65,
+        "title": "Romina Ortiz, finalista del premio “Docentes que Inspiran”",
+        "description": "La profesora del Centro Educativo Causay fue seleccionada entre los seis finalistas del prestigioso premio nacional que reconoce a los mejores docentes del país.",
+        "date": "2026-07-06",
+        "category": "Educación",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/docentes-que-inspiran-finalistas-06-07-2026"
+    },
+    {
+        "id": 66,
+        "title": "Causay realizó mejoras edilicias durante el receso invernal",
+        "description": "La institución incorporó un circuito de calistenia y realizó obras para brindar mayor confort, seguridad y bienestar a sus estudiantes.",
+        "date": "2026-07-21",
+        "category": "Infraestructura",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/mejoras-edilicias-invierno-21-07-2026"
+    },
+    {
+        "id": 67,
+        "title": "Alumnos del Causay investigan cómo aprende el cerebro",
+        "description": "El proyecto “Synapsys” integra neurociencia, estadística e inteligencia artificial para estudiar los procesos de aprendizaje en el ámbito escolar.",
+        "date": "2026-07-23",
+        "category": "Ciencia y Tecnología",
+        "image": "/press/synapsys-feria-ciencias-23-07-2026.webp",
+        "link": "/noticias/synapsys-feria-ciencias-23-07-2026"
+    },
+    {
+        "id": 68,
+        "title": "Estudiantes del Causay grabaron un radioteatro en Casa de Gobierno",
+        "description": "Alumnos del Centro Educativo Causay participaron del programa federal 'Sueños de Radio' realizando una producción de radioteatro en Casa de Gobierno.",
+        "date": "2026-07-24",
+        "category": "Educación",
+        "image": "/press/suenos-de-radio-24-07-2026.webp",
+        "link": "/noticias/suenos-de-radio-24-07-2026"
+    },
+    {
+        "id": 69,
+        "title": "Causay siembra futuro con una nueva campaña de reciclaje",
+        "description": "La comunidad educativa del Causay reunió más de una tonelada de materiales reciclables destinados a campañas ambientales y solidarias.",
+        "date": "2026-07-28",
+        "category": "Medio Ambiente",
+        "image": "/press/noimage.webp",
+        "link": "/noticias/causay-siembra-futuro-28-07-2026"
+    }
 ]

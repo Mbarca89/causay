@@ -27,6 +27,7 @@ const Gallery = lazy(() => import("./views/Gallery/Gallery"))
 const NewsPage = lazy(() => import("./views/News/NewsPage"))
 const NewsList = lazy(() => import("./views/News/NewsList"))
 const NewsArchive = lazy(() => import("./views/News/NewsArchive"))
+const CompreCausay = lazy(() => import("./views/CompreCausay/CompreCausay"))
 
 function App() {
 
@@ -67,6 +68,7 @@ function App() {
           <Route path="/noticias/:slug" element={<NewsPage />} />
           <Route path="/noticias" element={<NewsList />} />
           <Route path="/noticias/archivo" element={<NewsArchive />} />
+          <Route path="/compre-causay" element={<CompreCausay />} />
 
         </Route>
       </Routes>
